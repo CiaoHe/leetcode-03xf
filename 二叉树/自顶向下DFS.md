@@ -1,11 +1,11 @@
-# - [104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)
+# [104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)
 ```python fold
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root: return 0
         return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 ```
-# - [111. 二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)
+# [111. 二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)
 注意如果left/right为空，那么将不能简单返回0
 ```python fold
 class Solution:
@@ -19,7 +19,7 @@ class Solution:
             return self.minDepth(root.left) + 1
         return min(self.minDepth(root.left), self.minDepth(root.right)) + 1
 ```
-# - [100. 相同的树](https://leetcode.cn/problems/same-tree/)
+# [100. 相同的树](https://leetcode.cn/problems/same-tree/)
 ```python fold
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
@@ -31,7 +31,7 @@ class Solution:
             return False
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
 ```
-# - [112. 路径总和](https://leetcode.cn/problems/path-sum/)
+#  [112. 路径总和](https://leetcode.cn/problems/path-sum/)
 ```python fold
 class Solution:
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
@@ -63,4 +63,3 @@ class Solution:
                     q.append(node.right)
         return res
 ```
-# 

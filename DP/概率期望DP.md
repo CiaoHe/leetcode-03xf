@@ -16,7 +16,7 @@ class Solution:
             return res
         return dfs(k, row, column) / 8**k
 ```
-## [576. 出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/)
+# [576. 出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/)
 ```python fold
 class Solution:
     def findPaths(self, m: int, n: int, maxMove: int, startRow: int, startColumn: int) -> int:
@@ -36,7 +36,7 @@ class Solution:
             return res % MOD
         return dfs(maxMove, startRow, startColumn)
 ```
-## 用mcmc模拟到角落的概率
+# [minimax] 用mcmc模拟到角落的概率
 
 一个16x16棋盘上走马，就是说只能横着走2步，竖着走1步，或者竖着走2步横着走1步。假设你的初始位置是左上角(坐标0,0)，请估算从左上角达到任意顶点（包含0,0）要走步数的期望。 
 注意点： 1. 棋盘外的点是不合法的。 2. 用蒙特卡罗的思路来做。 3. 向每一个合法的点走的概率是一样的。

@@ -19,3 +19,4 @@ class Solution:
                 heappush(min_heap, (nums1[i + 1] + nums2[j], i + 1, j))
         return res
 ```
+

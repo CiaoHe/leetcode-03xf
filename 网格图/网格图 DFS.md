@@ -1,6 +1,6 @@
 适用于需要计算连通块个数、大小的题目。
 部分题目也可以用 BFS 或并查集解决。
-# - [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)
+# [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)
 ```python fold
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
@@ -26,7 +26,7 @@ class Solution:
         return ans
 ```
 
-# - [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)
+# [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)
 ```python fold
 class Solution:
     def solve(self, board: List[List[str]]) -> None:

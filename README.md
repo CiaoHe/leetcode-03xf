@@ -205,8 +205,8 @@ Table of Contents
 - [207. 课程表](https://leetcode.cn/problems/course-schedule/) [题解](./图论算法/DFS基础.md#207.-课程表)
 ## 拓扑排序
 
-- [[[DFS基础#207. 课程表]]](https //leetcode.cn/problems/course-schedule/) [题解](./图论算法/拓扑排序.md#[[dfs基础#207.-课程表]])
-- [- 210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii/) [题解](./图论算法/拓扑排序.md#--210.-课程表-ii)
+- [207. 课程表](https://leetcode.cn/problems/course-schedule/) [题解](./图论算法/拓扑排序.md#207.-课程表)
+- [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii/) [题解](./图论算法/拓扑排序.md#210.-课程表-ii)
 # 堆(优先队列)
 
 ## 堆（基础）
@@ -229,11 +229,11 @@ Table of Contents
 
 ## 基础
 
-- [- 208. 实现 Trie (前缀树)](https://leetcode.cn/problems/implement-trie-prefix-tree/) [题解](./字典树trie/基础.md#--208.-实现-trie-(前缀树))
+- [208. 实现 Trie (前缀树)](https://leetcode.cn/problems/implement-trie-prefix-tree/) [题解](./字典树trie/基础.md#208.-实现-trie-(前缀树))
 - [211. 添加与搜索单词 - 数据结构设计](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) [题解](./字典树trie/基础.md#211.-添加与搜索单词---数据结构设计)
 ## 进阶
 
-- [- 212. 单词搜索 II](https://leetcode.cn/problems/word-search-ii/) [题解](./字典树trie/进阶.md#--212.-单词搜索-ii)
+- [212. 单词搜索 II](https://leetcode.cn/problems/word-search-ii/) [题解](./字典树trie/进阶.md#212.-单词搜索-ii)
 # 字符串
 
 ## Manacher算法
@@ -280,8 +280,8 @@ Table of Contents
 
 ## 网格图 DFS
 
-- [- 200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) [题解](./网格图/网格图 DFS.md#--200.-岛屿数量)
-- [- 130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/) [题解](./网格图/网格图 DFS.md#--130.-被围绕的区域)
+- [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) [题解](./网格图/网格图 DFS.md#200.-岛屿数量)
+- [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/) [题解](./网格图/网格图 DFS.md#130.-被围绕的区域)
 # 贪心
 
 ## 区间贪心

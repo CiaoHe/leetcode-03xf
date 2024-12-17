@@ -326,15 +326,19 @@ Table of Contents
 ## 双指针
 
 - [86. 分隔链表](https://leetcode.cn/problems/partition-list/) [题解](./链表/双指针.md#86.-分隔链表)
+- [160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) [题解](./链表/双指针.md#160.-相交链表)
 - [146. LRU 缓存](https://leetcode.cn/problems/lru-cache/) [题解](./链表/双指针.md#146.-lru-缓存)
 ## 反转链表
 
 - [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) [题解](./链表/反转链表.md#206.-反转链表)
 - [92. 反转链表 II(区间反转)](https://leetcode.cn/problems/reverse-linked-list-ii/) [题解](./链表/反转链表.md#92.-反转链表-ii(区间反转))
+- [24. 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/) [题解](./链表/反转链表.md#24.-两两交换链表中的节点)
 - [25. K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/) [题解](./链表/反转链表.md#25.-k-个一组翻转链表)
-- [88 合并两个有序数组（原地）](./链表/反转链表.md#88-合并两个有序数组（原地）)
-- [160 相交链表](./链表/反转链表.md#160-相交链表)
-- [21 合并链表](./链表/反转链表.md#21-合并链表)
+## 合并链表
+
+- [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) [题解](./链表/合并链表.md#88.-合并两个有序数组)
+- [21. 合并链表](https://leetcode.cn/problems/merge-two-sorted-lists/) [题解](./链表/合并链表.md#21.-合并链表)
+- [415. 字符串相加](https://leetcode.cn/problems/add-strings/) [题解](./链表/合并链表.md#415.-字符串相加)
 ## 快慢指针
 
 - [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) [题解](./链表/快慢指针.md#141.-环形链表)
@@ -377,11 +381,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **151**
+Total problems: **153**
 
 Still working on ...
 
-Last updated: 2024-12-17 16:10:57
+Last updated: 2024-12-17 16:53:23
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

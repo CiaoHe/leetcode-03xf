@@ -54,6 +54,7 @@ Table of Contents
 - [64. 最小路径和](https://leetcode.cn/problems/minimum-path-sum/) [题解](./DP/网格图DP/网格图DP-基础.md#64.-最小路径和)
 - [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) [题解](./DP/网格图DP/网格图DP-基础.md#63.-不同路径-ii)
 - [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/) [题解](./DP/网格图DP/网格图DP-基础.md#120.-三角形最小路径和)
+- [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) [题解](./DP/网格图DP/网格图DP-基础.md#718.-最长重复子数组)
 ## 背包
 
 ### 0-1背包
@@ -276,6 +277,22 @@ Table of Contents
 ## 栈（基础）
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./栈/栈（基础）.md#402.-移掉-k-位数字)
+# 滑动窗口
+
+## 不定长滑动窗口
+
+### 求最短or最小
+
+- [632. 最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#632.-最小区间)
+## 定长滑动窗口
+
+### 定长滑动窗口-基础
+
+- [187. 重复的DNA序列'](https://leetcode.cn/problems/repeated-dna-sequences/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-基础.md#187.-重复的dna序列')
+- [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-基础.md#658.-找到-k-个最接近的元素)
+### 定长滑动窗口-进阶
+
+- [480. 滑动窗口中位数](https://leetcode.cn/problems/sliding-window-median/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#480.-滑动窗口中位数)
 # 网格图
 
 ## 网格图 DFS
@@ -343,6 +360,9 @@ Table of Contents
 - [3258. 统计满足 K 约束的子字符串数量 I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) [题解](./滑动窗口.md#3258.-统计满足-k-约束的子字符串数量-i)
 - [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) [题解](./滑动窗口.md#3261.-统计满足-k-约束的子字符串数量-ii)
 - [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) [题解](./滑动窗口.md#30.-串联所有单词的子串)
+# 离线算法
+
+- [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
 # 经典题单
 
 - [03xf](./经典题单.md#03xf)
@@ -357,11 +377,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **145**
+Total problems: **151**
 
 Still working on ...
 
-Last updated: 2024-12-14 20:02:14
+Last updated: 2024-12-17 16:10:57
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

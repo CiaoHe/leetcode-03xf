@@ -277,6 +277,12 @@ Table of Contents
 ## 栈（基础）
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./栈/栈（基础）.md#402.-移掉-k-位数字)
+# 树状数组和线段树
+
+## 树状数组
+
+- [基础：发明树状数组](./树状数组和线段树/树状数组.md#基础：发明树状数组)
+- [315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) [题解](./树状数组和线段树/树状数组.md#315.-计算右侧小于当前元素的个数)
 # 滑动窗口
 
 ## 不定长滑动窗口
@@ -380,11 +386,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **154**
+Total problems: **156**
 
 Still working on ...
 
-Last updated: 2024-12-17 17:50:24
+Last updated: 2024-12-17 18:19:45
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

@@ -109,7 +109,7 @@ Table of Contents
 - [98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/) [题解](./二叉树/二叉搜索树 BST.md#98.-验证二叉搜索树)
 ## 公共祖先
 
-- [236 二叉树, 找到该树中两个指定节点的最近公共祖先(LCA)](./二叉树/公共祖先.md#236-二叉树,-找到该树中两个指定节点的最近公共祖先(lca))
+- [236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) [题解](./二叉树/公共祖先.md#236.-二叉树的最近公共祖先)
 ## 其他
 
 - [173. 二叉搜索树迭代器](https://leetcode.cn/problems/binary-search-tree-iterator/) [题解](./二叉树/其他.md#173.-二叉搜索树迭代器)
@@ -134,8 +134,8 @@ Table of Contents
 - [199. 二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/) [题解](./二叉树/自顶向下DFS.md#199.-二叉树的右视图)
 ## 遍历
 
-- [102 层次遍历](./二叉树/遍历.md#102-层次遍历)
-- [103 zigzag 遍历](./二叉树/遍历.md#103-zigzag-遍历)
+- [102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal) [题解](./二叉树/遍历.md#102. 二叉树的层序遍历)
+- [103. 二叉树的锯齿形层序遍历](https://leetcode.cn/problems/binary-tree-zigzag-level-order-traversal) [题解](./二叉树/遍历.md#103. 二叉树的锯齿形层序遍历)
 ## 链表+二叉树
 
 - [114. 二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) [题解](./二叉树/链表+二叉树.md#114.-二叉树展开为链表)
@@ -247,12 +247,12 @@ Table of Contents
 
 ## 区间并查集
 
-- [3244 新增道路查询后的最短距离 II](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-ii/) [题解](./并查集/区间并查集.md#3244-新增道路查询后的最短距离-ii)
+- [3244. 新增道路查询后的最短距离 II](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-ii/) [题解](./并查集/区间并查集.md#3244.-新增道路查询后的最短距离-ii)
 ## 基础
 
 ## 边权并查集
 
-- [- 399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#--399.-除法求值)
+- [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
 # 数学
 
 ## 数论
@@ -354,6 +354,7 @@ Table of Contents
 
 - [380. O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/) [题解](./数据结构设计.md#380.-o(1)-时间插入、删除和获取随机元素)
 - [381. O(1) 时间插入、删除和获取随机元素 - 允许重复](https://leetcode.cn/problems/insert-delete-getrandom-o1-duplicates-allowed/) [题解](./数据结构设计.md#381.-o(1)-时间插入、删除和获取随机元素---允许重复)
+- [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/) [题解](./数据结构设计.md#386.-字典序排数)
 # 模拟
 
 - [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) [题解](./模拟.md#54.-螺旋矩阵)
@@ -373,19 +374,17 @@ Table of Contents
 # 脑筋急转弯
 
 - [189. 轮转数组](https://leetcode.cn/problems/rotate-array/) [题解](./脑筋急转弯.md#189.-轮转数组)
-# 贪心构造
-
-- [3139](./贪心构造.md#3139)
-- [621](./贪心构造.md#621)
+- [6. Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/) [题解](./脑筋急转弯.md#6.-z-字形变换)
+- [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) [题解](./脑筋急转弯.md#406.-根据身高重建队列)
 
 
 # Summary
 
-Total problems: **153**
+Total problems: **154**
 
 Still working on ...
 
-Last updated: 2024-12-17 16:53:23
+Last updated: 2024-12-17 17:50:24
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

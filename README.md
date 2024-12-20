@@ -72,10 +72,6 @@ Table of Contents
 - [[minimax] 用mcmc模拟到角落的概率](./DP/概率期望DP.md#[minimax]-用mcmc模拟到角落的概率)
 # graph路径
 
-## Dijkstra’s
-
-- [1928. 规定时间内到达终点的最小花费](https://leetcode.cn/problems/minimum-cost-to-reach-destination-in-time/) [题解](./graph路径/Dijkstra’s.md#1928.-规定时间内到达终点的最小花费)
-- [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/) [题解](./graph路径/Dijkstra’s.md#743.-网络延迟时间)
 ## Floyd 求任意两点的最短路径
 
 ## 任一点到终点的距离
@@ -198,12 +194,29 @@ Table of Contents
 
 ## BFS基础
 
+- [207. 课程表](https://leetcode.cn/problems/course-schedule/) [题解](./图论算法/BFS基础.md#207.-课程表)
 - [909. 蛇梯棋](https://leetcode.cn/problems/snakes-and-ladders/) [题解](./图论算法/BFS基础.md#909.-蛇梯棋)
 - [433. 最小基因变化](https://leetcode.cn/problems/minimum-genetic-mutation/) [题解](./图论算法/BFS基础.md#433.-最小基因变化)
 - [127. 单词接龙](https://leetcode.cn/problems/word-ladder/) [题解](./图论算法/BFS基础.md#127.-单词接龙)
+## Bellman-Ford
+
+- [和Dijkstra的对比](./图论算法/Bellman-Ford.md#和dijkstra的对比)
+- [787. K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) [题解](./图论算法/Bellman-Ford.md#787.-k-站中转内最便宜的航班)
 ## DFS基础
 
-- [207. 课程表](https://leetcode.cn/problems/course-schedule/) [题解](./图论算法/DFS基础.md#207.-课程表)
+- [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) [题解](./图论算法/DFS基础.md#797.-所有可能的路径)
+- [133. 克隆图](https://leetcode.cn/problems/clone-graph/) [题解](./图论算法/DFS基础.md#133.-克隆图)
+## Dijkstra-单源最短路径
+
+- [基础模版](./图论算法/Dijkstra-单源最短路径.md#基础模版)
+- [743. 网络延迟时间](https://leetcode.cn/problems/network-delay-time/) [题解](./图论算法/Dijkstra-单源最短路径.md#743.-网络延迟时间)
+- [带状态的模版](./图论算法/Dijkstra-单源最短路径.md#带状态的模版)
+- [787. K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) [题解](./图论算法/Dijkstra-单源最短路径.md#787.-k-站中转内最便宜的航班)
+- [1928. 规定时间内到达终点的最小花费](https://leetcode.cn/problems/minimum-cost-to-reach-destination-in-time/) [题解](./图论算法/Dijkstra-单源最短路径.md#1928.-规定时间内到达终点的最小花费)
+## 二分图染色
+
+- [785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/) [题解](./图论算法/二分图染色.md#785.-判断二分图)
+- [886. 可能的二分法](https://leetcode.cn/problems/possible-bipartition/) [题解](./图论算法/二分图染色.md#886.-可能的二分法)
 ## 拓扑排序
 
 - [207. 课程表](https://leetcode.cn/problems/course-schedule/) [题解](./图论算法/拓扑排序.md#207.-课程表)
@@ -237,9 +250,18 @@ Table of Contents
 - [212. 单词搜索 II](https://leetcode.cn/problems/word-search-ii/) [题解](./字典树trie/进阶.md#212.-单词搜索-ii)
 # 字符串
 
+## KMP
+
+- [KMP template](./字符串/KMP.md#kmp-template)
+- [3008. 找出数组中的美丽下标 II](https://leetcode.cn/problems/find-beautiful-indices-in-the-given-array-ii/) [题解](./字符串/KMP.md#3008.-找出数组中的美丽下标-ii)
 ## Manacher算法
 
 - [5. 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/) [题解](./字符串/Manacher算法.md#5.-最长回文子串)
+## Z函数(扩展KMP)
+
+- [定义](./字符串/Z函数(扩展KMP).md#定义)
+- [使用](./字符串/Z函数(扩展KMP).md#使用)
+- [3292. 形成目标字符串需要的最少字符串数 II](https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/) [题解](./字符串/Z函数(扩展KMP).md#3292.-形成目标字符串需要的最少字符串数-ii)
 ## 拓扑排序
 
 - [936. 戳印序列](https://leetcode.cn/problems/stamping-the-sequence/) [题解](./字符串/拓扑排序.md#936.-戳印序列)
@@ -250,6 +272,8 @@ Table of Contents
 - [3244. 新增道路查询后的最短距离 II](https://leetcode.cn/problems/shortest-distance-after-road-addition-queries-ii/) [题解](./并查集/区间并查集.md#3244.-新增道路查询后的最短距离-ii)
 ## 基础
 
+- [模版](./并查集/基础.md#模版)
+- [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/) [题解](./并查集/基础.md#547.-省份数量)
 ## 边权并查集
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
@@ -386,11 +410,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **156**
+Total problems: **172**
 
 Still working on ...
 
-Last updated: 2024-12-17 18:19:45
+Last updated: 2024-12-20 08:30:27
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

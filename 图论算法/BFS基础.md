@@ -1,3 +1,61 @@
+# [207. 课程表](https://leetcode.cn/problems/course-schedule/)
+## 拓扑排序BFS
+```python fold
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        n = numCourses
+        # b->a
+        g = defaultdict(list)
+        for a, b in prerequisites:
+            g[a].append(b) # a的先修课有b
+        
+        # topo sort
+        in_degree = [0] * n
+        for _, b in prerequisites:
+            in_degree[b] += 1
+        
+        # find 0 in_degree
+        q = deque([i for i in range(n) if in_degree[i] == 0])
+        count = 0
+        while q:
+            i = q.popleft()
+            count += 1
+            for j in g[i]:
+                in_degree[j] -= 1
+                if in_degree[j] == 0:
+                    q.append(j)
+        return count == n
+```
+## 三色标记法
+dfs来判断是否有环
+```python fold
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        g = defaultdict(list)
+        for course, pre in prerequisites:
+            g[pre].append(course)
+
+        # 染色法：0-未访问，1-访问中，2-访问完成
+        visited = [0] * numCourses
+
+        # 返回是否存在环
+        def dfs(course)->bool:
+            visited[course] = 1 # 访问中
+            for pre in g[course]:
+                # 访问中，存在环
+                if visited[pre] == 1:
+                    return True
+                # 未访问, 递归访问，存在环
+                if visited[pre] == 0 and dfs(pre):
+                    return True
+            visited[course] = 2 # 访问完成
+            return False
+
+        for course in range(numCourses):
+            if visited[course] == 0 and dfs(course):
+                return False
+        return True
+```
 # [909. 蛇梯棋](https://leetcode.cn/problems/snakes-and-ladders/)
 重新翻译： 题目：一个蛇形棋盘，从1走到结尾，每次只能甩骰子1-6，遇到不是-1的值也就是（蛇或者楼梯）可以跳转到相应值的位置，问最少需要几步到达终点。
 BFS:

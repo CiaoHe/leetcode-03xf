@@ -1,59 +1,88 @@
-# [207. 课程表](https://leetcode.cn/problems/course-schedule/)
-## 拓扑排序BFS
-```python fold
+# [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/)
+DFS做法
+```python
 class Solution:
-    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+    def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
+        n = len(graph)
         g = defaultdict(list)
-        for course, pre in prerequisites:
-            g[pre].append(course)
-        n = numCourses
-        # topological sort
-
-        # leaf node
-        leaves = []
-        for course in range(n):
-            if course not in g:
-                leaves.append(course)
-
-        visited = set()
-        while leaves:
-            course = leaves.pop()
-            visited.add(course)
-            for pre in g:
-                if course in g[pre]:
-                    g[pre].remove(course)
-                    if len(g[pre]) == 0:
-                        leaves.append(pre)
+        for i, v in enumerate(graph):
+            g[i].extend(v)
+        ans = []
         
-        return len(visited) == n
+        visited = set()
+        def dfs(i, path):
+            if i==n-1:
+                ans.append(path)
+                return
+            for j in g[i]:
+                if j not in visited:
+                    visited.add(j)
+                    dfs(j, path + [j])
+                    visited.remove(j)
+        dfs(0, [0])
+        return ans
 ```
-## 三色标记法
-dfs来判断是否有环
+BFS做法
 ```python fold
 class Solution:
-    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+    def allPathsSourceTarget(self, graph: List[List[int]]) -> List[List[int]]:
+        n = len(graph)
         g = defaultdict(list)
-        for course, pre in prerequisites:
-            g[pre].append(course)
+        for i, v in enumerate(graph):
+            g[i].extend(v)
+        ans = []
+        
+        q = deque([(0, [0])])
+        while q:
+            i, path = q.popleft()
+            if i == n - 1:
+                ans.append(path)
+            for j in g[i]:
+                q.append((j, path + [j]))
+        return ans
+```
 
-        # 染色法：0-未访问，1-访问中，2-访问完成
-        visited = [0] * numCourses
-
-        # 返回是否存在环
-        def dfs(course)->bool:
-            visited[course] = 1 # 访问中
-            for pre in g[course]:
-                # 访问中，存在环
-                if visited[pre] == 1:
-                    return True
-                # 未访问, 递归访问，存在环
-                if visited[pre] == 0 and dfs(pre):
-                    return True
-            visited[course] = 2 # 访问完成
-            return False
-
-        for course in range(numCourses):
-            if visited[course] == 0 and dfs(course):
-                return False
-        return True
+# [133. 克隆图](https://leetcode.cn/problems/clone-graph/)
+用DFS去遍历neighbor, 同时用一个hash去做cache（也同时充当visited)
+```python
+from typing import Optional
+class Solution:
+    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+        self.visited = {}
+        def dfs(node):
+            if not node:
+                return None
+            if node in self.visited:
+                return self.visited[node]
+            new_node = Node(node.val)
+            self.visited[node] = new_node
+            for neighbor in node.neighbors:
+                new_node.neighbors.append(dfs(neighbor))
+            return new_node
+        return dfs(node)
+```
+BFS
+```python fold
+from typing import Optional
+class Solution:
+    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+        self.visited = {}
+        
+        def bfs(node):
+            if not node:
+                return node
+            new_node = Node(node.val)
+            self.visited[node] = new_node
+            
+            q = deque([node])
+            while q:
+                cur = q.popleft()
+                for neighbor in cur.neighbors:
+                    if neighbor not in self.visited:
+                        self.visited[neighbor] = Node(neighbor.val) # register new nb
+                        q.append(neighbor)
+                    self.visited[cur].neighbors.append(self.visited[neighbor])
+            return new_node
+        
+        return bfs(node)
 ```

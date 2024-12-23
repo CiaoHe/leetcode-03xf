@@ -63,6 +63,9 @@ Table of Contents
 
 - [322. 零钱兑换](https://leetcode.cn/problems/coin-change/) [题解](./DP/背包/完全背包.md#322.-零钱兑换)
 - [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) [题解](./DP/背包/完全背包.md#518.-零钱兑换-ii)
+## 其他DP
+
+- [1387. 将整数按权重排序](https://leetcode.cn/problems/sort-integers-by-the-power-value/) [题解](./DP/其他DP.md#1387.-将整数按权重排序)
 ## 数位DP
 
 ## 概率期望DP
@@ -236,6 +239,9 @@ Table of Contents
 ## 对顶堆（滑动窗口第K小或者大）
 
 - [295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) [题解](./堆(优先队列)/对顶堆（滑动窗口第K小或者大）.md#295.-数据流的中位数)
+## 有序集合
+
+- [855. 考场就座](https://leetcode.cn/problems/exam-room/) [题解](./堆(优先队列)/有序集合.md#855.-考场就座)
 ## 第K小（大）
 
 - [373. 查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) [题解](./堆(优先队列)/第K小（大）.md#373.-查找和最小的-k-对数字)
@@ -245,6 +251,9 @@ Table of Contents
 
 - [208. 实现 Trie (前缀树)](https://leetcode.cn/problems/implement-trie-prefix-tree/) [题解](./字典树trie/基础.md#208.-实现-trie-(前缀树))
 - [211. 添加与搜索单词 - 数据结构设计](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) [题解](./字典树trie/基础.md#211.-添加与搜索单词---数据结构设计)
+## 字典树优化DP
+
+- [440. 字典序的第K小数字](https://leetcode.cn/problems/k-th-smallest-in-lexicographical-order/) [题解](./字典树trie/字典树优化DP.md#440.-字典序的第k小数字)
 ## 进阶
 
 - [212. 单词搜索 II](https://leetcode.cn/problems/word-search-ii/) [题解](./字典树trie/进阶.md#212.-单词搜索-ii)
@@ -262,6 +271,9 @@ Table of Contents
 - [定义](./字符串/Z函数(扩展KMP).md#定义)
 - [使用](./字符串/Z函数(扩展KMP).md#使用)
 - [3292. 形成目标字符串需要的最少字符串数 II](https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/) [题解](./字符串/Z函数(扩展KMP).md#3292.-形成目标字符串需要的最少字符串数-ii)
+## 字符串hash
+
+- [3138. 同位字符串连接的最小长度](https://leetcode.cn/problems/minimum-length-of-anagram-concatenation/) [题解](./字符串/字符串hash.md#3138.-同位字符串连接的最小长度)
 ## 拓扑排序
 
 - [936. 戳印序列](https://leetcode.cn/problems/stamping-the-sequence/) [题解](./字符串/拓扑排序.md#936.-戳印序列)
@@ -277,6 +289,17 @@ Table of Contents
 ## 边权并查集
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
+# 排序
+
+## 归并排序
+
+- [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) [题解](./排序/归并排序.md#lcr-170.-交易逆序对的总数)
+## 逆序对
+
+- [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) [题解](./排序/逆序对.md#lcr-170.-交易逆序对的总数)
+- [315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) [题解](./排序/逆序对.md#315.-计算右侧小于当前元素的个数)
+- [1395. 统计作战单位数](https://leetcode.cn/problems/count-number-of-teams/) [题解](./排序/逆序对.md#1395.-统计作战单位数)
+- [2250. 统计包含每个点的矩形数目](https://leetcode.cn/problems/count-number-of-rectangles-containing-each-point/) [题解](./排序/逆序对.md#2250.-统计包含每个点的矩形数目)
 # 数学
 
 ## 数论
@@ -314,6 +337,13 @@ Table of Contents
 ### 求最短or最小
 
 - [632. 最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#632.-最小区间)
+## 单序列双指针
+
+### 相向双指针
+
+- [15. 三数之和](https://leetcode.cn/problems/3sum/) [题解](./滑动窗口/单序列双指针/相向双指针.md#15.-三数之和)
+- [16. 最接近的三数之和](https://leetcode.cn/problems/3sum-closest/) [题解](./滑动窗口/单序列双指针/相向双指针.md#16.-最接近的三数之和)
+- [18. 四数之和](https://leetcode.cn/problems/4sum/) [题解](./滑动窗口/单序列双指针/相向双指针.md#18.-四数之和)
 ## 定长滑动窗口
 
 ### 定长滑动窗口-基础
@@ -410,11 +440,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **172**
+Total problems: **184**
 
 Still working on ...
 
-Last updated: 2024-12-20 08:30:27
+Last updated: 2024-12-23 09:30:05
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

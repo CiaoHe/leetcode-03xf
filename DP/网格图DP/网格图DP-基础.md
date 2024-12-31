@@ -1,5 +1,5 @@
 # [64. 最小路径和](https://leetcode.cn/problems/minimum-path-sum/)
-```python fold
+```python
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
         m,n = len(grid),len(grid[0])
@@ -14,7 +14,7 @@ class Solution:
         return dfs(m-1,n-1)
 ```
 # [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/)
-```python fold
+```python
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         grid = obstacleGrid
@@ -36,7 +36,7 @@ class Solution:
 ```
 
 # [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/)
-```python fold
+```python
 class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         n = len(triangle)
@@ -52,7 +52,7 @@ class Solution:
         return min(dfs(n-1,j) for j in range(n))
 ```
 # [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/)
-```python fold
+```python
 class Solution:
     def findLength(self, nums1: List[int], nums2: List[int]) -> int:
         m,n = len(nums1), len(nums2)

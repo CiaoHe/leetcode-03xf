@@ -15,6 +15,12 @@ Table of Contents
 ### 爬楼梯
 
 - [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) [题解](./DP/入门DP/爬楼梯.md#70.-爬楼梯)
+## 其他线形DP
+
+### 多维DP
+
+- [3218. 切蛋糕的最小总开销 I](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-i/) [题解](./DP/其他线形DP/多维DP.md#3218.-切蛋糕的最小总开销-i)
+- [3219. 切蛋糕的最小总开销 II](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) [题解](./DP/其他线形DP/多维DP.md#3219.-切蛋糕的最小总开销-ii)
 ## 划分型DP
 
 ### 划分能否判定
@@ -140,6 +146,7 @@ Table of Contents
 - [114. 二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) [题解](./二叉树/链表+二叉树.md#114.-二叉树展开为链表)
 - [116. 填充每个节点的下一个右侧节点指针](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node/) [题解](./二叉树/链表+二叉树.md#116.-填充每个节点的下一个右侧节点指针)
 - [117. 填充每个节点的下一个右侧节点指针 II](https://leetcode.cn/problems/populating-next-right-pointers-in-each-node-ii/) [题解](./二叉树/链表+二叉树.md#117.-填充每个节点的下一个右侧节点指针-ii)
+- [1367. 二叉树中的链表](https://leetcode.cn/problems/linked-list-in-binary-tree/) [题解](./二叉树/链表+二叉树.md#1367.-二叉树中的链表)
 # 位运算
 
 ## 位运算（其他）
@@ -236,6 +243,7 @@ Table of Contents
 - [502. IPO](https://leetcode.cn/problems/ipo/) [题解](./堆(优先队列)/堆（进阶）.md#502.-ipo)
 - [218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) [题解](./堆(优先队列)/堆（进阶）.md#218.-天际线问题)
 - [3266. K 次乘运算后的最终数组 II](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-ii/) [题解](./堆(优先队列)/堆（进阶）.md#3266.-k-次乘运算后的最终数组-ii)
+- [1705. 吃苹果的最大数目](https://leetcode.cn/problems/maximum-number-of-eaten-apples/) [题解](./堆(优先队列)/堆（进阶）.md#1705.-吃苹果的最大数目)
 ## 对顶堆（滑动窗口第K小或者大）
 
 - [295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) [题解](./堆(优先队列)/对顶堆（滑动窗口第K小或者大）.md#295.-数据流的中位数)
@@ -324,6 +332,7 @@ Table of Contents
 ## 栈（基础）
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./栈/栈（基础）.md#402.-移掉-k-位数字)
+- [394. 字符串解码](https://leetcode.cn/problems/decode-string/) [题解](./栈/栈（基础）.md#394.-字符串解码)
 # 树状数组和线段树
 
 ## 树状数组
@@ -440,11 +449,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **184**
+Total problems: **189**
 
 Still working on ...
 
-Last updated: 2024-12-23 09:30:05
+Last updated: 2024-12-31 09:13:24
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

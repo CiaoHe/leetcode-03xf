@@ -24,6 +24,7 @@ class Solution:
 思考：
 1. 代价越大的边 越早切割会越好：否则累积到后面每一大刀都得切多次
 2. 使用双指针来代表当前下刀的位置
+	1. 如果当前 horizon比vertical更大，那么从horizon走
 ```python
 class Solution:
     def minimumCost(self, m: int, n: int, horizontalCut: List[int], verticalCut: List[int]) -> int:

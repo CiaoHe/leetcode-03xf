@@ -100,6 +100,7 @@ Table of Contents
 - [162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/) [题解](./二分/其他.md#162.-寻找峰值)
 - [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) [题解](./二分/其他.md#33.-搜索旋转排序数组)
 - [153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) [题解](./二分/其他.md#153.-寻找旋转排序数组中的最小值)
+- [154. 寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) [题解](./二分/其他.md#154.-寻找旋转排序数组中的最小值-ii)
 - [4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) [题解](./二分/其他.md#4.-寻找两个正序数组的中位数)
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./二分/其他.md#69.-x-的平方根)
 # 二叉树
@@ -250,6 +251,7 @@ Table of Contents
 ## 有序集合
 
 - [855. 考场就座](https://leetcode.cn/problems/exam-room/) [题解](./堆(优先队列)/有序集合.md#855.-考场就座)
+- [729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/) [题解](./堆(优先队列)/有序集合.md#729.-我的日程安排表-i)
 ## 第K小（大）
 
 - [373. 查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) [题解](./堆(优先队列)/第K小（大）.md#373.-查找和最小的-k-对数字)
@@ -333,6 +335,9 @@ Table of Contents
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./栈/栈（基础）.md#402.-移掉-k-位数字)
 - [394. 字符串解码](https://leetcode.cn/problems/decode-string/) [题解](./栈/栈（基础）.md#394.-字符串解码)
+## 邻项消除
+
+- [1209. 删除字符串中的所有相邻重复项 II](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/) [题解](./栈/邻项消除.md#1209.-删除字符串中的所有相邻重复项-ii)
 # 树状数组和线段树
 
 ## 树状数组
@@ -368,6 +373,8 @@ Table of Contents
 
 - [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) [题解](./网格图/网格图 DFS.md#200.-岛屿数量)
 - [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/) [题解](./网格图/网格图 DFS.md#130.-被围绕的区域)
+- [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) [题解](./网格图/网格图 DFS.md#695.-岛屿的最大面积)
+- [463. 岛屿的周长](https://leetcode.cn/problems/island-perimeter/) [题解](./网格图/网格图 DFS.md#463.-岛屿的周长)
 # 贪心
 
 ## 区间贪心
@@ -431,6 +438,7 @@ Table of Contents
 
 - [3. 无重复数字的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) [题解](./滑动窗口.md#3.-无重复数字的最长子串)
 - [209. 长度最小的子数组l](https://leetcode.cn/problems/minimum-size-subarray-sum/description/) [题解](./滑动窗口.md#209.-长度最小的子数组l)
+- [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) [题解](./滑动窗口.md#76.-最小覆盖子串)
 - [3258. 统计满足 K 约束的子字符串数量 I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) [题解](./滑动窗口.md#3258.-统计满足-k-约束的子字符串数量-i)
 - [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) [题解](./滑动窗口.md#3261.-统计满足-k-约束的子字符串数量-ii)
 - [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) [题解](./滑动窗口.md#30.-串联所有单词的子串)
@@ -449,11 +457,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **189**
+Total problems: **195**
 
 Still working on ...
 
-Last updated: 2024-12-31 09:13:24
+Last updated: 2025-01-02 23:03:34
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

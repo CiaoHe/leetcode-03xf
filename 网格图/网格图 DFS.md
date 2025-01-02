@@ -1,7 +1,7 @@
 适用于需要计算连通块个数、大小的题目。
 部分题目也可以用 BFS 或并查集解决。
 # [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/)
-```python fold
+```python
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         m,n = len(grid),len(grid[0])
@@ -27,7 +27,7 @@ class Solution:
 ```
 
 # [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)
-```python fold
+```python
 class Solution:
     def solve(self, board: List[List[str]]) -> None:
         """
@@ -58,4 +58,78 @@ class Solution:
                     board[i][j] = 'O'
                 elif board[i][j] == 'O':
                     board[i][j] = 'X'
+```
+
+# [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/)
+使用BFS去做+visit数组
+```python
+class Solution:
+    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+        m, n = len(grid), len(grid[0])
+        # 思考：
+        # 1. 使用bfs向四周拓展，记得使用visited数组
+        visited = [[False]*n for _ in range(m)]
+        q = deque()
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j]==1 and not visited[i][j]:
+                    q.append((i, j))
+                    visited[i][j] = True
+                    area = 0
+                    while q:
+                        x, y = q.popleft()
+                        area += 1
+                        for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+                            nx, ny = x+dx, y+dy
+                            if 0<=nx<m and 0<=ny<n and grid[nx][ny] == 1 and not visited[nx][ny]:
+                                q.append((nx, ny))
+                                visited[nx][ny] = True
+                    res = max(res, area)
+        return res
+```
+用DFS
+- 这里我们想用`lru_cache`但是会出错，因为我们在操作过程中会改变`grid`, `@lru_cache` 无法正确检测到对象的变化，从而导致缓存结果错误
+```python
+class Solution:
+    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+        m, n = len(grid), len(grid[0])
+        def dfs(x:int, y:int) -> int:
+            # function: 返回以(x,y)为起点的岛屿面积
+            if not (0<=x<m and 0<=y<n and grid[x][y]==1):
+                return 0
+            grid[x][y] = -1
+            return 1 + dfs(x+1, y) + dfs(x-1, y) + dfs(x, y+1) + dfs(x, y-1)
+        
+        res = 0
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == 1:
+                    res = max(res, dfs(i, j))
+        return res
+```
+
+# [463. 岛屿的周长](https://leetcode.cn/problems/island-perimeter/)
+每个1周围有1个1就会减去1条边
+```python
+class Solution:
+    def islandPerimeter(self, grid: List[List[int]]) -> int:
+        m, n = len(grid), len(grid[0])
+        res = 0
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j] == 1:
+                    res += 4
+                    # 检查上方有没有连着的
+                    if i and grid[i-1][j] == 1:
+                        res -= 1
+                    # 检查左边有没有连着的
+                    if j and grid[i][j-1] == 1:
+                        res -= 1
+                    # 检查下方有没有连着的
+                    if i<m-1 and grid[i+1][j] == 1:
+                        res -= 1
+                    # 检查右边有没有连着的
+                    if j<n-1 and grid[i][j+1] == 1:
+                        res -= 1
+        return res
 ```

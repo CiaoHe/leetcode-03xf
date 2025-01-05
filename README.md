@@ -72,8 +72,12 @@ Table of Contents
 ## 其他DP
 
 - [1387. 将整数按权重排序](https://leetcode.cn/problems/sort-integers-by-the-power-value/) [题解](./DP/其他DP.md#1387.-将整数按权重排序)
+## 博弈DP
+
+- [486. 预测赢家](https://leetcode.cn/problems/predict-the-winner/) [题解](./DP/博弈DP.md#486.-预测赢家)
 ## 数位DP
 
+- [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/) [题解](./DP/数位DP.md#60.-排列序列)
 ## 概率期望DP
 
 - [688. 骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) [题解](./DP/概率期望DP.md#688.-骑士在棋盘上的概率)
@@ -136,6 +140,7 @@ Table of Contents
 - [104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) [题解](./二叉树/自顶向下DFS.md#104.-二叉树的最大深度)
 - [111. 二叉树的最小深度](https://leetcode.cn/problems/minimum-depth-of-binary-tree/) [题解](./二叉树/自顶向下DFS.md#111.-二叉树的最小深度)
 - [100. 相同的树](https://leetcode.cn/problems/same-tree/) [题解](./二叉树/自顶向下DFS.md#100.-相同的树)
+- [LCR 143. 子结构判断](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/) [题解](./二叉树/自顶向下DFS.md#lcr-143.-子结构判断)
 - [112. 路径总和](https://leetcode.cn/problems/path-sum/) [题解](./二叉树/自顶向下DFS.md#112.-路径总和)
 - [199. 二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/) [题解](./二叉树/自顶向下DFS.md#199.-二叉树的右视图)
 ## 遍历
@@ -173,9 +178,11 @@ Table of Contents
 ## 同向双指针
 
 - [26. 删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) [题解](./双指针/同向双指针.md#26.-删除有序数组中的重复项)
+- [80. 删除有序数组中的重复项 II](https://leetcode.cn/problems/remove-duplicates-from-sorted-array-ii/) [题解](./双指针/同向双指针.md#80.-删除有序数组中的重复项-ii)
 - [15. 三数之和](https://leetcode.cn/problems/3sum/) [题解](./双指针/同向双指针.md#15.-三数之和)
 - [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) [题解](./双指针/同向双指针.md#31.-下一个排列)
 - [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) [题解](./双指针/同向双指针.md#88.-合并两个有序数组)
+- [443. 压缩字符串](https://leetcode.cn/problems/string-compression/) [题解](./双指针/同向双指针.md#443.-压缩字符串)
 ## 相向双指针
 
 - [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) [题解](./双指针/相向双指针.md#11.-盛最多水的容器)
@@ -189,9 +196,9 @@ Table of Contents
 - [39. 组合总和](https://leetcode.cn/problems/combination-sum/) [题解](./回溯/子集型回溯.md#39.-组合总和)
 ## 排列型回溯
 
+- [46. 全排列](https://leetcode.cn/problems/permutations/) [题解](./回溯/排列型回溯.md#46.-全排列)
 - [51. N 皇后](https://leetcode.cn/problems/n-queens/) [题解](./回溯/排列型回溯.md#51.-n-皇后)
 - [52. N 皇后 II](https://leetcode.cn/problems/n-queens-ii/) [题解](./回溯/排列型回溯.md#52.-n-皇后-ii)
-- [46. 全排列](https://leetcode.cn/problems/permutations/) [题解](./回溯/排列型回溯.md#46.-全排列)
 - [3001. 捕获黑皇后需要的最少移动次数](https://leetcode.cn/problems/minimum-moves-to-capture-the-queen/) [题解](./回溯/排列型回溯.md#3001.-捕获黑皇后需要的最少移动次数)
 ## 暴搜+剪枝
 
@@ -252,6 +259,8 @@ Table of Contents
 
 - [855. 考场就座](https://leetcode.cn/problems/exam-room/) [题解](./堆(优先队列)/有序集合.md#855.-考场就座)
 - [729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/) [题解](./堆(优先队列)/有序集合.md#729.-我的日程安排表-i)
+- [731. 我的日程安排表 II](https://leetcode.cn/problems/my-calendar-ii/) [题解](./堆(优先队列)/有序集合.md#731.-我的日程安排表-ii)
+- [732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/) [题解](./堆(优先队列)/有序集合.md#732.-我的日程安排表-iii)
 ## 第K小（大）
 
 - [373. 查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) [题解](./堆(优先队列)/第K小（大）.md#373.-查找和最小的-k-对数字)
@@ -301,9 +310,14 @@ Table of Contents
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
 # 排序
 
+## 其他
+
+- [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii/) [题解](./排序/其他.md#324.-摆动排序-ii)
+- [2274. 不含特殊楼层的最大连续楼层数](https://leetcode.cn/problems/maximum-consecutive-floors-without-special-floors/) [题解](./排序/其他.md#2274.-不含特殊楼层的最大连续楼层数)
 ## 归并排序
 
 - [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) [题解](./排序/归并排序.md#lcr-170.-交易逆序对的总数)
+- [493. 翻转对](https://leetcode.cn/problems/reverse-pairs/) [题解](./排序/归并排序.md#493.-翻转对)
 ## 逆序对
 
 - [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) [题解](./排序/逆序对.md#lcr-170.-交易逆序对的总数)
@@ -338,6 +352,7 @@ Table of Contents
 ## 邻项消除
 
 - [1209. 删除字符串中的所有相邻重复项 II](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/) [题解](./栈/邻项消除.md#1209.-删除字符串中的所有相邻重复项-ii)
+- [面试题 01.06. 字符串压缩](https://leetcode.cn/problems/compress-string-lcci/) [题解](./栈/邻项消除.md#面试题-01.06.-字符串压缩)
 # 树状数组和线段树
 
 ## 树状数组
@@ -419,6 +434,9 @@ Table of Contents
 
 - [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) [题解](./链表/快慢指针.md#141.-环形链表)
 - [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) [题解](./链表/快慢指针.md#142.-环形链表-ii)
+# 分治
+
+- [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/) [题解](./分治.md#395.-至少有-k-个重复字符的最长子串)
 # 前后缀分解
 
 - [题单](./前后缀分解.md#题单)
@@ -431,6 +449,7 @@ Table of Contents
 - [380. O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/) [题解](./数据结构设计.md#380.-o(1)-时间插入、删除和获取随机元素)
 - [381. O(1) 时间插入、删除和获取随机元素 - 允许重复](https://leetcode.cn/problems/insert-delete-getrandom-o1-duplicates-allowed/) [题解](./数据结构设计.md#381.-o(1)-时间插入、删除和获取随机元素---允许重复)
 - [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/) [题解](./数据结构设计.md#386.-字典序排数)
+- [2241. 设计一个 ATM 机器](https://leetcode.cn/problems/design-an-atm-machine/) [题解](./数据结构设计.md#2241.-设计一个-atm-机器)
 # 模拟
 
 - [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) [题解](./模拟.md#54.-螺旋矩阵)
@@ -457,11 +476,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **195**
+Total problems: **194**
 
 Still working on ...
 
-Last updated: 2025-01-02 23:03:34
+Last updated: 2025-01-06 00:24:58
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

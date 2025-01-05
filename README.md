@@ -2,87 +2,87 @@ Table of Contents
 
 # DP
 
-## 入门DP
+## 1-入门DP
 
 ### 打家劫舍
 
-- [198. 打家劫舍](https://leetcode.cn/problems/house-robber/) [题解](./DP/入门DP/打家劫舍.md#198.-打家劫舍)
-- [213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) [题解](./DP/入门DP/打家劫舍.md#213.-打家劫舍-ii)
+- [198. 打家劫舍](https://leetcode.cn/problems/house-robber/) [题解](./DP/1-入门DP/打家劫舍.md#198.-打家劫舍)
+- [213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) [题解](./DP/1-入门DP/打家劫舍.md#213.-打家劫舍-ii)
 ### 最大子数组和
 
-- [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) [题解](./DP/入门DP/最大子数组和.md#53.-最大子数组和)
-- [918. 环形子数组的最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray/) [题解](./DP/入门DP/最大子数组和.md#918.-环形子数组的最大和)
+- [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) [题解](./DP/1-入门DP/最大子数组和.md#53.-最大子数组和)
+- [918. 环形子数组的最大和](https://leetcode.cn/problems/maximum-sum-circular-subarray/) [题解](./DP/1-入门DP/最大子数组和.md#918.-环形子数组的最大和)
 ### 爬楼梯
 
-- [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) [题解](./DP/入门DP/爬楼梯.md#70.-爬楼梯)
-## 其他线形DP
-
-### 多维DP
-
-- [3218. 切蛋糕的最小总开销 I](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-i/) [题解](./DP/其他线形DP/多维DP.md#3218.-切蛋糕的最小总开销-i)
-- [3219. 切蛋糕的最小总开销 II](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) [题解](./DP/其他线形DP/多维DP.md#3219.-切蛋糕的最小总开销-ii)
-## 划分型DP
-
-### 划分能否判定
-
-- [139. 单词拆分](https://leetcode.cn/problems/word-break/) [题解](./DP/划分型DP/划分能否判定.md#139.-单词拆分)
-## 数据结构优化DP
+- [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) [题解](./DP/1-入门DP/爬楼梯.md#70.-爬楼梯)
+## 11-数据结构优化DP
 
 ### 前缀和优化DP
 
-- [3251. 单调数组对的数目 II](https://leetcode.cn/problems/find-the-count-of-monotonic-pairs-ii/) [题解](./DP/数据结构优化DP/前缀和优化DP.md#3251.-单调数组对的数目-ii)
-## 状态机DP
-
-### 买卖股票
-
-- [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) [题解](./DP/状态机DP/买卖股票.md#121.-买卖股票的最佳时机)
-- [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) [题解](./DP/状态机DP/买卖股票.md#122.-买卖股票的最佳时机-ii)
-- [123. 买卖股票的最佳时机 III](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/description/) [题解](./DP/状态机DP/买卖股票.md#123.-买卖股票的最佳时机-iii)
-- [188. 买卖股票的最佳时机 IV](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) [题解](./DP/状态机DP/买卖股票.md#188.-买卖股票的最佳时机-iv)
-- [309 买卖股票的最佳时机含冷冻期](./DP/状态机DP/买卖股票.md#309-买卖股票的最佳时机含冷冻期)
-- [714 买卖股票的最佳时机含手续费](./DP/状态机DP/买卖股票.md#714-买卖股票的最佳时机含手续费)
-### 其他
-
-- [935. 骑士拨号器](https://leetcode.cn/problems/knight-dialer/) [题解](./DP/状态机DP/其他.md#935.-骑士拨号器)
-## 经典线形DP
-
-### 最长公共子串(LCS)
-
-- [72. 编辑距离](https://leetcode.cn/problems/edit-distance/) [题解](./DP/经典线形DP/最长公共子串(LCS).md#72.-编辑距离)
-- [97. 交错字符串](https://leetcode.cn/problems/interleaving-string/) [题解](./DP/经典线形DP/最长公共子串(LCS).md#97.-交错字符串)
-### 最长递增子序列 (LIS)
-
-- [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) [题解](./DP/经典线形DP/最长递增子序列 (LIS).md#300.-最长递增子序列)
-## 网格图DP
+- [3251. 单调数组对的数目 II](https://leetcode.cn/problems/find-the-count-of-monotonic-pairs-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3251.-单调数组对的数目-ii)
+## 2-网格图DP
 
 ### 网格图DP-基础
 
-- [64. 最小路径和](https://leetcode.cn/problems/minimum-path-sum/) [题解](./DP/网格图DP/网格图DP-基础.md#64.-最小路径和)
-- [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) [题解](./DP/网格图DP/网格图DP-基础.md#63.-不同路径-ii)
-- [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/) [题解](./DP/网格图DP/网格图DP-基础.md#120.-三角形最小路径和)
-- [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) [题解](./DP/网格图DP/网格图DP-基础.md#718.-最长重复子数组)
-## 背包
+- [64. 最小路径和](https://leetcode.cn/problems/minimum-path-sum/) [题解](./DP/2-网格图DP/网格图DP-基础.md#64.-最小路径和)
+- [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) [题解](./DP/2-网格图DP/网格图DP-基础.md#63.-不同路径-ii)
+- [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/) [题解](./DP/2-网格图DP/网格图DP-基础.md#120.-三角形最小路径和)
+- [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) [题解](./DP/2-网格图DP/网格图DP-基础.md#718.-最长重复子数组)
+## 3-背包
 
 ### 0-1背包
 
 ### 完全背包
 
-- [322. 零钱兑换](https://leetcode.cn/problems/coin-change/) [题解](./DP/背包/完全背包.md#322.-零钱兑换)
-- [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) [题解](./DP/背包/完全背包.md#518.-零钱兑换-ii)
+- [322. 零钱兑换](https://leetcode.cn/problems/coin-change/) [题解](./DP/3-背包/完全背包.md#322.-零钱兑换)
+- [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) [题解](./DP/3-背包/完全背包.md#518.-零钱兑换-ii)
+## 4-经典线形DP
+
+### 最长公共子串(LCS)
+
+- [72. 编辑距离](https://leetcode.cn/problems/edit-distance/) [题解](./DP/4-经典线形DP/最长公共子串(LCS).md#72.-编辑距离)
+- [97. 交错字符串](https://leetcode.cn/problems/interleaving-string/) [题解](./DP/4-经典线形DP/最长公共子串(LCS).md#97.-交错字符串)
+### 最长递增子序列 (LIS)
+
+- [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) [题解](./DP/4-经典线形DP/最长递增子序列 (LIS).md#300.-最长递增子序列)
+## 5-状态机DP
+
+### 买卖股票
+
+- [121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) [题解](./DP/5-状态机DP/买卖股票.md#121.-买卖股票的最佳时机)
+- [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/) [题解](./DP/5-状态机DP/买卖股票.md#122.-买卖股票的最佳时机-ii)
+- [123. 买卖股票的最佳时机 III](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/description/) [题解](./DP/5-状态机DP/买卖股票.md#123.-买卖股票的最佳时机-iii)
+- [188. 买卖股票的最佳时机 IV](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) [题解](./DP/5-状态机DP/买卖股票.md#188.-买卖股票的最佳时机-iv)
+- [309 买卖股票的最佳时机含冷冻期](./DP/5-状态机DP/买卖股票.md#309-买卖股票的最佳时机含冷冻期)
+- [714 买卖股票的最佳时机含手续费](./DP/5-状态机DP/买卖股票.md#714-买卖股票的最佳时机含手续费)
+### 其他
+
+- [935. 骑士拨号器](https://leetcode.cn/problems/knight-dialer/) [题解](./DP/5-状态机DP/其他.md#935.-骑士拨号器)
+## 6-划分型DP
+
+### 划分能否判定
+
+- [139. 单词拆分](https://leetcode.cn/problems/word-break/) [题解](./DP/6-划分型DP/划分能否判定.md#139.-单词拆分)
+## 7-其他线形DP
+
+### 多维DP
+
+- [3218. 切蛋糕的最小总开销 I](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-i/) [题解](./DP/7-其他线形DP/多维DP.md#3218.-切蛋糕的最小总开销-i)
+- [3219. 切蛋糕的最小总开销 II](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) [题解](./DP/7-其他线形DP/多维DP.md#3219.-切蛋糕的最小总开销-ii)
+## 10-数位DP
+
+- [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/) [题解](./DP/10-数位DP.md#60.-排列序列)
+## 14-博弈DP
+
+- [486. 预测赢家](https://leetcode.cn/problems/predict-the-winner/) [题解](./DP/14-博弈DP.md#486.-预测赢家)
+## 15-概率期望DP
+
+- [688. 骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) [题解](./DP/15-概率期望DP.md#688.-骑士在棋盘上的概率)
+- [576. 出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) [题解](./DP/15-概率期望DP.md#576.-出界的路径数)
+- [[minimax] 用mcmc模拟到角落的概率](./DP/15-概率期望DP.md#[minimax]-用mcmc模拟到角落的概率)
 ## 其他DP
 
 - [1387. 将整数按权重排序](https://leetcode.cn/problems/sort-integers-by-the-power-value/) [题解](./DP/其他DP.md#1387.-将整数按权重排序)
-## 博弈DP
-
-- [486. 预测赢家](https://leetcode.cn/problems/predict-the-winner/) [题解](./DP/博弈DP.md#486.-预测赢家)
-## 数位DP
-
-- [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/) [题解](./DP/数位DP.md#60.-排列序列)
-## 概率期望DP
-
-- [688. 骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) [题解](./DP/概率期望DP.md#688.-骑士在棋盘上的概率)
-- [576. 出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) [题解](./DP/概率期望DP.md#576.-出界的路径数)
-- [[minimax] 用mcmc模拟到角落的概率](./DP/概率期望DP.md#[minimax]-用mcmc模拟到角落的概率)
 # graph路径
 
 ## Floyd 求任意两点的最短路径
@@ -480,7 +480,7 @@ Total problems: **194**
 
 Still working on ...
 
-Last updated: 2025-01-06 00:24:58
+Last updated: 2025-01-06 00:28:21
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

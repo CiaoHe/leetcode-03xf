@@ -331,6 +331,11 @@ Table of Contents
 ### 判断质数
 
 - [埃氏筛](./数学/数论/判断质数.md#埃氏筛)
+### 最大公约数(GCD)
+
+- [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/最大公约数(GCD).md#365.-水壶问题)
+### 最小公倍数(LCM)
+
 ### 阶乘分解
 
 - [172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) [题解](./数学/数论/阶乘分解.md#172.-阶乘后的零)
@@ -363,9 +368,23 @@ Table of Contents
 
 ## 不定长滑动窗口
 
+### 求子数组个数
+
+#### 越短越合法
+
+- [3258. 统计满足 K 约束的子字符串数量 I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3258.-统计满足-k-约束的子字符串数量-i)
+- [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3261.-统计满足-k-约束的子字符串数量-ii)
+#### 越长越合法
+
 ### 求最短or最小
 
+- [209. 长度最小的子数组l](https://leetcode.cn/problems/minimum-size-subarray-sum/description/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#209.-长度最小的子数组l)
+- [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#76.-最小覆盖子串)
 - [632. 最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#632.-最小区间)
+### 求最长or最大
+
+- [3. 无重复数字的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#3.-无重复数字的最长子串)
+- [3297. 统计重新排列后包含另一个字符串的子字符串数目 I](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#3297.-统计重新排列后包含另一个字符串的子字符串数目-i)
 ## 单序列双指针
 
 ### 相向双指针
@@ -381,6 +400,7 @@ Table of Contents
 - [658. 找到 K 个最接近的元素](https://leetcode.cn/problems/find-k-closest-elements/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-基础.md#658.-找到-k-个最接近的元素)
 ### 定长滑动窗口-进阶
 
+- [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#30.-串联所有单词的子串)
 - [480. 滑动窗口中位数](https://leetcode.cn/problems/sliding-window-median/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#480.-滑动窗口中位数)
 # 网格图
 
@@ -390,6 +410,7 @@ Table of Contents
 - [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/) [题解](./网格图/网格图 DFS.md#130.-被围绕的区域)
 - [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) [题解](./网格图/网格图 DFS.md#695.-岛屿的最大面积)
 - [463. 岛屿的周长](https://leetcode.cn/problems/island-perimeter/) [题解](./网格图/网格图 DFS.md#463.-岛屿的周长)
+- [529. 扫雷游戏](https://leetcode.cn/problems/minesweeper/) [题解](./网格图/网格图 DFS.md#529.-扫雷游戏)
 # 贪心
 
 ## 区间贪心
@@ -453,14 +474,6 @@ Table of Contents
 # 模拟
 
 - [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) [题解](./模拟.md#54.-螺旋矩阵)
-# 滑动窗口
-
-- [3. 无重复数字的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) [题解](./滑动窗口.md#3.-无重复数字的最长子串)
-- [209. 长度最小的子数组l](https://leetcode.cn/problems/minimum-size-subarray-sum/description/) [题解](./滑动窗口.md#209.-长度最小的子数组l)
-- [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) [题解](./滑动窗口.md#76.-最小覆盖子串)
-- [3258. 统计满足 K 约束的子字符串数量 I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) [题解](./滑动窗口.md#3258.-统计满足-k-约束的子字符串数量-i)
-- [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) [题解](./滑动窗口.md#3261.-统计满足-k-约束的子字符串数量-ii)
-- [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) [题解](./滑动窗口.md#30.-串联所有单词的子串)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -476,11 +489,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **194**
+Total problems: **197**
 
 Still working on ...
 
-Last updated: 2025-01-06 00:28:21
+Last updated: 2025-01-09 10:25:50
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

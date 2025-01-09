@@ -107,6 +107,9 @@ Table of Contents
 - [154. 寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) [题解](./二分/其他.md#154.-寻找旋转排序数组中的最小值-ii)
 - [4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) [题解](./二分/其他.md#4.-寻找两个正序数组的中位数)
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./二分/其他.md#69.-x-的平方根)
+## 最小化最大值
+
+- [410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) [题解](./二分/最小化最大值.md#410.-分割数组的最大值)
 # 二叉树
 
 ## N叉树
@@ -413,6 +416,16 @@ Table of Contents
 - [529. 扫雷游戏](https://leetcode.cn/problems/minesweeper/) [题解](./网格图/网格图 DFS.md#529.-扫雷游戏)
 # 贪心
 
+## 字符串贪心
+
+### 回文串贪心
+
+- [409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) [题解](./贪心/字符串贪心/回文串贪心.md#409.-最长回文串)
+## 贪心策略
+
+### 双序列配对
+
+- [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/) [题解](./贪心/贪心策略/双序列配对.md#455.-分发饼干)
 ## 区间贪心
 
 - [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) [题解](./贪心/区间贪心.md#45.-跳跃游戏-ii)
@@ -489,11 +502,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **197**
+Total problems: **200**
 
 Still working on ...
 
-Last updated: 2025-01-09 10:25:50
+Last updated: 2025-01-09 22:41:34
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

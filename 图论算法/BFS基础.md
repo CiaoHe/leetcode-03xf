@@ -99,7 +99,8 @@ class Solution:
 ```
 
 # [433. 最小基因变化](https://leetcode.cn/problems/minimum-genetic-mutation/)
-## 单向BFS
+- 带(cur_state, step)的BFS
+- 每一步考虑可以选择的mutation (或者说：可以转移到的下一个状态)
 ```python fold
 class Solution:
     def minMutation(self, startGene: str, endGene: str, bank: List[str]) -> int:

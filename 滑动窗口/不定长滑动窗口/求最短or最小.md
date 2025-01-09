@@ -1,3 +1,57 @@
+# [209. 长度最小的子数组l](https://leetcode.cn/problems/minimum-size-subarray-sum/description/)
+```python
+class Solution:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        n=len(nums)
+        l=0
+        # 确保最差的条件也可以满足
+        if sum(nums)<target:
+            return 0
+        res=n
+        tmp=0
+        # 滑动right
+        for r,x in enumerate(nums):
+            tmp+=x
+            # 尝试收缩l
+            while tmp>=target: # 条件破坏，需要收缩
+                res = min(r-l+1, res)
+                tmp -= nums[l]
+                l+=1
+        return res
+
+# 或者可写成 只更新一遍
+for r,x in enumerate(nums):
+	tmp+=x
+	while tmp>=target:
+		tmp -= nums[l]
+		l+=1
+	# regret
+	if tmp < target:
+		l -= 1
+		tmp += nums[l]
+	res = min(r-l+1, mi)            
+```
+# [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/)
+能用hash还是老老实实用hash
+```python
+class Solution:
+    def minWindow(self, s: str, t: str) -> str:
+        t_count = Counter(t)
+        ans_left, ans_right = 0, len(s)
+        s_count = Counter()
+
+        i = 0
+        for j, char in enumerate(s):
+            s_count[char] += 1
+            while all(s_count[c] >= t_count[c] for c in t_count):
+                if j-i < ans_right - ans_left:
+                    ans_left, ans_right = i, j
+                s_count[s[i]] -= 1
+                i += 1
+        if ans_left == 0 and ans_right == len(s):
+            return ""
+        return s[ans_left:ans_right+1]
+```
 # [632. 最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/)
 堆的解法
 - 维护一个最小堆，记录`(value, arr-id, inner-arr-id)`

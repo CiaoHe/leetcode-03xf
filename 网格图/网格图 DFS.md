@@ -27,6 +27,7 @@ class Solution:
 ```
 
 # [130. 被围绕的区域](https://leetcode.cn/problems/surrounded-regions/)
+思考：沿着boarder溜一圈来找到可以被拯救的内部的‘O'
 ```python
 class Solution:
     def solve(self, board: List[List[str]]) -> None:
@@ -34,30 +35,28 @@ class Solution:
         Do not return anything, modify board in-place instead.
         """
         m, n = len(board), len(board[0])
-        def dfs(x:int, y:int):
-            if x < 0 or x >= m or y < 0 or y >= n or board[x][y] != 'O':
+
+        def dfs(x, y):
+            if x<0 or x>=m or y<0 or y>=n or board[x][y] != 'O':
                 return
-            board[x][y] = '2'
-            dfs(x+1,y)
-            dfs(x-1,y)
-            dfs(x,y+1)
-            dfs(x,y-1)
+            board[x][y] = 'A' # mark as visited
+            for dx, dy in [(0,1), (0,-1), (1,0), (-1,0)]:
+                dfs(x+dx, y+dy)
         
-        # 处理边界：标记所有与边界相连的O
+        # mark all 'O' on the border
         for i in range(m):
-            dfs(i,0)
-            dfs(i,n-1)
+            dfs(i, 0)
+            dfs(i, n-1)
         for j in range(n):
-            dfs(0,j)
-            dfs(m-1,j)
+            dfs(0, j)
+            dfs(m-1, j)
         
-        # post process：将所有标记的O恢复为O，将所有未标记的O恢复为X
         for i in range(m):
             for j in range(n):
-                if board[i][j] == '2':
-                    board[i][j] = 'O'
-                elif board[i][j] == 'O':
+                if board[i][j] == 'O': # 所有剩下的'O'都是被包围的
                     board[i][j] = 'X'
+                elif board[i][j] == 'A': # 所有被标记的'O'都是未被包围的
+                    board[i][j] = 'O'
 ```
 
 # [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/)
@@ -132,4 +131,46 @@ class Solution:
                     if j<n-1 and grid[i][j+1] == 1:
                         res -= 1
         return res
+```
+
+# [529. 扫雷游戏](https://leetcode.cn/problems/minesweeper/)
+- 如果有雷，直接插旗返回
+- 对于空地
+	- 先检查周围八个方向是不是有雷
+		- 如果有雷，那么插成 雷数，直接返回
+	- 否则，证明没有雷，继续dfs
+- 加个visited及时prune
+```python
+class Solution:
+    def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
+        m, n = len(board), len(board[0])
+        x, y = click
+        visited = set()
+
+        def dfs(x, y):
+            if (x, y) in visited:
+                return
+            visited.add((x, y))
+            board[x][y] = 'B'
+            # 检查周围8个方向, 看是否有地雷
+            cnt = 0
+            for dx, dy in [(0,1), (0,-1), (1,0), (-1,0), (1,1), (1,-1), (-1,1), (-1,-1)]:
+                nx, ny = x+dx, y+dy
+                if 0<=nx<m and 0<=ny<n and board[nx][ny] == 'M':
+                    cnt += 1
+            if cnt > 0:
+                board[x][y] = str(cnt)
+                return
+            else:
+                for dx, dy in [(0,1), (0,-1), (1,0), (-1,0), (1,1), (1,-1), (-1,1), (-1,-1)]:
+                    nx, ny = x+dx, y+dy
+                    if 0<=nx<m and 0<=ny<n and (nx, ny) not in visited:
+                        dfs(nx, ny)
+
+        # 如果点击的是地雷，直接返回
+        if board[x][y] == 'M':
+            board[x][y] = 'X'
+            return board
+        dfs(x, y)
+        return board
 ```

@@ -379,6 +379,12 @@ Table of Contents
 - [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3261.-统计满足-k-约束的子字符串数量-ii)
 #### 越长越合法
 
+- [1358. 包含所有三种字符的子字符串数目](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#1358.-包含所有三种字符的子字符串数目)
+- [3325. 字符至少出现 K 次的子字符串 I](https://leetcode.cn/problems/count-substrings-with-k-frequency-characters-i/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#3325.-字符至少出现-k-次的子字符串-i)
+- [2799. 统计完全子数组的数目](https://leetcode.cn/problems/count-complete-subarrays-in-an-array/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#2799.-统计完全子数组的数目)
+- [2962. 统计最大元素出现至少 K 次的子数组](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#2962.-统计最大元素出现至少-k-次的子数组)
+- [2537. 统计好子数组的数目](https://leetcode.cn/problems/count-the-number-of-good-subarrays/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#2537.-统计好子数组的数目)
+- [3298. 统计重新排列后包含另一个字符串的子字符串数目 II](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#3298.-统计重新排列后包含另一个字符串的子字符串数目-ii)
 ### 求最短or最小
 
 - [209. 长度最小的子数组l](https://leetcode.cn/problems/minimum-size-subarray-sum/description/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#209.-长度最小的子数组l)
@@ -502,11 +508,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **200**
+Total problems: **206**
 
 Still working on ...
 
-Last updated: 2025-01-09 22:41:34
+Last updated: 2025-01-10 10:02:11
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

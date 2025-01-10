@@ -37,20 +37,20 @@ for r,x in enumerate(nums):
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         t_count = Counter(t)
-        ans_left, ans_right = 0, len(s)
+        left, right = 0, len(s)
         s_count = Counter()
 
         i = 0
         for j, char in enumerate(s):
             s_count[char] += 1
-            while all(s_count[c] >= t_count[c] for c in t_count):
-                if j-i < ans_right - ans_left:
-                    ans_left, ans_right = i, j
+            while s_count >= t_count:
+                if j-i < right - left: # 可以收缩
+                    left, right = i, j
                 s_count[s[i]] -= 1
                 i += 1
-        if ans_left == 0 and ans_right == len(s):
+        if left == 0 and right == len(s):
             return ""
-        return s[ans_left:ans_right+1]
+        return s[left:right+1]
 ```
 # [632. 最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/)
 堆的解法

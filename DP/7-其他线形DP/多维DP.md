@@ -46,3 +46,26 @@ class Solution:
                 v += 1
         return res
 ```
+# [403. 青蛙过河](https://leetcode.cn/problems/frog-jump/)
+设计子状态 `f(i,k)`: 当前在第`i` 块石头，上一次跳跃的距离为`k`
+```python
+class Solution:
+    def canCross(self, stones: List[int]) -> bool:
+        n = len(stones)
+        @lru_cache(None)
+        def dfs(i,k)->bool:
+            """
+            i: 当前石头索引
+            k: 上一次跳跃的距离
+            """
+            if i == n-1:
+                return True
+            for step in [k-1,k,k+1]:
+                if step > 0:
+                    next_stone = stones[i] + step
+                    if next_stone in stones:
+                        if dfs(stones.index(next_stone), step):
+                            return True
+            return False
+        return dfs(0,0)
+```

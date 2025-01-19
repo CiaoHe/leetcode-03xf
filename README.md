@@ -15,6 +15,7 @@ Table of Contents
 ### 爬楼梯
 
 - [70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) [题解](./DP/1-入门DP/爬楼梯.md#70.-爬楼梯)
+- [2266. 统计打字方案数](https://leetcode.cn/problems/count-number-of-texts/) [题解](./DP/1-入门DP/爬楼梯.md#2266.-统计打字方案数)
 ## 11-数据结构优化DP
 
 ### 前缀和优化DP
@@ -28,10 +29,15 @@ Table of Contents
 - [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) [题解](./DP/2-网格图DP/网格图DP-基础.md#63.-不同路径-ii)
 - [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/) [题解](./DP/2-网格图DP/网格图DP-基础.md#120.-三角形最小路径和)
 - [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) [题解](./DP/2-网格图DP/网格图DP-基础.md#718.-最长重复子数组)
+### 网格图DP-进阶
+
+- [329. 矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#329.-矩阵中的最长递增路径)
 ## 3-背包
 
 ### 0-1背包
 
+- [494. 目标和](https://leetcode.cn/problems/target-sum/) [题解](./DP/3-背包/0-1背包.md#494.-目标和)
+- [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) [题解](./DP/3-背包/0-1背包.md#416.-分割等和子集)
 ### 完全背包
 
 - [322. 零钱兑换](https://leetcode.cn/problems/coin-change/) [题解](./DP/3-背包/完全背包.md#322.-零钱兑换)
@@ -69,6 +75,12 @@ Table of Contents
 
 - [3218. 切蛋糕的最小总开销 I](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-i/) [题解](./DP/7-其他线形DP/多维DP.md#3218.-切蛋糕的最小总开销-i)
 - [3219. 切蛋糕的最小总开销 II](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) [题解](./DP/7-其他线形DP/多维DP.md#3219.-切蛋糕的最小总开销-ii)
+- [403. 青蛙过河](https://leetcode.cn/problems/frog-jump/) [题解](./DP/7-其他线形DP/多维DP.md#403.-青蛙过河)
+## 8-区间DP
+
+### 其他区间 DP
+
+- [312. 戳气球](https://leetcode.cn/problems/burst-balloons/) [题解](./DP/8-区间DP/其他区间 DP.md#312.-戳气球)
 ## 10-数位DP
 
 - [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/) [题解](./DP/10-数位DP.md#60.-排列序列)
@@ -107,6 +119,7 @@ Table of Contents
 - [154. 寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) [题解](./二分/其他.md#154.-寻找旋转排序数组中的最小值-ii)
 - [4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) [题解](./二分/其他.md#4.-寻找两个正序数组的中位数)
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./二分/其他.md#69.-x-的平方根)
+- [436. 寻找右区间](https://leetcode.cn/problems/find-right-interval/) [题解](./二分/其他.md#436.-寻找右区间)
 ## 最小化最大值
 
 - [410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) [题解](./二分/最小化最大值.md#410.-分割数组的最大值)
@@ -158,24 +171,48 @@ Table of Contents
 - [1367. 二叉树中的链表](https://leetcode.cn/problems/linked-list-in-binary-tree/) [题解](./二叉树/链表+二叉树.md#1367.-二叉树中的链表)
 # 位运算
 
+## 与或-LogTrick
+
+- [898. 子数组按位或操作](https://leetcode.cn/problems/bitwise-ors-of-subarrays/) [题解](./位运算/与或-LogTrick.md#898.-子数组按位或操作)
+- [3171. 找到按位或最接近 K 的子数组](https://leetcode.cn/problems/find-subarray-with-bitwise-or-closest-to-k/) [题解](./位运算/与或-LogTrick.md#3171.-找到按位或最接近-k-的子数组)
+- [3097. 或值至少为 K 的最短子数组 II](https://leetcode.cn/problems/shortest-subarray-with-or-at-least-k-ii/) [题解](./位运算/与或-LogTrick.md#3097.-或值至少为-k-的最短子数组-ii)
+- [2411. 按位或最大的最小子数组长度](https://leetcode.cn/problems/smallest-subarrays-with-maximum-bitwise-or/) [题解](./位运算/与或-LogTrick.md#2411.-按位或最大的最小子数组长度)
+- [1521. 找到最接近目标值的函数值](https://leetcode.cn/problems/find-a-value-of-a-mysterious-function-closest-to-target/) [题解](./位运算/与或-LogTrick.md#1521.-找到最接近目标值的函数值)
+- [3209. 子数组按位与值为 K 的数目](https://leetcode.cn/problems/number-of-subarrays-with-and-value-of-k/) [题解](./位运算/与或-LogTrick.md#3209.-子数组按位与值为-k-的数目)
+## 与或（AND OR）的性质
+
 ## 位运算（其他）
 
 - [137. 只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) [题解](./位运算/位运算（其他）.md#137.-只出现一次的数字-ii)
 - [201. 数字范围按位与](https://leetcode.cn/problems/bitwise-and-of-numbers-range/) [题解](./位运算/位运算（其他）.md#201.-数字范围按位与)
 - [782. 变为棋盘](https://leetcode.cn/problems/transform-to-chessboard/) [题解](./位运算/位运算（其他）.md#782.-变为棋盘)
+## 拆位or贡献法
+
+- [2275. 按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) [题解](./位运算/拆位or贡献法.md#2275.-按位与结果大于零的最长组合)
+## 试填法
+
+- [[3287. 求出数组中最大序列值](https://leetcode.cn/problems/find-the-maximum-sequence-value-of-array/](./位运算/试填法.md#[3287.-求出数组中最大序列值](https://leetcode.cn/problems/find-the-maximum-sequence-value-of-array/)
 # 前缀和
 
 ## 二维前缀和
 
 - [1738. 找出第 K 大的异或坐标值](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/) [题解](./前缀和/二维前缀和.md#1738.-找出第-k-大的异或坐标值)
+## 基础
+
+- [2270. 分割数组的方案数](https://leetcode.cn/problems/number-of-ways-to-split-array/) [题解](./前缀和/基础.md#2270.-分割数组的方案数)
 # 单调栈
 
 ## 基础
 
+- [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/) [题解](./单调栈/基础.md#739.-每日温度)
 ## 最小字典序
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./单调栈/最小字典序.md#402.-移掉-k-位数字)
 - [321. 拼接最大数](https://leetcode.cn/problems/create-maximum-number/) [题解](./单调栈/最小字典序.md#321.-拼接最大数)
+## 矩形
+
+- [84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/) [题解](./单调栈/矩形.md#84.-柱状图中最大的矩形)
+- [85. 最大矩形](https://leetcode.cn/problems/maximal-rectangle/) [题解](./单调栈/矩形.md#85.-最大矩形)
 # 双指针
 
 ## 同向双指针
@@ -249,6 +286,7 @@ Table of Contents
 - [215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) [题解](./堆(优先队列)/堆（基础）.md#215.-数组中的第k个最大元素)
 - [264. 丑数 II](https://leetcode.cn/problems/ugly-number-ii/) [题解](./堆(优先队列)/堆（基础）.md#264.-丑数-ii)
 - [2931. 购买物品的最大开销](https://leetcode.cn/problems/maximum-spending-after-buying-items/) [题解](./堆(优先队列)/堆（基础）.md#2931.-购买物品的最大开销)
+- [3066. 超过阈值的最少操作数 II](https://leetcode.cn/problems/minimum-operations-to-exceed-threshold-value-ii/) [题解](./堆(优先队列)/堆（基础）.md#3066.-超过阈值的最少操作数-ii)
 ## 堆（进阶）
 
 - [502. IPO](https://leetcode.cn/problems/ipo/) [题解](./堆(优先队列)/堆（进阶）.md#502.-ipo)
@@ -334,8 +372,10 @@ Table of Contents
 ### 判断质数
 
 - [埃氏筛](./数学/数论/判断质数.md#埃氏筛)
+- [204. 计数质数](https://leetcode.cn/problems/count-primes/) [题解](./数学/数论/判断质数.md#204.-计数质数)
 ### 最大公约数(GCD)
 
+- [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](./数学/数论/最大公约数(GCD).md#1979.-找出数组的最大公约数)
 - [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/最大公约数(GCD).md#365.-水壶问题)
 ### 最小公倍数(LCM)
 
@@ -508,11 +548,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **206**
+Total problems: **227**
 
 Still working on ...
 
-Last updated: 2025-01-10 10:02:11
+Last updated: 2025-01-19 11:24:19
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

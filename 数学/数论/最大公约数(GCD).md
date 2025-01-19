@@ -32,6 +32,19 @@ QED
 >[!裴蜀定理]
 >如果a,b是正整数，则关于$x$,$y$的方程$ax+by=c$有整数解 当且仅当 $c$ 是 $gcd(a,b)$的倍数
 
+# [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/)
+- 给你一个整数数组 `nums` ，返回数组中最大数和最小数的 **最大公约数** 。
+```python
+class Solution:
+    def findGCD(self, nums: List[int]) -> int:
+        mn,mx = min(nums),max(nums)
+        def gcd(a,b):
+            # assume a>b
+            while b:
+                a, b = b, a%b
+            return a
+        return gcd(mn, mx)
+```
 # [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/)
 当然可以先用dfs来搜索
 ```python

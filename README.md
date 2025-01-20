@@ -373,6 +373,10 @@ Table of Contents
 
 - [埃氏筛](./数学/数论/判断质数.md#埃氏筛)
 - [204. 计数质数](https://leetcode.cn/problems/count-primes/) [题解](./数学/数论/判断质数.md#204.-计数质数)
+### 因子
+
+- [1492. n 的第 k 个因子](https://leetcode.cn/problems/the-kth-factor-of-n/) [题解](./数学/数论/因子.md#1492.-n-的第-k-个因子)
+- [952. 按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor/) [题解](./数学/数论/因子.md#952.-按公因数计算最大组件大小)
 ### 最大公约数(GCD)
 
 - [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](./数学/数论/最大公约数(GCD).md#1979.-找出数组的最大公约数)
@@ -382,6 +386,11 @@ Table of Contents
 ### 阶乘分解
 
 - [172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) [题解](./数学/数论/阶乘分解.md#172.-阶乘后的零)
+## 组合数学
+
+### 放球问题
+
+- [1735. 生成乘积数组的方案数](https://leetcode.cn/problems/count-ways-to-make-array-with-product/) [题解](./数学/组合数学/放球问题.md#1735.-生成乘积数组的方案数)
 ## 计算几何
 
 ### 点+线
@@ -548,11 +557,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **227**
+Total problems: **230**
 
 Still working on ...
 
-Last updated: 2025-01-19 11:24:19
+Last updated: 2025-01-20 10:05:35
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

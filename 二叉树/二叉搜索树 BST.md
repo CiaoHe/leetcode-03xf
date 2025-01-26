@@ -1,3 +1,16 @@
+# [700. 二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/)
+```python
+class Solution:
+    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+        if not root:
+            return None
+        if root.val==val:
+            return root
+        if root.val > val:
+            return self.searchBST(root.left, val) 
+        else:
+            return self.searchBST(root.right, val)
+```
 # [530. 二叉搜索树的最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/)
 谢谢你，in-order侠
 ```python fold

@@ -21,6 +21,11 @@ Table of Contents
 ### 前缀和优化DP
 
 - [3251. 单调数组对的数目 II](https://leetcode.cn/problems/find-the-count-of-monotonic-pairs-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3251.-单调数组对的数目-ii)
+## 12-树形DP
+
+### 其他树形DP
+
+- [2920. 收集所有金币可获得的最大积分](https://leetcode.cn/problems/maximum-points-after-collecting-coins-from-all-nodes/) [题解](./DP/12-树形DP/其他树形DP.md#2920.-收集所有金币可获得的最大积分)
 ## 2-网格图DP
 
 ### 网格图DP-基础
@@ -38,6 +43,9 @@ Table of Contents
 
 - [494. 目标和](https://leetcode.cn/problems/target-sum/) [题解](./DP/3-背包/0-1背包.md#494.-目标和)
 - [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) [题解](./DP/3-背包/0-1背包.md#416.-分割等和子集)
+### 分组背包
+
+- [2218. 从栈中取出 K 个硬币的最大面值和](https://leetcode.cn/problems/maximum-value-of-k-coins-from-piles/) [题解](./DP/3-背包/分组背包.md#2218.-从栈中取出-k-个硬币的最大面值和)
 ### 完全背包
 
 - [322. 零钱兑换](https://leetcode.cn/problems/coin-change/) [题解](./DP/3-背包/完全背包.md#322.-零钱兑换)
@@ -71,6 +79,9 @@ Table of Contents
 - [139. 单词拆分](https://leetcode.cn/problems/word-break/) [题解](./DP/6-划分型DP/划分能否判定.md#139.-单词拆分)
 ## 7-其他线形DP
 
+### 一维DP
+
+- [2944. 购买水果需要的最少金币数](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits/) [题解](./DP/7-其他线形DP/一维DP.md#2944.-购买水果需要的最少金币数)
 ### 多维DP
 
 - [3218. 切蛋糕的最小总开销 I](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-i/) [题解](./DP/7-其他线形DP/多维DP.md#3218.-切蛋糕的最小总开销-i)
@@ -130,6 +141,7 @@ Table of Contents
 - [427. 建立四叉树](https://leetcode.cn/problems/construct-quad-tree/) [题解](./二叉树/N叉树.md#427.-建立四叉树)
 ## 二叉搜索树 BST
 
+- [700. 二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/) [题解](./二叉树/二叉搜索树 BST.md#700.-二叉搜索树中的搜索)
 - [530. 二叉搜索树的最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference-in-bst/) [题解](./二叉树/二叉搜索树 BST.md#530.-二叉搜索树的最小绝对差)
 - [230. 二叉搜索树中第 K 小的元素](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/) [题解](./二叉树/二叉搜索树 BST.md#230.-二叉搜索树中第-k-小的元素)
 - [98. 验证二叉搜索树](https://leetcode.cn/problems/validate-binary-search-tree/) [题解](./二叉树/二叉搜索树 BST.md#98.-验证二叉搜索树)
@@ -145,6 +157,9 @@ Table of Contents
 - [105. 从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) [题解](./二叉树/创建二叉树.md#105.-从前序与中序遍历序列构造二叉树)
 - [106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) [题解](./二叉树/创建二叉树.md#106.-从中序与后序遍历序列构造二叉树)
 - [108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) [题解](./二叉树/创建二叉树.md#108.-将有序数组转换为二叉搜索树)
+## 插入or删除节点
+
+- [450. 删除二叉搜索树中的节点](https://leetcode.cn/problems/delete-node-in-a-bst/) [题解](./二叉树/插入or删除节点.md#450.-删除二叉搜索树中的节点)
 ## 直径
 
 - [124. 二叉树中的最大路径和](https://leetcode.cn/problems/binary-tree-maximum-path-sum/) [题解](./二叉树/直径.md#124.-二叉树中的最大路径和)
@@ -244,6 +259,9 @@ Table of Contents
 
 - [79. 单词搜索](https://leetcode.cn/problems/word-search/) [题解](./回溯/暴搜+剪枝.md#79.-单词搜索)
 - [2056. 棋盘上有效移动组合的数目](https://leetcode.cn/problems/number-of-valid-move-combinations-on-chessboard/) [题解](./回溯/暴搜+剪枝.md#2056.-棋盘上有效移动组合的数目)
+## 有重复元素的回溯
+
+- [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/) [题解](./回溯/有重复元素的回溯.md#40.-组合总和-ii)
 ## 组合型回溯
 
 - [77. 组合](https://leetcode.cn/problems/combinations/) [题解](./回溯/组合型回溯.md#77.-组合)
@@ -478,6 +496,10 @@ Table of Contents
 - [409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) [题解](./贪心/字符串贪心/回文串贪心.md#409.-最长回文串)
 ## 贪心策略
 
+### 从最小or最大开始贪心
+
+- [1561. 你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1561.-你可以获得的最大硬币数目)
+- [2412. 完成所有交易的初始最少钱数](https://leetcode.cn/problems/minimum-money-required-before-transactions/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2412.-完成所有交易的初始最少钱数)
 ### 双序列配对
 
 - [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/) [题解](./贪心/贪心策略/双序列配对.md#455.-分发饼干)
@@ -557,11 +579,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **230**
+Total problems: **238**
 
 Still working on ...
 
-Last updated: 2025-01-20 10:05:35
+Last updated: 2025-01-26 18:38:22
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

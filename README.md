@@ -126,6 +126,7 @@ Table of Contents
 
 - [162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/) [题解](./二分/其他.md#162.-寻找峰值)
 - [33. 搜索旋转排序数组](https://leetcode.cn/problems/search-in-rotated-sorted-array/) [题解](./二分/其他.md#33.-搜索旋转排序数组)
+- [81. 搜索旋转排序数组 II](https://leetcode.cn/problems/search-in-rotated-sorted-array-ii/) [题解](./二分/其他.md#81.-搜索旋转排序数组-ii)
 - [153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/) [题解](./二分/其他.md#153.-寻找旋转排序数组中的最小值)
 - [154. 寻找旋转排序数组中的最小值 II](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array-ii/) [题解](./二分/其他.md#154.-寻找旋转排序数组中的最小值-ii)
 - [4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) [题解](./二分/其他.md#4.-寻找两个正序数组的中位数)
@@ -262,6 +263,8 @@ Table of Contents
 ## 有重复元素的回溯
 
 - [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/) [题解](./回溯/有重复元素的回溯.md#40.-组合总和-ii)
+- [90. 子集 II](https://leetcode.cn/problems/subsets-ii/) [题解](./回溯/有重复元素的回溯.md#90.-子集-ii)
+- [47. 全排列 II](https://leetcode.cn/problems/permutations-ii/) [题解](./回溯/有重复元素的回溯.md#47.-全排列-ii)
 ## 组合型回溯
 
 - [77. 组合](https://leetcode.cn/problems/combinations/) [题解](./回溯/组合型回溯.md#77.-组合)
@@ -555,6 +558,10 @@ Table of Contents
 - [407. 二维接雨水](https://leetcode.cn/problems/trapping-rain-water-ii/) [题解](./前后缀分解.md#407.-二维接雨水)
 - [238. 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) [题解](./前后缀分解.md#238.-除自身以外数组的乘积)
 - [135. 分发糖果](https://leetcode.cn/problems/candy/) [题解](./前后缀分解.md#135.-分发糖果)
+# 博弈论
+
+- [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
+- [1728. 猫和老鼠 II](https://leetcode.cn/problems/cat-and-mouse-ii/) [题解](./博弈论.md#1728.-猫和老鼠-ii)
 # 数据结构设计
 
 - [380. O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/) [题解](./数据结构设计.md#380.-o(1)-时间插入、删除和获取随机元素)
@@ -579,11 +586,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **238**
+Total problems: **243**
 
 Still working on ...
 
-Last updated: 2025-01-26 18:38:22
+Last updated: 2025-02-11 08:46:31
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

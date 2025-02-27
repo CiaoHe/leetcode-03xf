@@ -87,6 +87,7 @@ Table of Contents
 - [3218. 切蛋糕的最小总开销 I](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-i/) [题解](./DP/7-其他线形DP/多维DP.md#3218.-切蛋糕的最小总开销-i)
 - [3219. 切蛋糕的最小总开销 II](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) [题解](./DP/7-其他线形DP/多维DP.md#3219.-切蛋糕的最小总开销-ii)
 - [403. 青蛙过河](https://leetcode.cn/problems/frog-jump/) [题解](./DP/7-其他线形DP/多维DP.md#403.-青蛙过河)
+- [2209. 用地毯覆盖后的最少白色砖块](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/) [题解](./DP/7-其他线形DP/多维DP.md#2209.-用地毯覆盖后的最少白色砖块)
 ## 8-区间DP
 
 ### 其他区间 DP
@@ -132,9 +133,13 @@ Table of Contents
 - [4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) [题解](./二分/其他.md#4.-寻找两个正序数组的中位数)
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./二分/其他.md#69.-x-的平方根)
 - [436. 寻找右区间](https://leetcode.cn/problems/find-right-interval/) [题解](./二分/其他.md#436.-寻找右区间)
+## 最大化最小值
+
+- [1552. 两球之间的磁力](https://leetcode.cn/problems/magnetic-force-between-two-balls/) [题解](./二分/最大化最小值.md#1552.-两球之间的磁力)
 ## 最小化最大值
 
 - [410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) [题解](./二分/最小化最大值.md#410.-分割数组的最大值)
+- [1760. 袋子里最少数目的球](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) [题解](./二分/最小化最大值.md#1760.-袋子里最少数目的球)
 # 二叉树
 
 ## N叉树
@@ -323,6 +328,7 @@ Table of Contents
 - [729. 我的日程安排表 I](https://leetcode.cn/problems/my-calendar-i/) [题解](./堆(优先队列)/有序集合.md#729.-我的日程安排表-i)
 - [731. 我的日程安排表 II](https://leetcode.cn/problems/my-calendar-ii/) [题解](./堆(优先队列)/有序集合.md#731.-我的日程安排表-ii)
 - [732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/) [题解](./堆(优先队列)/有序集合.md#732.-我的日程安排表-iii)
+- [2353. 设计食物评分系统](https://leetcode.cn/problems/design-a-food-rating-system/) [题解](./堆(优先队列)/有序集合.md#2353.-设计食物评分系统)
 ## 第K小（大）
 
 - [373. 查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) [题解](./堆(优先队列)/第K小（大）.md#373.-查找和最小的-k-对数字)
@@ -358,6 +364,11 @@ Table of Contents
 ## 拓扑排序
 
 - [936. 戳印序列](https://leetcode.cn/problems/stamping-the-sequence/) [题解](./字符串/拓扑排序.md#936.-戳印序列)
+# 常用枚举技巧
+
+## 枚举右维护左
+
+- [624. 数组列表中的最大距离](https://leetcode.cn/problems/maximum-distance-in-arrays/) [题解](./常用枚举技巧/枚举右维护左.md#624.-数组列表中的最大距离)
 # 并查集
 
 ## 区间并查集
@@ -568,9 +579,12 @@ Table of Contents
 - [381. O(1) 时间插入、删除和获取随机元素 - 允许重复](https://leetcode.cn/problems/insert-delete-getrandom-o1-duplicates-allowed/) [题解](./数据结构设计.md#381.-o(1)-时间插入、删除和获取随机元素---允许重复)
 - [386. 字典序排数](https://leetcode.cn/problems/lexicographical-numbers/) [题解](./数据结构设计.md#386.-字典序排数)
 - [2241. 设计一个 ATM 机器](https://leetcode.cn/problems/design-an-atm-machine/) [题解](./数据结构设计.md#2241.-设计一个-atm-机器)
+- [2502. 设计内存分配器](https://leetcode.cn/problems/design-memory-allocator/) [题解](./数据结构设计.md#2502.-设计内存分配器)
+- [2296. 设计一个文本编辑器](https://leetcode.cn/problems/design-a-text-editor/) [题解](./数据结构设计.md#2296.-设计一个文本编辑器)
 # 模拟
 
 - [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) [题解](./模拟.md#54.-螺旋矩阵)
+- [1706. 球会落何处](https://leetcode.cn/problems/where-will-the-ball-fall/) [题解](./模拟.md#1706.-球会落何处)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -586,11 +600,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **243**
+Total problems: **251**
 
 Still working on ...
 
-Last updated: 2025-02-11 08:46:31
+Last updated: 2025-02-28 01:45:20
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

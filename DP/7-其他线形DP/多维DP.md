@@ -69,3 +69,26 @@ class Solution:
             return False
         return dfs(0,0)
 ```
+# [2209. 用地毯覆盖后的最少白色砖块](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/)
+- Let `DP[i][j] `denote the minimum number of white tiles still visible from indices `i` to `floor.length-1` after covering with at most `j `carpets. (从左往右思考)
+```python
+class Solution:
+    def minimumWhiteTiles(self, floor: str, numCarpets: int, carpetLen: int) -> int:
+        n = len(floor)
+        dp = [[0] * (numCarpets + 1) for _ in range(n+1)]
+
+        # transition: dp[i][j] = min(dp[i + 1][j] + (floor[i] == '1'), dp[i + carpetLen][j - 1])
+        for i in range(n - 1, -1, -1):
+            for j in range(numCarpets + 1):
+                # not to cover, so the left white number equals to dp[i+1][j], if i-th is white, we need add one:
+                if floor[i] == '1':
+                    dp[i][j] = dp[i + 1][j] + 1
+                else:
+                    dp[i][j] = dp[i + 1][j]
+                    
+                # if we have carpets left, we can cover the current tile with a carpet
+                if j > 0:
+                    dp[i][j] = min(dp[i][j], dp[min(i + carpetLen, n)][j - 1])
+        return dp[0][numCarpets]
+
+```

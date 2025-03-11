@@ -77,6 +77,13 @@ Table of Contents
 ### 划分能否判定
 
 - [139. 单词拆分](https://leetcode.cn/problems/word-break/) [题解](./DP/6-划分型DP/划分能否判定.md#139.-单词拆分)
+### 最优划分
+
+- [132. 分割回文串 II](https://leetcode.cn/problems/palindrome-partitioning-ii/) [题解](./DP/6-划分型DP/最优划分.md#132.-分割回文串-ii)
+### 约束划分个数
+
+- [1278. 分割回文串 III](https://leetcode.cn/problems/palindrome-partitioning-iii/) [题解](./DP/6-划分型DP/约束划分个数.md#1278.-分割回文串-iii)
+- [1745. 分割回文串 IV](https://leetcode.cn/problems/palindrome-partitioning-iv/) [题解](./DP/6-划分型DP/约束划分个数.md#1745.-分割回文串-iv)
 ## 7-其他线形DP
 
 ### 一维DP
@@ -218,6 +225,9 @@ Table of Contents
 ## 二维前缀和
 
 - [1738. 找出第 K 大的异或坐标值](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/) [题解](./前缀和/二维前缀和.md#1738.-找出第-k-大的异或坐标值)
+## 前缀和与哈希表
+
+- [2588. 统计美丽子数组数目](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) [题解](./前缀和/前缀和与哈希表.md#2588.-统计美丽子数组数目)
 ## 基础
 
 - [2270. 分割数组的方案数](https://leetcode.cn/problems/number-of-ways-to-split-array/) [题解](./前缀和/基础.md#2270.-分割数组的方案数)
@@ -255,6 +265,8 @@ Table of Contents
 ## 子集型回溯
 
 - [39. 组合总和](https://leetcode.cn/problems/combination-sum/) [题解](./回溯/子集型回溯.md#39.-组合总和)
+- [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/) [题解](./回溯/子集型回溯.md#131.-分割回文串)
+- [2597. 美丽子集的数目](https://leetcode.cn/problems/the-number-of-beautiful-subsets/) [题解](./回溯/子集型回溯.md#2597.-美丽子集的数目)
 ## 排列型回溯
 
 - [46. 全排列](https://leetcode.cn/problems/permutations/) [题解](./回溯/排列型回溯.md#46.-全排列)
@@ -508,6 +520,7 @@ Table of Contents
 ### 回文串贪心
 
 - [409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) [题解](./贪心/字符串贪心/回文串贪心.md#409.-最长回文串)
+- [1328. 破坏回文串](https://leetcode.cn/problems/break-a-palindrome/) [题解](./贪心/字符串贪心/回文串贪心.md#1328.-破坏回文串)
 ## 贪心策略
 
 ### 从最小or最大开始贪心
@@ -569,6 +582,7 @@ Table of Contents
 - [407. 二维接雨水](https://leetcode.cn/problems/trapping-rain-water-ii/) [题解](./前后缀分解.md#407.-二维接雨水)
 - [238. 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) [题解](./前后缀分解.md#238.-除自身以外数组的乘积)
 - [135. 分发糖果](https://leetcode.cn/problems/candy/) [题解](./前后缀分解.md#135.-分发糖果)
+- [2012. 数组美丽值求和](https://leetcode.cn/problems/sum-of-beauty-in-the-array/) [题解](./前后缀分解.md#2012.-数组美丽值求和)
 # 博弈论
 
 - [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
@@ -588,6 +602,7 @@ Table of Contents
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
+- [2070. 每一个查询的最大美丽值](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) [题解](./离线算法.md#2070.-每一个查询的最大美丽值)
 # 经典题单
 
 - [03xf](./经典题单.md#03xf)
@@ -600,11 +615,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **251**
+Total problems: **260**
 
 Still working on ...
 
-Last updated: 2025-02-28 01:45:20
+Last updated: 2025-03-11 10:06:33
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

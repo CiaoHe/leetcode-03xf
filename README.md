@@ -72,6 +72,9 @@ Table of Contents
 ### 其他
 
 - [935. 骑士拨号器](https://leetcode.cn/problems/knight-dialer/) [题解](./DP/5-状态机DP/其他.md#935.-骑士拨号器)
+### 进阶
+
+- [2272. 最大波动的子字符串](https://leetcode.cn/problems/substring-with-largest-variance/) [题解](./DP/5-状态机DP/进阶.md#2272.-最大波动的子字符串)
 ## 6-划分型DP
 
 ### 划分能否判定
@@ -446,6 +449,10 @@ Table of Contents
 - [50. Pow(x, n)快速幂](https://leetcode.cn/problems/powx-n/) [题解](./数学/数值计算.md#50.-pow(x,-n)快速幂)
 # 栈
 
+## 合法括号字符串
+
+- [1963. 使字符串平衡的最小交换次数](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/) [题解](./栈/合法括号字符串.md#1963.-使字符串平衡的最小交换次数)
+- [2116. 判断一个括号字符串是否有效](https://leetcode.cn/problems/check-if-a-parentheses-string-can-be-valid/) [题解](./栈/合法括号字符串.md#2116.-判断一个括号字符串是否有效)
 ## 栈（基础）
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./栈/栈（基础）.md#402.-移掉-k-位数字)
@@ -466,6 +473,9 @@ Table of Contents
 
 ### 求子数组个数
 
+#### 恰好型滑动窗口
+
+- [3306. 元音辅音字符串计数 II](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/恰好型滑动窗口.md#3306.-元音辅音字符串计数-ii)
 #### 越短越合法
 
 - [3258. 统计满足 K 约束的子字符串数量 I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3258.-统计满足-k-约束的子字符串数量-i)
@@ -577,12 +587,13 @@ Table of Contents
 - [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/) [题解](./分治.md#395.-至少有-k-个重复字符的最长子串)
 # 前后缀分解
 
-- [题单](./前后缀分解.md#题单)
 - [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/description/) [题解](./前后缀分解.md#42.-接雨水)
 - [407. 二维接雨水](https://leetcode.cn/problems/trapping-rain-water-ii/) [题解](./前后缀分解.md#407.-二维接雨水)
 - [238. 除自身以外数组的乘积](https://leetcode.cn/problems/product-of-array-except-self/) [题解](./前后缀分解.md#238.-除自身以外数组的乘积)
 - [135. 分发糖果](https://leetcode.cn/problems/candy/) [题解](./前后缀分解.md#135.-分发糖果)
 - [2012. 数组美丽值求和](https://leetcode.cn/problems/sum-of-beauty-in-the-array/) [题解](./前后缀分解.md#2012.-数组美丽值求和)
+- [2680. 最大或值](https://leetcode.cn/problems/maximum-or/) [题解](./前后缀分解.md#2680.-最大或值)
+- [2711. 对角线上不同值的数量差](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) [题解](./前后缀分解.md#2711.-对角线上不同值的数量差)
 # 博弈论
 
 - [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
@@ -615,11 +626,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **260**
+Total problems: **266**
 
 Still working on ...
 
-Last updated: 2025-03-11 10:06:33
+Last updated: 2025-03-25 10:05:20
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

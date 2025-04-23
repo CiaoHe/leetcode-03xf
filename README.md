@@ -418,21 +418,21 @@ Table of Contents
 
 ### 判断质数
 
-- [埃氏筛](./数学/数论/判断质数.md#埃氏筛)
-- [204. 计数质数](https://leetcode.cn/problems/count-primes/) [题解](./数学/数论/判断质数.md#204.-计数质数)
+- [埃氏筛](1.%20判断质数.md#埃氏筛)
+- [204. 计数质数](https://leetcode.cn/problems/count-primes/) [题解](1.%20判断质数.md#204.-计数质数)
 ### 因子
 
-- [1492. n 的第 k 个因子](https://leetcode.cn/problems/the-kth-factor-of-n/) [题解](./数学/数论/因子.md#1492.-n-的第-k-个因子)
-- [952. 按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor/) [题解](./数学/数论/因子.md#952.-按公因数计算最大组件大小)
+- [1492. n 的第 k 个因子](https://leetcode.cn/problems/the-kth-factor-of-n/) [题解](5.%20因子.md#1492.-n-的第-k-个因子)
+- [952. 按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor/) [题解](5.%20因子.md#952.-按公因数计算最大组件大小)
 ### 最大公约数(GCD)
 
-- [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](./数学/数论/最大公约数(GCD).md#1979.-找出数组的最大公约数)
-- [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/最大公约数(GCD).md#365.-水壶问题)
+- [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](6.%20最大公约数(GCD).md#1979.-找出数组的最大公约数)
+- [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](6.%20最大公约数(GCD).md#365.-水壶问题)
 ### 最小公倍数(LCM)
 
 ### 阶乘分解
 
-- [172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) [题解](./数学/数论/阶乘分解.md#172.-阶乘后的零)
+- [172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) [题解](4.%20阶乘分解.md#172.-阶乘后的零)
 ## 组合数学
 
 ### 放球问题

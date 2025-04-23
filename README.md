@@ -106,6 +106,8 @@ Table of Contents
 ## 10-数位DP
 
 - [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/) [题解](./DP/10-数位DP.md#60.-排列序列)
+- [2999. 统计强大整数的数目](https://leetcode.cn/problems/count-the-number-of-powerful-integers/) [题解](./DP/10-数位DP.md#2999.-统计强大整数的数目)
+- [2843. 统计对称整数的数目](https://leetcode.cn/problems/count-symmetric-integers/) [题解](./DP/10-数位DP.md#2843.-统计对称整数的数目)
 ## 14-博弈DP
 
 - [486. 预测赢家](https://leetcode.cn/problems/predict-the-winner/) [题解](./DP/14-博弈DP.md#486.-预测赢家)
@@ -384,6 +386,8 @@ Table of Contents
 ## 枚举右维护左
 
 - [624. 数组列表中的最大距离](https://leetcode.cn/problems/maximum-distance-in-arrays/) [题解](./常用枚举技巧/枚举右维护左.md#624.-数组列表中的最大距离)
+- [2874. 有序三元组中的最大值 II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) [题解](./常用枚举技巧/枚举右维护左.md#2874.-有序三元组中的最大值-ii)
+- [2364. 统计坏数对的数目](https://leetcode.cn/problems/count-number-of-bad-pairs/) [题解](./常用枚举技巧/枚举右维护左.md#2364.-统计坏数对的数目)
 # 并查集
 
 ## 区间并查集
@@ -416,23 +420,26 @@ Table of Contents
 
 ## 数论
 
-### 判断质数
+### 1. 判断质数
 
-- [埃氏筛](1.%20判断质数.md#埃氏筛)
-- [204. 计数质数](https://leetcode.cn/problems/count-primes/) [题解](1.%20判断质数.md#204.-计数质数)
-### 因子
+- [埃氏筛](./数学/数论/1. 判断质数.md#埃氏筛)
+- [204. 计数质数](https://leetcode.cn/problems/count-primes/) [题解](./数学/数论/1. 判断质数.md#204.-计数质数)
+### 3. 质因数分解
 
-- [1492. n 的第 k 个因子](https://leetcode.cn/problems/the-kth-factor-of-n/) [题解](5.%20因子.md#1492.-n-的第-k-个因子)
-- [952. 按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor/) [题解](5.%20因子.md#952.-按公因数计算最大组件大小)
-### 最大公约数(GCD)
+- [2338. 统计理想数组的数目](https://leetcode.cn/problems/count-the-number-of-ideal-arrays/) [题解](./数学/数论/3. 质因数分解.md#2338.-统计理想数组的数目)
+### 4. 阶乘分解
 
-- [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](6.%20最大公约数(GCD).md#1979.-找出数组的最大公约数)
-- [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](6.%20最大公约数(GCD).md#365.-水壶问题)
-### 最小公倍数(LCM)
+- [172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) [题解](./数学/数论/4. 阶乘分解.md#172.-阶乘后的零)
+### 5. 因子
 
-### 阶乘分解
+- [1492. n 的第 k 个因子](https://leetcode.cn/problems/the-kth-factor-of-n/) [题解](./数学/数论/5. 因子.md#1492.-n-的第-k-个因子)
+- [952. 按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor/) [题解](./数学/数论/5. 因子.md#952.-按公因数计算最大组件大小)
+### 6. 最大公约数(GCD)
 
-- [172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) [题解](4.%20阶乘分解.md#172.-阶乘后的零)
+- [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](./数学/数论/6. 最大公约数(GCD).md#1979.-找出数组的最大公约数)
+- [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/6. 最大公约数(GCD).md#365.-水壶问题)
+### 7. 最小公倍数(LCM)
+
 ## 组合数学
 
 ### 放球问题
@@ -443,6 +450,9 @@ Table of Contents
 ### 点+线
 
 - [149. 直线上最多的点数](https://leetcode.cn/problems/max-points-on-a-line/) [题解](./数学/计算几何/点+线.md#149.-直线上最多的点数)
+## 乘法原理
+
+- [1922. 统计好数字的数目](https://leetcode.cn/problems/count-good-numbers/) [题解](./数学/乘法原理.md#1922.-统计好数字的数目)
 ## 数值计算
 
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./数学/数值计算.md#69.-x-的平方根)
@@ -622,15 +632,16 @@ Table of Contents
 - [189. 轮转数组](https://leetcode.cn/problems/rotate-array/) [题解](./脑筋急转弯.md#189.-轮转数组)
 - [6. Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/) [题解](./脑筋急转弯.md#6.-z-字形变换)
 - [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) [题解](./脑筋急转弯.md#406.-根据身高重建队列)
+- [781. 森林中的兔子](https://leetcode.cn/problems/rabbits-in-forest/) [题解](./脑筋急转弯.md#781.-森林中的兔子)
 
 
 # Summary
 
-Total problems: **266**
+Total problems: **273**
 
 Still working on ...
 
-Last updated: 2025-03-25 10:05:20
+Last updated: 2025-04-23 11:35:31
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

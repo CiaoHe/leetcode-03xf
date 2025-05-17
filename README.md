@@ -92,6 +92,10 @@ Table of Contents
 ### 一维DP
 
 - [2944. 购买水果需要的最少金币数](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits/) [题解](./DP/7-其他线形DP/一维DP.md#2944.-购买水果需要的最少金币数)
+### 合法子序列DP(特殊子序列DP)
+
+- [2900. 最长相邻不相等子序列 I](https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-i/) [题解](./DP/7-其他线形DP/合法子序列DP(特殊子序列DP).md#2900.-最长相邻不相等子序列-i)
+- [2901. 最长相邻不相等子序列 II](https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-ii/) [题解](./DP/7-其他线形DP/合法子序列DP(特殊子序列DP).md#2901.-最长相邻不相等子序列-ii)
 ### 多维DP
 
 - [3218. 切蛋糕的最小总开销 I](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-i/) [题解](./DP/7-其他线形DP/多维DP.md#3218.-切蛋糕的最小总开销-i)
@@ -314,6 +318,8 @@ Table of Contents
 - [带状态的模版](./图论算法/Dijkstra-单源最短路径.md#带状态的模版)
 - [787. K 站中转内最便宜的航班](https://leetcode.cn/problems/cheapest-flights-within-k-stops/) [题解](./图论算法/Dijkstra-单源最短路径.md#787.-k-站中转内最便宜的航班)
 - [1928. 规定时间内到达终点的最小花费](https://leetcode.cn/problems/minimum-cost-to-reach-destination-in-time/) [题解](./图论算法/Dijkstra-单源最短路径.md#1928.-规定时间内到达终点的最小花费)
+- [3341. 到达最后一个房间的最少时间 I](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-i/) [题解](./图论算法/Dijkstra-单源最短路径.md#3341.-到达最后一个房间的最少时间-i)
+- [3342. 到达最后一个房间的最少时间 II](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-ii/) [题解](./图论算法/Dijkstra-单源最短路径.md#3342.-到达最后一个房间的最少时间-ii)
 ## 二分图染色
 
 - [785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/) [题解](./图论算法/二分图染色.md#785.-判断二分图)
@@ -388,6 +394,7 @@ Table of Contents
 - [624. 数组列表中的最大距离](https://leetcode.cn/problems/maximum-distance-in-arrays/) [题解](./常用枚举技巧/枚举右维护左.md#624.-数组列表中的最大距离)
 - [2874. 有序三元组中的最大值 II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) [题解](./常用枚举技巧/枚举右维护左.md#2874.-有序三元组中的最大值-ii)
 - [2364. 统计坏数对的数目](https://leetcode.cn/problems/count-number-of-bad-pairs/) [题解](./常用枚举技巧/枚举右维护左.md#2364.-统计坏数对的数目)
+- [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/) [题解](./常用枚举技巧/枚举右维护左.md#2845.-统计趣味子数组的数目)
 # 并查集
 
 ## 区间并查集
@@ -410,6 +417,9 @@ Table of Contents
 
 - [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) [题解](./排序/归并排序.md#lcr-170.-交易逆序对的总数)
 - [493. 翻转对](https://leetcode.cn/problems/reverse-pairs/) [题解](./排序/归并排序.md#493.-翻转对)
+## 快排
+
+- [75. 颜色分类](https://leetcode.cn/problems/sort-colors/) [题解](./排序/快排.md#75.-颜色分类)
 ## 逆序对
 
 - [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) [题解](./排序/逆序对.md#lcr-170.-交易逆序对的总数)
@@ -637,11 +647,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **273**
+Total problems: **279**
 
 Still working on ...
 
-Last updated: 2025-04-23 11:35:31
+Last updated: 2025-05-17 08:50:15
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

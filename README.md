@@ -26,6 +26,7 @@ Table of Contents
 ### 其他树形DP
 
 - [2920. 收集所有金币可获得的最大积分](https://leetcode.cn/problems/maximum-points-after-collecting-coins-from-all-nodes/) [题解](./DP/12-树形DP/其他树形DP.md#2920.-收集所有金币可获得的最大积分)
+- [3068. 最大节点价值之和](https://leetcode.cn/problems/find-the-maximum-sum-of-node-values/) [题解](./DP/12-树形DP/其他树形DP.md#3068.-最大节点价值之和)
 ## 2-网格图DP
 
 ### 网格图DP-基础
@@ -107,6 +108,11 @@ Table of Contents
 ### 其他区间 DP
 
 - [312. 戳气球](https://leetcode.cn/problems/burst-balloons/) [题解](./DP/8-区间DP/其他区间 DP.md#312.-戳气球)
+## 9-状态压缩DP
+
+### 其他状态压缩DP
+
+- [1931. 用三种不同颜色为网格涂色](https://leetcode.cn/problems/painting-a-grid-with-three-different-colors/) [题解](./DP/9-状态压缩DP/其他状态压缩DP.md#1931.-用三种不同颜色为网格涂色)
 ## 10-数位DP
 
 - [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/) [题解](./DP/10-数位DP.md#60.-排列序列)
@@ -196,6 +202,7 @@ Table of Contents
 - [LCR 143. 子结构判断](https://leetcode.cn/problems/shu-de-zi-jie-gou-lcof/) [题解](./二叉树/自顶向下DFS.md#lcr-143.-子结构判断)
 - [112. 路径总和](https://leetcode.cn/problems/path-sum/) [题解](./二叉树/自顶向下DFS.md#112.-路径总和)
 - [199. 二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/) [题解](./二叉树/自顶向下DFS.md#199.-二叉树的右视图)
+- [3372. 连接两棵树后最大目标节点数目 I](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) [题解](./二叉树/自顶向下DFS.md#3372.-连接两棵树后最大目标节点数目-i)
 ## 遍历
 
 - [102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal) [题解](./二叉树/遍历.md#102. 二叉树的层序遍历)
@@ -328,6 +335,7 @@ Table of Contents
 
 - [207. 课程表](https://leetcode.cn/problems/course-schedule/) [题解](./图论算法/拓扑排序.md#207.-课程表)
 - [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii/) [题解](./图论算法/拓扑排序.md#210.-课程表-ii)
+- [1857. 有向图中最大颜色值](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) [题解](./图论算法/拓扑排序.md#1857.-有向图中最大颜色值)
 # 堆(优先队列)
 
 ## 堆（基础）
@@ -387,6 +395,13 @@ Table of Contents
 ## 拓扑排序
 
 - [936. 戳印序列](https://leetcode.cn/problems/stamping-the-sequence/) [题解](./字符串/拓扑排序.md#936.-戳印序列)
+# 差分
+
+## 一维差分
+
+- [3355. 零数组变换 I](https://leetcode.cn/problems/zero-array-transformation-i/) [题解](./差分/一维差分.md#3355.-零数组变换-i)
+- [3356. 零数组变换 II](https://leetcode.cn/problems/zero-array-transformation-ii/) [题解](./差分/一维差分.md#3356.-零数组变换-ii)
+- [3362. 零数组变换 III](https://leetcode.cn/problems/zero-array-transformation-iii/) [题解](./差分/一维差分.md#3362.-零数组变换-iii)
 # 常用枚举技巧
 
 ## 枚举右维护左
@@ -647,11 +662,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **279**
+Total problems: **286**
 
 Still working on ...
 
-Last updated: 2025-05-17 08:50:15
+Last updated: 2025-05-28 10:38:03
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

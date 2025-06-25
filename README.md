@@ -137,14 +137,19 @@ Table of Contents
 
 # 二分
 
+## 二分答案
+
+### 求最大
+
+- [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/) [题解](./二分/二分答案/求最大.md#2071.-你可以安排的最多任务数目)
+### 第k小or大
+
+- [2040. 两个有序数组的第 K 小乘积](https://leetcode.cn/problems/kth-smallest-product-of-two-sorted-arrays/) [题解](./二分/二分答案/第k小or大.md#2040.-两个有序数组的第-k-小乘积)
 ## 二分查找
 
 - [35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/) [题解](./二分/二分查找.md#35.-搜索插入位置)
 - [74. 搜索二维矩阵](https://leetcode.cn/problems/search-a-2d-matrix/) [题解](./二分/二分查找.md#74.-搜索二维矩阵)
 - [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/) [题解](./二分/二分查找.md#34.-在排序数组中查找元素的第一个和最后一个位置)
-## 二分答案：求最大
-
-- [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/) [题解](./二分/二分答案：求最大.md#2071.-你可以安排的最多任务数目)
 ## 其他
 
 - [162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/) [题解](./二分/其他.md#162.-寻找峰值)
@@ -162,6 +167,7 @@ Table of Contents
 
 - [410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) [题解](./二分/最小化最大值.md#410.-分割数组的最大值)
 - [1760. 袋子里最少数目的球](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) [题解](./二分/最小化最大值.md#1760.-袋子里最少数目的球)
+- [2616. 最小化数对的最大差值](https://leetcode.cn/problems/minimize-the-maximum-difference-of-pairs/) [题解](./二分/最小化最大值.md#2616.-最小化数对的最大差值)
 # 二叉树
 
 ## N叉树
@@ -203,6 +209,7 @@ Table of Contents
 - [112. 路径总和](https://leetcode.cn/problems/path-sum/) [题解](./二叉树/自顶向下DFS.md#112.-路径总和)
 - [199. 二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/) [题解](./二叉树/自顶向下DFS.md#199.-二叉树的右视图)
 - [3372. 连接两棵树后最大目标节点数目 I](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) [题解](./二叉树/自顶向下DFS.md#3372.-连接两棵树后最大目标节点数目-i)
+- [3373. 连接两棵树后最大目标节点数目 II](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) [题解](./二叉树/自顶向下DFS.md#3373.-连接两棵树后最大目标节点数目-ii)
 ## 遍历
 
 - [102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal) [题解](./二叉树/遍历.md#102. 二叉树的层序遍历)
@@ -310,6 +317,7 @@ Table of Contents
 - [909. 蛇梯棋](https://leetcode.cn/problems/snakes-and-ladders/) [题解](./图论算法/BFS基础.md#909.-蛇梯棋)
 - [433. 最小基因变化](https://leetcode.cn/problems/minimum-genetic-mutation/) [题解](./图论算法/BFS基础.md#433.-最小基因变化)
 - [127. 单词接龙](https://leetcode.cn/problems/word-ladder/) [题解](./图论算法/BFS基础.md#127.-单词接龙)
+- [1298. 你能从盒子里获得的最大糖果数](https://leetcode.cn/problems/maximum-candies-you-can-get-from-boxes/) [题解](./图论算法/BFS基础.md#1298.-你能从盒子里获得的最大糖果数)
 ## Bellman-Ford
 
 - [和Dijkstra的对比](./图论算法/Bellman-Ford.md#和dijkstra的对比)
@@ -422,6 +430,7 @@ Table of Contents
 ## 边权并查集
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
+- [1061. 按字典序排列最小的等效字符串](https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/) [题解](./并查集/边权并查集.md#1061.-按字典序排列最小的等效字符串)
 # 排序
 
 ## 其他
@@ -465,11 +474,19 @@ Table of Contents
 - [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/6. 最大公约数(GCD).md#365.-水壶问题)
 ### 7. 最小公倍数(LCM)
 
+## 杂项
+
+### 回文数
+
+- [2081. k 镜像数字的和](https://leetcode.cn/problems/sum-of-k-mirror-numbers/) [题解](./数学/杂项/回文数.md#2081.-k-镜像数字的和)
 ## 组合数学
 
 ### 放球问题
 
 - [1735. 生成乘积数组的方案数](https://leetcode.cn/problems/count-ways-to-make-array-with-product/) [题解](./数学/组合数学/放球问题.md#1735.-生成乘积数组的方案数)
+### 组合计数
+
+- [3405. 统计恰好有 K 个相等相邻元素的数组数目](https://leetcode.cn/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) [题解](./数学/组合数学/组合计数.md#3405.-统计恰好有-k-个相等相邻元素的数组数目)
 ## 计算几何
 
 ### 点+线
@@ -478,6 +495,9 @@ Table of Contents
 ## 乘法原理
 
 - [1922. 统计好数字的数目](https://leetcode.cn/problems/count-good-numbers/) [题解](./数学/乘法原理.md#1922.-统计好数字的数目)
+## 容斥原理
+
+- [2929. 给小朋友们分糖果 II](https://leetcode.cn/problems/distribute-candies-among-children-ii/) [题解](./数学/容斥原理.md#2929.-给小朋友们分糖果-ii)
 ## 数值计算
 
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./数学/数值计算.md#69.-x-的平方根)
@@ -492,6 +512,9 @@ Table of Contents
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./栈/栈（基础）.md#402.-移掉-k-位数字)
 - [394. 字符串解码](https://leetcode.cn/problems/decode-string/) [题解](./栈/栈（基础）.md#394.-字符串解码)
+## 进阶
+
+- [2434. 使用机器人打印字典序最小的字符串](https://leetcode.cn/problems/using-a-robot-to-print-the-lexicographically-smallest-string/) [题解](./栈/进阶.md#2434.-使用机器人打印字典序最小的字符串)
 ## 邻项消除
 
 - [1209. 删除字符串中的所有相邻重复项 II](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/) [题解](./栈/邻项消除.md#1209.-删除字符串中的所有相邻重复项-ii)
@@ -572,6 +595,9 @@ Table of Contents
 
 - [1561. 你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1561.-你可以获得的最大硬币数目)
 - [2412. 完成所有交易的初始最少钱数](https://leetcode.cn/problems/minimum-money-required-before-transactions/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2412.-完成所有交易的初始最少钱数)
+### 先枚举，再贪心
+
+- [3085. 成为 K 特殊字符串需要删除的最少字符数](https://leetcode.cn/problems/minimum-deletions-to-make-string-k-special/) [题解](./贪心/贪心策略/先枚举，再贪心.md#3085.-成为-k-特殊字符串需要删除的最少字符数)
 ### 双序列配对
 
 - [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/) [题解](./贪心/贪心策略/双序列配对.md#455.-分发饼干)
@@ -649,9 +675,6 @@ Table of Contents
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
 - [2070. 每一个查询的最大美丽值](https://leetcode.cn/problems/most-beautiful-item-for-each-query/) [题解](./离线算法.md#2070.-每一个查询的最大美丽值)
-# 经典题单
-
-- [03xf](./经典题单.md#03xf)
 # 脑筋急转弯
 
 - [189. 轮转数组](https://leetcode.cn/problems/rotate-array/) [题解](./脑筋急转弯.md#189.-轮转数组)
@@ -662,11 +685,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **286**
+Total problems: **296**
 
 Still working on ...
 
-Last updated: 2025-05-28 10:38:03
+Last updated: 2025-06-25 09:21:28
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

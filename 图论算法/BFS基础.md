@@ -146,3 +146,53 @@ class Solution:
                         q.append((next_word, step + 1))
         return 0
 ```
+# [1298. 你能从盒子里获得的最大糖果数](https://leetcode.cn/problems/maximum-candies-you-can-get-from-boxes/)
+给你 `n` 个盒子，每个盒子的格式为 `[status, candies, keys, containedBoxes]` ，其中：
+
+- 状态字 `status[i]`：整数，如果 `box[i]` 是开的，那么是 **1** ，否则是 **0** 。
+- 糖果数 `candies[i]`: 整数，表示 `box[i]` 中糖果的数目。
+- 钥匙 `keys[i]`：数组，表示你打开 `box[i]` 后，可以得到一些盒子的钥匙，每个元素分别为该钥匙对应盒子的下标。
+- 内含的盒子 `containedBoxes[i]`：整数，表示放在 `box[i]` 里的盒子所对应的下标。
+
+给你一个 `initialBoxes` 数组，表示你现在得到的盒子，你可以获得里面的糖果，也可以用盒子里的钥匙打开新的盒子，还可以继续探索从这个盒子里找到的其他盒子。
+
+请你按照上述规则，返回可以获得糖果的 **最大数目** 。
+
+> BFS + hash
+```python
+class Solution:
+    def maxCandies(self, status: List[int], candies: List[int], keys: List[List[int]], containedBoxes: List[List[int]], initialBoxes: List[int]) -> int:
+        q = deque() # 当前可访问+已经开启的盒子
+        has, took = set(initialBoxes), set() # 当前拥有的盒子，已经打开的盒子
+        ans = 0
+
+        for box in initialBoxes:
+            if status[box]:
+                q.append(box)
+                took.add(box)
+                ans += candies[box]
+
+        while q:
+            box = q.popleft()
+            # 获取盒子中的每一个钥匙
+            for k in keys[box]: 
+                # 如果钥匙对应的盒子未开启，则开启
+                if not status[k]:
+                    status[k] = 1
+                    # 如果钥匙对应的盒子在拥有的盒子中，并且未打开，则加入队列
+                    if k in has and k not in took:
+                        q.append(k)
+                        took.add(k)
+                        ans += candies[k]
+
+            # 获取盒子中的每一个子盒子
+            for b in containedBoxes[box]:
+                has.add(b)
+                # 如果子盒子未打开，则开启
+                if b not in took:
+                    if status[b]:
+                        q.append(b)
+                        took.add(b)
+                        ans += candies[b]
+        return ans
+```

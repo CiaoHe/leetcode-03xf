@@ -21,6 +21,7 @@ Table of Contents
 ### 前缀和优化DP
 
 - [3251. 单调数组对的数目 II](https://leetcode.cn/problems/find-the-count-of-monotonic-pairs-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3251.-单调数组对的数目-ii)
+- [3333. 找到初始输入字符串 II](https://leetcode.cn/problems/find-the-original-typed-string-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3333.-找到初始输入字符串-ii)
 ## 12-树形DP
 
 ### 其他树形DP
@@ -93,6 +94,9 @@ Table of Contents
 ### 一维DP
 
 - [2944. 购买水果需要的最少金币数](https://leetcode.cn/problems/minimum-number-of-coins-for-fruits/) [题解](./DP/7-其他线形DP/一维DP.md#2944.-购买水果需要的最少金币数)
+### 不相交区间
+
+- [1751. 最多可以参加的会议数目 II](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended-ii/) [题解](./DP/7-其他线形DP/不相交区间.md#1751.-最多可以参加的会议数目-ii)
 ### 合法子序列DP(特殊子序列DP)
 
 - [2900. 最长相邻不相等子序列 I](https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-i/) [题解](./DP/7-其他线形DP/合法子序列DP(特殊子序列DP).md#2900.-最长相邻不相等子序列-i)
@@ -237,6 +241,9 @@ Table of Contents
 - [137. 只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) [题解](./位运算/位运算（其他）.md#137.-只出现一次的数字-ii)
 - [201. 数字范围按位与](https://leetcode.cn/problems/bitwise-and-of-numbers-range/) [题解](./位运算/位运算（其他）.md#201.-数字范围按位与)
 - [782. 变为棋盘](https://leetcode.cn/problems/transform-to-chessboard/) [题解](./位运算/位运算（其他）.md#782.-变为棋盘)
+## 其他
+
+- [3307. 找出第 K 个字符 II](https://leetcode.cn/problems/find-the-k-th-character-in-string-game-ii/) [题解](./位运算/其他.md#3307.-找出第-k-个字符-ii)
 ## 拆位or贡献法
 
 - [2275. 按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) [题解](./位运算/拆位or贡献法.md#2275.-按位与结果大于零的最长组合)
@@ -280,6 +287,7 @@ Table of Contents
 ## 相向双指针
 
 - [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) [题解](./双指针/相向双指针.md#11.-盛最多水的容器)
+- [1498. 满足条件的子序列数目](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) [题解](./双指针/相向双指针.md#1498.-满足条件的子序列数目)
 # 回溯
 
 ## 入门
@@ -358,6 +366,7 @@ Table of Contents
 - [218. 天际线问题](https://leetcode.cn/problems/the-skyline-problem/) [题解](./堆(优先队列)/堆（进阶）.md#218.-天际线问题)
 - [3266. K 次乘运算后的最终数组 II](https://leetcode.cn/problems/final-array-state-after-k-multiplication-operations-ii/) [题解](./堆(优先队列)/堆（进阶）.md#3266.-k-次乘运算后的最终数组-ii)
 - [1705. 吃苹果的最大数目](https://leetcode.cn/problems/maximum-number-of-eaten-apples/) [题解](./堆(优先队列)/堆（进阶）.md#1705.-吃苹果的最大数目)
+- [1353. 最多可以参加的会议数目](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended/) [题解](./堆(优先队列)/堆（进阶）.md#1353.-最多可以参加的会议数目)
 ## 对顶堆（滑动窗口第K小或者大）
 
 - [295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) [题解](./堆(优先队列)/对顶堆（滑动窗口第K小或者大）.md#295.-数据流的中位数)
@@ -397,6 +406,9 @@ Table of Contents
 - [定义](./字符串/Z函数(扩展KMP).md#定义)
 - [使用](./字符串/Z函数(扩展KMP).md#使用)
 - [3292. 形成目标字符串需要的最少字符串数 II](https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/) [题解](./字符串/Z函数(扩展KMP).md#3292.-形成目标字符串需要的最少字符串数-ii)
+## 子序列自动机
+
+- [2014. 重复 K 次的最长子序列](https://leetcode.cn/problems/longest-subsequence-repeated-k-times/) [题解](./字符串/子序列自动机.md#2014.-重复-k-次的最长子序列)
 ## 字符串hash
 
 - [3138. 同位字符串连接的最小长度](https://leetcode.cn/problems/minimum-length-of-anagram-concatenation/) [题解](./字符串/字符串hash.md#3138.-同位字符串连接的最小长度)
@@ -681,15 +693,16 @@ Table of Contents
 - [6. Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/) [题解](./脑筋急转弯.md#6.-z-字形变换)
 - [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) [题解](./脑筋急转弯.md#406.-根据身高重建队列)
 - [781. 森林中的兔子](https://leetcode.cn/problems/rabbits-in-forest/) [题解](./脑筋急转弯.md#781.-森林中的兔子)
+- [2311. 小于等于 K 的最长二进制子序列](https://leetcode.cn/problems/longest-binary-subsequence-less-than-or-equal-to-k/) [题解](./脑筋急转弯.md#2311.-小于等于-k-的最长二进制子序列)
 
 
 # Summary
 
-Total problems: **296**
+Total problems: **303**
 
 Still working on ...
 
-Last updated: 2025-06-25 09:21:28
+Last updated: 2025-07-08 09:51:18
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

@@ -276,6 +276,9 @@ Table of Contents
 - [85. 最大矩形](https://leetcode.cn/problems/maximal-rectangle/) [题解](./单调栈/矩形.md#85.-最大矩形)
 # 双指针
 
+## 双序列匹配
+
+- [2410. 运动员和训练师的最大匹配数](https://leetcode.cn/problems/maximum-matching-of-players-with-trainers/) [题解](./双指针/双序列匹配.md#2410.-运动员和训练师的最大匹配数)
 ## 同向双指针
 
 - [26. 删除有序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/) [题解](./双指针/同向双指针.md#26.-删除有序数组中的重复项)
@@ -486,6 +489,10 @@ Table of Contents
 - [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/6. 最大公约数(GCD).md#365.-水壶问题)
 ### 7. 最小公倍数(LCM)
 
+### 8. 余数
+
+- [3201. 找出有效子序列的最大长度 I](https://leetcode.cn/problems/find-the-maximum-length-of-valid-subsequence-i/) [题解](./数学/数论/8. 余数.md#3201.-找出有效子序列的最大长度-i)
+- [3202. 找出有效子序列的最大长度 II](https://leetcode.cn/problems/find-the-maximum-length-of-valid-subsequence-ii/) [题解](./数学/数论/8. 余数.md#3202.-找出有效子序列的最大长度-ii)
 ## 杂项
 
 ### 回文数
@@ -584,6 +591,7 @@ Table of Contents
 
 - [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#30.-串联所有单词的子串)
 - [480. 滑动窗口中位数](https://leetcode.cn/problems/sliding-window-median/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#480.-滑动窗口中位数)
+- [3439. 重新安排会议得到最多空余时间 I](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-i/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#3439.-重新安排会议得到最多空余时间-i)
 # 网格图
 
 ## 网格图 DFS
@@ -607,12 +615,17 @@ Table of Contents
 
 - [1561. 你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1561.-你可以获得的最大硬币数目)
 - [2412. 完成所有交易的初始最少钱数](https://leetcode.cn/problems/minimum-money-required-before-transactions/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2412.-完成所有交易的初始最少钱数)
+- [3440. 重新安排会议得到最多空余时间 II](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-ii/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3440.-重新安排会议得到最多空余时间-ii)
 ### 先枚举，再贪心
 
 - [3085. 成为 K 特殊字符串需要删除的最少字符数](https://leetcode.cn/problems/minimum-deletions-to-make-string-k-special/) [题解](./贪心/贪心策略/先枚举，再贪心.md#3085.-成为-k-特殊字符串需要删除的最少字符数)
 ### 双序列配对
 
 - [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/) [题解](./贪心/贪心策略/双序列配对.md#455.-分发饼干)
+## 区间合并
+
+- [56. 合并区间](https://leetcode.cn/problems/merge-intervals/) [题解](./贪心/区间合并.md#56.-合并区间)
+- [3169. 无需开会的工作日](https://leetcode.cn/problems/count-days-without-meetings/) [题解](./贪心/区间合并.md#3169.-无需开会的工作日)
 ## 区间贪心
 
 - [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) [题解](./贪心/区间贪心.md#45.-跳跃游戏-ii)
@@ -698,11 +711,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **303**
+Total problems: **310**
 
 Still working on ...
 
-Last updated: 2025-07-08 09:51:18
+Last updated: 2025-07-16 10:12:49
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

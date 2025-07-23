@@ -133,6 +133,9 @@ Table of Contents
 ## 其他DP
 
 - [1387. 将整数按权重排序](https://leetcode.cn/problems/sort-integers-by-the-power-value/) [题解](./DP/其他DP.md#1387.-将整数按权重排序)
+## 前后缀分解
+
+- [2163. 删除元素后和的最小差值](https://leetcode.cn/problems/minimum-difference-in-sums-after-removal-of-elements/) [题解](./DP/前后缀分解.md#2163.-删除元素后和的最小差值)
 # graph路径
 
 ## Floyd 求任意两点的最短路径
@@ -538,6 +541,7 @@ Table of Contents
 
 - [1209. 删除字符串中的所有相邻重复项 II](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/) [题解](./栈/邻项消除.md#1209.-删除字符串中的所有相邻重复项-ii)
 - [面试题 01.06. 字符串压缩](https://leetcode.cn/problems/compress-string-lcci/) [题解](./栈/邻项消除.md#面试题-01.06.-字符串压缩)
+- [1717. 删除子字符串的最大得分](https://leetcode.cn/problems/maximum-score-from-removing-substrings/) [题解](./栈/邻项消除.md#1717.-删除子字符串的最大得分)
 # 树状数组和线段树
 
 ## 树状数组
@@ -573,6 +577,7 @@ Table of Contents
 ### 求最长or最大
 
 - [3. 无重复数字的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#3.-无重复数字的最长子串)
+- [1695. 删除子数组的最大得分](https://leetcode.cn/problems/maximum-erasure-value/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#1695.-删除子数组的最大得分)
 - [3297. 统计重新排列后包含另一个字符串的子字符串数目 I](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#3297.-统计重新排列后包含另一个字符串的子字符串数目-i)
 ## 单序列双指针
 
@@ -609,6 +614,10 @@ Table of Contents
 
 - [409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) [题解](./贪心/字符串贪心/回文串贪心.md#409.-最长回文串)
 - [1328. 破坏回文串](https://leetcode.cn/problems/break-a-palindrome/) [题解](./贪心/字符串贪心/回文串贪心.md#1328.-破坏回文串)
+## 思维题目
+
+### 从特殊到一般
+
 ## 贪心策略
 
 ### 从最小or最大开始贪心
@@ -711,11 +720,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **310**
+Total problems: **313**
 
 Still working on ...
 
-Last updated: 2025-07-16 10:16:02
+Last updated: 2025-07-23 09:50:14
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

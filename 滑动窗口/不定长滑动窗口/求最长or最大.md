@@ -84,3 +84,43 @@ class Solution:
             res += left
         return res
 ```
+# [2106. 摘水果](https://leetcode.cn/problems/maximum-fruits-harvested-after-at-most-k-steps/)
+在一个无限的 x 坐标轴上，有许多水果分布在其中某些位置。给你一个二维整数数组 `fruits` ，其中 `fruits[i] = [positioni, amounti]` 表示共有 `amounti` 个水果放置在 `positioni` 上。`fruits` 已经按 `positioni` **升序排列** ，每个 `positioni` **互不相同** 。
+
+另给你两个整数 `startPos` 和 `k` 。最初，你位于 `startPos` 。从任何位置，你可以选择 **向左或者向右** 走。在 x 轴上每移动 **一个单位** ，就记作 **一步** 。你总共可以走 **最多** `k` 步。你每达到一个位置，都会摘掉全部的水果，水果也将从该位置消失（不会再生）。
+
+返回你可以摘到水果的 **最大总数** 。
+
+1. ​**​摘水果的路线​**​：无论你怎么走，最终摘水果的位置一定是一个连续的区间 [l, r]
+2. ​**​步数计算​**​：从 startPos 到这个区间 [l, r] 的步数取决于：
+    - 如果 startPos 在区间左边（startPos ≤ l）：直接向右走到 r，步数 = r - startPos
+    - 如果 startPos 在区间右边（startPos ≥ r）：直接向左走到 l，步数 = startPos - l
+    - 如果 startPos 在区间中间（l < startPos < r）：
+        - 可以左→右：先向左到 l，再向右到 r，步数 = (startPos - l) + (r - l)
+        - 可以右→左：先向右到 r，再向左到 l，步数 = (r - startPos) + (r - l)
+        - 取两者中较小的：步数 = (r - l) + min(startPos - l, r - startPos)
+解决方法：
+3. 使用滑动窗口（双指针）找出所有可能的 [l, r] 区间
+4. 对于每个区间，计算从 startPos 到这个区间的最小步数
+5. 如果步数 ≤ k，则计算这个区间的水果总数，并更新最大值
+
+```python
+class Solution:
+    def maxTotalFruits(self, fruits: List[List[int]], startPos: int, k: int) -> int:
+        # 要么从左到右然后转头，要么从右到左然后转头; 要么就朝着一个方向走完
+        ans = 0
+        i = 0
+        # 假设最后摘水果的范围是[l,r]
+        s = 0
+        # 我们用i,j 来代表 左边的index 和 右边的index
+        for j, (pj, val) in enumerate(fruits):
+            s += val
+            while i<=j and pj - fruits[i][0] + min(
+                abs(startPos - fruits[i][0]),
+                pj - startPos
+            ) > k:
+                s -= fruits[i][1] # 收缩左边界
+                i += 1
+            ans = max(ans, s)
+        return ans
+```

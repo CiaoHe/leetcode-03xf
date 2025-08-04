@@ -142,6 +142,11 @@ Table of Contents
 
 ## 任一点到终点的距离
 
+# 一般树
+
+## 7. DFS时间戳
+
+- [2322. 从树中删除边的最小分数](https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree/) [题解](./一般树/7. DFS时间戳.md#2322.-从树中删除边的最小分数)
 # 二分
 
 ## 二分答案
@@ -237,6 +242,7 @@ Table of Contents
 - [2411. 按位或最大的最小子数组长度](https://leetcode.cn/problems/smallest-subarrays-with-maximum-bitwise-or/) [题解](./位运算/与或-LogTrick.md#2411.-按位或最大的最小子数组长度)
 - [1521. 找到最接近目标值的函数值](https://leetcode.cn/problems/find-a-value-of-a-mysterious-function-closest-to-target/) [题解](./位运算/与或-LogTrick.md#1521.-找到最接近目标值的函数值)
 - [3209. 子数组按位与值为 K 的数目](https://leetcode.cn/problems/number-of-subarrays-with-and-value-of-k/) [题解](./位运算/与或-LogTrick.md#3209.-子数组按位与值为-k-的数目)
+- [2419. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) [题解](./位运算/与或-LogTrick.md#2419.-按位与最大的最长子数组)
 ## 与或（AND OR）的性质
 
 ## 位运算（其他）
@@ -520,6 +526,9 @@ Table of Contents
 ## 容斥原理
 
 - [2929. 给小朋友们分糖果 II](https://leetcode.cn/problems/distribute-candies-among-children-ii/) [题解](./数学/容斥原理.md#2929.-给小朋友们分糖果-ii)
+## 异或（XOR）的性质
+
+- [2683. 相邻值的按位异或](https://leetcode.cn/problems/neighboring-bitwise-xor/) [题解](./数学/异或（XOR）的性质.md#2683.-相邻值的按位异或)
 ## 数值计算
 
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./数学/数值计算.md#69.-x-的平方根)
@@ -569,6 +578,7 @@ Table of Contents
 - [2962. 统计最大元素出现至少 K 次的子数组](https://leetcode.cn/problems/count-subarrays-where-max-element-appears-at-least-k-times/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#2962.-统计最大元素出现至少-k-次的子数组)
 - [2537. 统计好子数组的数目](https://leetcode.cn/problems/count-the-number-of-good-subarrays/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#2537.-统计好子数组的数目)
 - [3298. 统计重新排列后包含另一个字符串的子字符串数目 II](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-ii/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#3298.-统计重新排列后包含另一个字符串的子字符串数目-ii)
+- [904. 水果成篮](https://leetcode.cn/problems/fruit-into-baskets/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#904.-水果成篮)
 ### 求最短or最小
 
 - [209. 长度最小的子数组l](https://leetcode.cn/problems/minimum-size-subarray-sum/description/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#209.-长度最小的子数组l)
@@ -579,6 +589,7 @@ Table of Contents
 - [3. 无重复数字的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#3.-无重复数字的最长子串)
 - [1695. 删除子数组的最大得分](https://leetcode.cn/problems/maximum-erasure-value/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#1695.-删除子数组的最大得分)
 - [3297. 统计重新排列后包含另一个字符串的子字符串数目 I](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#3297.-统计重新排列后包含另一个字符串的子字符串数目-i)
+- [2106. 摘水果](https://leetcode.cn/problems/maximum-fruits-harvested-after-at-most-k-steps/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#2106.-摘水果)
 ## 单序列双指针
 
 ### 相向双指针
@@ -720,11 +731,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **313**
+Total problems: **318**
 
 Still working on ...
 
-Last updated: 2025-07-23 09:53:26
+Last updated: 2025-08-04 09:55:01
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

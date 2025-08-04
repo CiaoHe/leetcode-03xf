@@ -134,3 +134,34 @@ class Solution:
             ans += bisect_right(nums, k, 0, i+1) - bisect_left(nums, k, 0, i+1)
         return ans
 ```
+
+# [2419. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/)
+给你一个长度为 `n` 的整数数组 `nums` 。
+
+考虑 `nums` 中进行 **按位与（bitwise AND）**运算得到的值 **最大** 的 **非空** 子数组。
+
+- 换句话说，令 `k` 是 `nums` **任意** 子数组执行按位与运算所能得到的最大值。那么，只需要考虑那些执行一次按位与运算后等于 `k` 的子数组。
+
+返回满足要求的 **最长** 子数组的长度。
+
+数组的按位与就是对数组中的所有数字进行按位与运算。
+
+**子数组** 是数组中的一个连续元素序列。
+
+- 按位与操作（`&`）的性质是：对于任何子数组，按位与的结果不会比子数组中的任何一个数更大。换句话说，子数组的按位与结果的最大值一定是数组中的某个单独的元素（通常是最大值）。
+- 那么满足要求的子数组必须全部都是max_value, 问题变成了统计 都是max_value的子数组的最长长度
+```python
+class Solution:
+    def longestSubarray(self, nums: List[int]) -> int:
+        max_and = max(nums)
+        max_len = 0
+        cur_len = 0
+
+        for x in nums:
+            if x == max_and:
+                cur_len += 1
+            else:
+                max_len = max(max_len, cur_len)
+                cur_len = 0
+        return max(max_len, cur_len)
+```

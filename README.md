@@ -39,12 +39,14 @@ Table of Contents
 ### 网格图DP-进阶
 
 - [329. 矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#329.-矩阵中的最长递增路径)
+- [[3363. 最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/](./DP/2-网格图DP/网格图DP-进阶.md#[3363.-最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/)
 ## 3-背包
 
 ### 0-1背包
 
 - [494. 目标和](https://leetcode.cn/problems/target-sum/) [题解](./DP/3-背包/0-1背包.md#494.-目标和)
 - [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) [题解](./DP/3-背包/0-1背包.md#416.-分割等和子集)
+- [2787. 将一个数字表示成幂的和的方案数](https://leetcode.cn/problems/ways-to-express-an-integer-as-sum-of-powers/) [题解](./DP/3-背包/0-1背包.md#2787.-将一个数字表示成幂的和的方案数)
 ### 分组背包
 
 - [2218. 从栈中取出 K 个硬币的最大面值和](https://leetcode.cn/problems/maximum-value-of-k-coins-from-piles/) [题解](./DP/3-背包/分组背包.md#2218.-从栈中取出-k-个硬币的最大面值和)
@@ -130,6 +132,7 @@ Table of Contents
 - [688. 骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) [题解](./DP/15-概率期望DP.md#688.-骑士在棋盘上的概率)
 - [576. 出界的路径数](https://leetcode.cn/problems/out-of-boundary-paths/) [题解](./DP/15-概率期望DP.md#576.-出界的路径数)
 - [[minimax] 用mcmc模拟到角落的概率](./DP/15-概率期望DP.md#[minimax]-用mcmc模拟到角落的概率)
+- [808. 分汤](https://leetcode.cn/problems/soup-servings/) [题解](./DP/15-概率期望DP.md#808.-分汤)
 ## 其他DP
 
 - [1387. 将整数按权重排序](https://leetcode.cn/problems/sort-integers-by-the-power-value/) [题解](./DP/其他DP.md#1387.-将整数按权重排序)
@@ -557,6 +560,10 @@ Table of Contents
 
 - [基础：发明树状数组](./树状数组和线段树/树状数组.md#基础：发明树状数组)
 - [315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) [题解](./树状数组和线段树/树状数组.md#315.-计算右侧小于当前元素的个数)
+## 线段树
+
+- [3479. 水果成篮 III](https://leetcode.cn/problems/fruits-into-baskets-iii/) [题解](./树状数组和线段树/线段树.md#3479.-水果成篮-iii)
+- [3477. 水果成篮 II](https://leetcode.cn/problems/fruits-into-baskets-ii/) [题解](./树状数组和线段树/线段树.md#3477.-水果成篮-ii)
 # 滑动窗口
 
 ## 不定长滑动窗口
@@ -731,11 +738,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **318**
+Total problems: **322**
 
 Still working on ...
 
-Last updated: 2025-08-04 09:55:01
+Last updated: 2025-08-12 10:00:48
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

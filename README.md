@@ -109,6 +109,11 @@ Table of Contents
 - [3219. 切蛋糕的最小总开销 II](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) [题解](./DP/7-其他线形DP/多维DP.md#3219.-切蛋糕的最小总开销-ii)
 - [403. 青蛙过河](https://leetcode.cn/problems/frog-jump/) [题解](./DP/7-其他线形DP/多维DP.md#403.-青蛙过河)
 - [2209. 用地毯覆盖后的最少白色砖块](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/) [题解](./DP/7-其他线形DP/多维DP.md#2209.-用地毯覆盖后的最少白色砖块)
+### 子矩形DP
+
+- [1277. 统计全为 1 的正方形子矩阵](https://leetcode.cn/problems/count-square-submatrices-with-all-ones/) [题解](./DP/7-其他线形DP/子矩形DP.md#1277.-统计全为-1-的正方形子矩阵)
+- [221. 最大正方形](https://leetcode.cn/problems/maximal-square/) [题解](./DP/7-其他线形DP/子矩形DP.md#221.-最大正方形)
+- [3148. 矩阵中的最大得分](https://leetcode.cn/problems/maximum-difference-score-in-a-grid/) [题解](./DP/7-其他线形DP/子矩形DP.md#3148.-矩阵中的最大得分)
 ## 8-区间DP
 
 ### 其他区间 DP
@@ -286,6 +291,7 @@ Table of Contents
 
 - [84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/) [题解](./单调栈/矩形.md#84.-柱状图中最大的矩形)
 - [85. 最大矩形](https://leetcode.cn/problems/maximal-rectangle/) [题解](./单调栈/矩形.md#85.-最大矩形)
+- [1504. 统计全 1 子矩形](https://leetcode.cn/problems/count-submatrices-with-all-ones/) [题解](./单调栈/矩形.md#1504.-统计全-1-子矩形)
 # 双指针
 
 ## 双序列匹配
@@ -323,6 +329,7 @@ Table of Contents
 
 - [79. 单词搜索](https://leetcode.cn/problems/word-search/) [题解](./回溯/暴搜+剪枝.md#79.-单词搜索)
 - [2056. 棋盘上有效移动组合的数目](https://leetcode.cn/problems/number-of-valid-move-combinations-on-chessboard/) [题解](./回溯/暴搜+剪枝.md#2056.-棋盘上有效移动组合的数目)
+- [679. 24 点游戏](https://leetcode.cn/problems/24-game/) [题解](./回溯/暴搜+剪枝.md#679.-24-点游戏)
 ## 有重复元素的回溯
 
 - [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/) [题解](./回溯/有重复元素的回溯.md#40.-组合总和-ii)
@@ -577,6 +584,7 @@ Table of Contents
 
 - [3258. 统计满足 K 约束的子字符串数量 I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3258.-统计满足-k-约束的子字符串数量-i)
 - [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3261.-统计满足-k-约束的子字符串数量-ii)
+- [2348. 全 0 子数组的数目](https://leetcode.cn/problems/number-of-zero-filled-subarrays/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#2348.-全-0-子数组的数目)
 #### 越长越合法
 
 - [1358. 包含所有三种字符的子字符串数目](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#1358.-包含所有三种字符的子字符串数目)
@@ -734,15 +742,16 @@ Table of Contents
 - [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) [题解](./脑筋急转弯.md#406.-根据身高重建队列)
 - [781. 森林中的兔子](https://leetcode.cn/problems/rabbits-in-forest/) [题解](./脑筋急转弯.md#781.-森林中的兔子)
 - [2311. 小于等于 K 的最长二进制子序列](https://leetcode.cn/problems/longest-binary-subsequence-less-than-or-equal-to-k/) [题解](./脑筋急转弯.md#2311.-小于等于-k-的最长二进制子序列)
+- [3195. 包含所有 1 的最小矩形面积 I](https://leetcode.cn/problems/find-the-minimum-area-to-cover-all-ones-i/) [题解](./脑筋急转弯.md#3195.-包含所有-1-的最小矩形面积-i)
 
 
 # Summary
 
-Total problems: **322**
+Total problems: **329**
 
 Still working on ...
 
-Last updated: 2025-08-12 10:00:48
+Last updated: 2025-08-22 08:42:24
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

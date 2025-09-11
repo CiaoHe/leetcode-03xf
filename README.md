@@ -22,6 +22,9 @@ Table of Contents
 
 - [3251. 单调数组对的数目 II](https://leetcode.cn/problems/find-the-count-of-monotonic-pairs-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3251.-单调数组对的数目-ii)
 - [3333. 找到初始输入字符串 II](https://leetcode.cn/problems/find-the-original-typed-string-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3333.-找到初始输入字符串-ii)
+- [2327. 知道秘密的人数](https://leetcode.cn/problems/number-of-people-aware-of-a-secret/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#2327.-知道秘密的人数)
+- [1871. 跳跃游戏 VII](https://leetcode.cn/problems/jump-game-vii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#1871.-跳跃游戏-vii)
+- [3473. 长度至少为 M 的 K 个子数组之和](https://leetcode.cn/problems/sum-of-k-subarrays-with-length-at-least-m/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3473.-长度至少为-m-的-k-个子数组之和)
 ## 12-树形DP
 
 ### 其他树形DP
@@ -40,6 +43,7 @@ Table of Contents
 
 - [329. 矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#329.-矩阵中的最长递增路径)
 - [[3363. 最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/](./DP/2-网格图DP/网格图DP-进阶.md#[3363.-最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/)
+- [3459. 最长 V 形对角线段的长度](https://leetcode.cn/problems/length-of-longest-v-shaped-diagonal-segment/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#3459.-最长-v-形对角线段的长度)
 ## 3-背包
 
 ### 0-1背包
@@ -382,6 +386,7 @@ Table of Contents
 - [264. 丑数 II](https://leetcode.cn/problems/ugly-number-ii/) [题解](./堆(优先队列)/堆（基础）.md#264.-丑数-ii)
 - [2931. 购买物品的最大开销](https://leetcode.cn/problems/maximum-spending-after-buying-items/) [题解](./堆(优先队列)/堆（基础）.md#2931.-购买物品的最大开销)
 - [3066. 超过阈值的最少操作数 II](https://leetcode.cn/problems/minimum-operations-to-exceed-threshold-value-ii/) [题解](./堆(优先队列)/堆（基础）.md#3066.-超过阈值的最少操作数-ii)
+- [1792. 最大平均通过率](https://leetcode.cn/problems/maximum-average-pass-ratio/) [题解](./堆(优先队列)/堆（基础）.md#1792.-最大平均通过率)
 ## 堆（进阶）
 
 - [502. IPO](https://leetcode.cn/problems/ipo/) [题解](./堆(优先队列)/堆（进阶）.md#502.-ipo)
@@ -428,6 +433,9 @@ Table of Contents
 - [定义](./字符串/Z函数(扩展KMP).md#定义)
 - [使用](./字符串/Z函数(扩展KMP).md#使用)
 - [3292. 形成目标字符串需要的最少字符串数 II](https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/) [题解](./字符串/Z函数(扩展KMP).md#3292.-形成目标字符串需要的最少字符串数-ii)
+## 其他
+
+- [2785. 将字符串中的元音字母排序](https://leetcode.cn/problems/sort-vowels-in-a-string/) [题解](./字符串/其他.md#2785.-将字符串中的元音字母排序)
 ## 子序列自动机
 
 - [2014. 重复 K 次的最长子序列](https://leetcode.cn/problems/longest-subsequence-repeated-k-times/) [题解](./字符串/子序列自动机.md#2014.-重复-k-次的最长子序列)
@@ -446,12 +454,17 @@ Table of Contents
 - [3362. 零数组变换 III](https://leetcode.cn/problems/zero-array-transformation-iii/) [题解](./差分/一维差分.md#3362.-零数组变换-iii)
 # 常用枚举技巧
 
+## 枚举共同
+
+- [1733. 需要教语言的最少人数](https://leetcode.cn/problems/minimum-number-of-people-to-teach/) [题解](./常用枚举技巧/枚举共同.md#1733.-需要教语言的最少人数)
 ## 枚举右维护左
 
 - [624. 数组列表中的最大距离](https://leetcode.cn/problems/maximum-distance-in-arrays/) [题解](./常用枚举技巧/枚举右维护左.md#624.-数组列表中的最大距离)
 - [2874. 有序三元组中的最大值 II](https://leetcode.cn/problems/maximum-value-of-an-ordered-triplet-ii/) [题解](./常用枚举技巧/枚举右维护左.md#2874.-有序三元组中的最大值-ii)
 - [2364. 统计坏数对的数目](https://leetcode.cn/problems/count-number-of-bad-pairs/) [题解](./常用枚举技巧/枚举右维护左.md#2364.-统计坏数对的数目)
 - [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/) [题解](./常用枚举技巧/枚举右维护左.md#2845.-统计趣味子数组的数目)
+- [3025. 人员站位的方案数 I](https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-i/) [题解](./常用枚举技巧/枚举右维护左.md#3025.-人员站位的方案数-i)
+- [3027. 人员站位的方案数 II](https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/) [题解](./常用枚举技巧/枚举右维护左.md#3027.-人员站位的方案数-ii)
 # 并查集
 
 ## 区间并查集
@@ -585,6 +598,7 @@ Table of Contents
 - [3258. 统计满足 K 约束的子字符串数量 I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3258.-统计满足-k-约束的子字符串数量-i)
 - [3261. 统计满足 K 约束的子字符串数量 II](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-ii/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3261.-统计满足-k-约束的子字符串数量-ii)
 - [2348. 全 0 子数组的数目](https://leetcode.cn/problems/number-of-zero-filled-subarrays/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#2348.-全-0-子数组的数目)
+- [1493. 删掉一个元素以后全为 1 的最长子数组](https://leetcode.cn/problems/longest-subarray-of-1s-after-deleting-one-element/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#1493.-删掉一个元素以后全为-1-的最长子数组)
 #### 越长越合法
 
 - [1358. 包含所有三种字符的子字符串数目](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越长越合法.md#1358.-包含所有三种字符的子字符串数目)
@@ -654,9 +668,14 @@ Table of Contents
 ### 先枚举，再贪心
 
 - [3085. 成为 K 特殊字符串需要删除的最少字符数](https://leetcode.cn/problems/minimum-deletions-to-make-string-k-special/) [题解](./贪心/贪心策略/先枚举，再贪心.md#3085.-成为-k-特殊字符串需要删除的最少字符数)
+- [2749. 得到整数零需要执行的最少操作数](https://leetcode.cn/problems/minimum-operations-to-make-the-integer-zero/) [题解](./贪心/贪心策略/先枚举，再贪心.md#2749.-得到整数零需要执行的最少操作数)
 ### 双序列配对
 
 - [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/) [题解](./贪心/贪心策略/双序列配对.md#455.-分发饼干)
+### 相邻不同
+
+- [3495. 使数组元素都变为零的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-array-elements-zero/) [题解](./贪心/贪心策略/相邻不同.md#3495.-使数组元素都变为零的最少操作次数)
+- [3659. 数组元素分组](https://leetcode.cn/problems/partition-array-into-k-distinct-groups/) [题解](./贪心/贪心策略/相邻不同.md#3659.-数组元素分组)
 ## 区间合并
 
 - [56. 合并区间](https://leetcode.cn/problems/merge-intervals/) [题解](./贪心/区间合并.md#56.-合并区间)
@@ -731,6 +750,8 @@ Table of Contents
 
 - [54. 螺旋矩阵](https://leetcode.cn/problems/spiral-matrix/) [题解](./模拟.md#54.-螺旋矩阵)
 - [1706. 球会落何处](https://leetcode.cn/problems/where-will-the-ball-fall/) [题解](./模拟.md#1706.-球会落何处)
+- [498. 对角线遍历](https://leetcode.cn/problems/diagonal-traverse/) [题解](./模拟.md#498.-对角线遍历)
+- [3446. 按对角线进行矩阵排序](https://leetcode.cn/problems/sort-matrix-by-diagonals/) [题解](./模拟.md#3446.-按对角线进行矩阵排序)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -747,11 +768,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **329**
+Total problems: **344**
 
 Still working on ...
 
-Last updated: 2025-08-22 08:42:24
+Last updated: 2025-09-11 09:28:40
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

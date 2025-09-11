@@ -64,3 +64,56 @@ class Solution:
 
         return ans
 ```
+# [3459. 最长 V 形对角线段的长度](https://leetcode.cn/problems/length-of-longest-v-shaped-diagonal-segment/)
+给你一个大小为 `n x m` 的二维整数矩阵 `grid`，其中每个元素的值为 `0`、`1` 或 `2`。
+
+**V 形对角线段** 定义如下：
+
+- 线段从 `1` 开始。
+- 后续元素按照以下无限序列的模式排列：`2, 0, 2, 0, ...`。
+- 该线段：
+    - 起始于某个对角方向（左上到右下、右下到左上、右上到左下或左下到右上）。
+    - 沿着相同的对角方向继续，保持 **序列模式** 。
+    - 在保持 **序列模式** 的前提下，最多允许 **一次顺时针 90 度转向** 另一个对角方向。
+
+![](https://pic.leetcode.cn/1739609732-jHpPma-length_of_longest3.jpg)
+
+返回最长的 **V 形对角线段** 的 **长度** 。如果不存在有效的线段，则返回 0。
+
+```python
+
+# 用动态规划来确定在斜对角线上移动的最佳位置，同时保持所需的序列。
+# 用(row, col, dir, canTurn, target)表示动态规划状态，跟踪当前位置、方向、是否可以转弯以及当前位置的目标值必须等于target。
+# 转移：
+# 1. 先尝试按照当前位置直行
+# 2. 如果可以转弯，尝试转弯
+# 3. 返回最大长度
+
+class Solution:
+    def lenOfVDiagonal(self, grid: List[List[int]]) -> int:
+        n,m = len(grid), len(grid[0])
+        DIRS = (1, 1), (1, -1), (-1, -1), (-1, 1)
+
+        @cache
+        def dfs(i,j,k,can_turn:bool, target:int) -> int:
+            i += DIRS[k][0]
+            j += DIRS[k][1]
+            if i<0 or i>=n or j<0 or j>=m:
+                return 0
+            if grid[i][j] != target:
+                return 0
+            # 先尝试按照当前位置直行
+            res = dfs(i,j,k,can_turn,2-target) + 1
+            if can_turn:
+                res = max(res, dfs(i, j, (k+1)%4, False, 2-target) + 1)
+            return res
+        
+        ans = 0
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j] != 1:
+                    continue
+                for k in range(4):
+                    ans = max(ans, dfs(i,j,k,True, 2)+1)
+        return ans
+```

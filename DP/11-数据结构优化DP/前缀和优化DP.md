@@ -1,16 +1,3 @@
-2327. 知道秘密的人数 1894
-1871. 跳跃游戏 VII 1896 也可以用滑动窗口优化
-1997. 访问完所有房间的第一天 2260
-3251. 单调数组对的数目 II [[#[3251. 单调数组对的数目 II](https //leetcode.cn/problems/find-the-count-of-monotonic-pairs-ii/)]] 2323 也有组合数学做法
-2478. 完美分割的方案数 2344
-837. 新 21 点 2350
-2463. 最小移动总距离 2454
-3333. 找到初始输入字符串 II ~2600 也有生成函数做法
-2902. 和带限制的子多重集合的数目 2759
-629. K 个逆序对数组
-1977. 划分数字的方案数 2817
-3130. 找出所有稳定的二进制数组 II 2825 也有组合数学做法
-
 # [3251. 单调数组对的数目 II](https://leetcode.cn/problems/find-the-count-of-monotonic-pairs-ii/)
 ```python fold
 
@@ -93,4 +80,149 @@ class Solution:
                 # s[j + 1] - s[j - min(x, j)] 计算的是 dp[i-1][j - x] + ... + dp[i-1][j]
         
         return (ans - sum(dp[m][j] for j in range(k))) % MOD
+```
+
+# [2327. 知道秘密的人数](https://leetcode.cn/problems/number-of-people-aware-of-a-secret/)
+在第 `1` 天，有一个人发现了一个秘密。
+
+给你一个整数 `delay` ，表示每个人会在发现秘密后的 `delay` 天之后，**每天** 给一个新的人 **分享** 秘密。同时给你一个整数 `forget` ，表示每个人在发现秘密 `forget` 天之后会 **忘记** 这个秘密。一个人 **不能** 在忘记秘密那一天及之后的日子里分享秘密。
+
+给你一个整数 `n` ，请你返回在第 `n` 天结束时，知道秘密的人数。由于答案可能会很大，请你将结果对 `109 + 7` **取余** 后返回。
+
+根据题意，任意一天你在银行的资产都可以分为：
+- A 类：可以产生利息的钱；
+- B 类：尚不能产生利息的钱；(cntb)
+- C 类：停止产生利息的钱（不参与计算）。
+
+定义 f\[i] 表示第 i 天的 A 类钱数，这也等价于第 i 天产生了 f\[i] 的利息，这些利息又可以在第 \[i+delay,i+forget) 天产生新的利息。因此，我们可以用 f\[i] 去更新后续的 f\[j]，把 j 在区间 \[i+delay,i+forget) 内的 f\[j] 都加上 f\[i]。
+
+```python
+class Solution:
+    def peopleAwareOfSecret(self, n: int, delay: int, forget: int) -> int:
+        MOD = 10**9 + 7
+        f = [0] * n
+        f[0] = 1
+        cnt_b = 0
+        for i, x in enumerate(f):
+            if i + delay >= n:
+                cnt_b += x
+            for j in range(i+delay, min(i+forget, n)):
+                f[j] = (f[j] + x) % MOD
+        return (f[-1] + cnt_b) % MOD
+```
+
+# [1871. 跳跃游戏 VII](https://leetcode.cn/problems/jump-game-vii/)
+给你一个下标从 **0** 开始的二进制字符串 `s` 和两个整数 `minJump` 和 `maxJump` 。一开始，你在下标 `0` 处，且该位置的值一定为 `'0'` 。当同时满足如下条件时，你可以从下标 `i` 移动到下标 `j` 处：
+
+- `i + minJump <= j <= min(i + maxJump, s.length - 1)` 且
+- `s[j] == '0'`.
+
+如果你可以到达 `s` 的下标 `s.length - 1` 处，请你返回 `true` ，否则返回 `false` 。
+
+
+oom
+```python
+class Solution:
+    def canReach(self, s: str, minJump: int, maxJump: int) -> bool:
+        n = len(s)
+        f = [False] * n
+        f[0] = True
+        for i in range(1, n):
+            if s[i] == '0':
+                for j in range(max(0, i-maxJump), i-minJump+1):
+                    if f[j]:
+                        f[i] = True
+                        break
+        return f[-1]
+```
+用一个计数器 记录在当前窗口[i-maxJump, i-minJump]内能到达的点的个数
+
+1. 我们从左到右遍历 i。
+2. 当 i 向右移动时，窗口 [i-maxJump, i-minJump] 也随之向右滑动。
+3. 在计算 f[i] 之前，我们先更新 reachable_count：
+    - 检查刚刚进入窗口右边界的元素 f[i - minJump]。如果它是 True，则 reachable_count 加一。
+    - 检查刚刚滑出窗口左边界的元素 f[i - maxJump - 1]。如果它是 True，则 reachable_count 减一。
+4. 这样，在 O(1) 的时间内更新完 reachable_count 后，我们只需要判断 reachable_count > 0 并且 s[i] == '0'，就可以知道 f[i] 是否可达。
+```python
+class Solution:
+    def canReach(self, s: str, minJump: int, maxJump: int) -> bool:
+        n = len(s)
+        f = [False] * n
+        f[0] = True
+
+        reach_cnt = 0 # 记录在当前窗口[i-maxJump, i-minJump]内能到达的点的个数
+        for i in range(1, n):
+	        # 
+            if i - minJump >= 0 and f[i-minJump]:
+                reach_cnt += 1
+            if i - (maxJump + 1) >= 0 and f[i-(maxJump + 1)]:
+                reach_cnt -= 1
+            if reach_cnt > 0 and s[i] == '0':
+                f[i] = True
+        return f[-1]
+```
+# [3473. 长度至少为 M 的 K 个子数组之和](https://leetcode.cn/problems/sum-of-k-subarrays-with-length-at-least-m/)
+给你一个整数数组 nums 和两个整数 k 和 m。
+返回数组 nums 中 k 个不重叠子数组的 最大 和，其中每个子数组的长度 至少 为 m。
+子数组 是数组中的一个连续序列。
+
+oom  O(k * n³)
+```python
+class Solution:
+    def maxSum(self, nums: List[int], k: int, m: int) -> int:
+        n = len(nums)
+        # f[i][j]: max sum with i subarrays for the first j elements
+        # i的范围: 0~k
+        # j的范围: 0~n-1
+        f = [[-inf] * (n+1) for _ in range(k+1)]
+        f[0][0] = 0
+        # 枚举子数组个数
+        for i in range(1, k+1):
+            for j in range(1, n+1):
+                f[i][j] = f[i][j-1]
+                # 第i个子数组以j-1结尾，那么起点l必须满足j-l>=m, 所以l<=j-m
+                for l in range(j-m+1):
+                    f[i][j] = max(f[i][j], f[i-1][l] + sum(nums[l:j]))
+        return f[k][n]
+```
+
+
+前缀和优化计算
+```python
+class Solution:
+    def maxSum(self, nums: List[int], k: int, m: int) -> int:
+        n = len(nums)
+        # f[i][j]: max sum with i subarrays for the first j elements
+        # i的范围: 0~k
+        # j的范围: 0~n-1
+        f = [[-inf] * (n+1) for _ in range(k+1)]
+        # 把边界做好 f[0][j] = 0
+        for j in range(n+1):
+            f[0][j] = 0
+        
+        # 为了快速计算nums[l:j]的和，需要预处理前缀和
+        s = [0] * (n+1)
+        for i in range(1, n+1):
+            s[i] = s[i-1] + nums[i-1]
+
+        # 实际上核心转移方程
+        # f[i][j] = max(f[i][j-1], max_{0 <= l <= j-m} (f[i-1][l] + s[j] - s[l]))
+        # 可以把和l无关的项(s[j])提到外面去
+        # f[i][j] = max(f[i][j-1], s[j] + max_{0 <= l <= j-m} (f[i-1][l] - s[l]))
+
+        # 所以我们可以用一个 max_prev来维护 max (f[i-1][l] - s[l])
+
+        for i in range(1, k+1):
+            max_prev = -inf
+            for j in range(i*m, n+1):
+                # option1: 不选以 nums[j-1] 结尾的子数组
+                f[i][j] = f[i][j-1]
+
+                # option2: 选以 nums[j-1] 结尾的子数组
+                # l 的范围选择在[0, j-m]
+                l_candidate = j - m # 新增的l_candidate
+                max_prev = max(max_prev, f[i-1][l_candidate] - s[l_candidate])
+                f[i][j] = max(f[i][j], s[j] + max_prev)
+
+        return f[k][n]
 ```

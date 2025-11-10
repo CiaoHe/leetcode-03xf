@@ -8,6 +8,7 @@ Table of Contents
 
 - [198. 打家劫舍](https://leetcode.cn/problems/house-robber/) [题解](./DP/1-入门DP/打家劫舍.md#198.-打家劫舍)
 - [213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/) [题解](./DP/1-入门DP/打家劫舍.md#213.-打家劫舍-ii)
+- [3186. 施咒的最大总伤害](https://leetcode.cn/problems/maximum-total-damage-with-spell-casting/) [题解](./DP/1-入门DP/打家劫舍.md#3186.-施咒的最大总伤害)
 ### 最大子数组和
 
 - [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) [题解](./DP/1-入门DP/最大子数组和.md#53.-最大子数组和)
@@ -187,6 +188,7 @@ Table of Contents
 ## 最大化最小值
 
 - [1552. 两球之间的磁力](https://leetcode.cn/problems/magnetic-force-between-two-balls/) [题解](./二分/最大化最小值.md#1552.-两球之间的磁力)
+- [2528. 最大化城市的最小电量](https://leetcode.cn/problems/maximize-the-minimum-powered-city/) [题解](./二分/最大化最小值.md#2528.-最大化城市的最小电量)
 ## 最小化最大值
 
 - [410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) [题解](./二分/最小化最大值.md#410.-分割数组的最大值)
@@ -296,6 +298,12 @@ Table of Contents
 - [84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/) [题解](./单调栈/矩形.md#84.-柱状图中最大的矩形)
 - [85. 最大矩形](https://leetcode.cn/problems/maximal-rectangle/) [题解](./单调栈/矩形.md#85.-最大矩形)
 - [1504. 统计全 1 子矩形](https://leetcode.cn/problems/count-submatrices-with-all-ones/) [题解](./单调栈/矩形.md#1504.-统计全-1-子矩形)
+## 进阶
+
+- [3542. 将所有元素变为 0 的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-convert-all-elements-to-zero/) [题解](./单调栈/进阶.md#3542.-将所有元素变为-0-的最少操作次数)
+## 邻项消除
+
+- [2197. 替换数组中的非互质数](https://leetcode.cn/problems/replace-non-coprime-numbers-in-array/) [题解](./单调栈/邻项消除.md#2197.-替换数组中的非互质数)
 # 双指针
 
 ## 双序列匹配
@@ -404,6 +412,10 @@ Table of Contents
 - [731. 我的日程安排表 II](https://leetcode.cn/problems/my-calendar-ii/) [题解](./堆(优先队列)/有序集合.md#731.-我的日程安排表-ii)
 - [732. 我的日程安排表 III](https://leetcode.cn/problems/my-calendar-iii/) [题解](./堆(优先队列)/有序集合.md#732.-我的日程安排表-iii)
 - [2353. 设计食物评分系统](https://leetcode.cn/problems/design-a-food-rating-system/) [题解](./堆(优先队列)/有序集合.md#2353.-设计食物评分系统)
+- [2349. 设计数字容器系统](https://leetcode.cn/problems/design-a-number-container-system/) [题解](./堆(优先队列)/有序集合.md#2349.-设计数字容器系统)
+- [3408. 设计任务管理器](https://leetcode.cn/problems/design-task-manager/) [题解](./堆(优先队列)/有序集合.md#3408.-设计任务管理器)
+- [1912. 设计电影租借系统](https://leetcode.cn/problems/design-movie-rental-system/) [题解](./堆(优先队列)/有序集合.md#1912.-设计电影租借系统)
+- [3321. 计算子数组的 x-sum II](https://leetcode.cn/problems/find-x-sum-of-all-k-long-subarrays-ii/) [题解](./堆(优先队列)/有序集合.md#3321.-计算子数组的-x-sum-ii)
 ## 第K小（大）
 
 - [373. 查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) [题解](./堆(优先队列)/第K小（大）.md#373.-查找和最小的-k-对数字)
@@ -452,6 +464,7 @@ Table of Contents
 - [3355. 零数组变换 I](https://leetcode.cn/problems/zero-array-transformation-i/) [题解](./差分/一维差分.md#3355.-零数组变换-i)
 - [3356. 零数组变换 II](https://leetcode.cn/problems/zero-array-transformation-ii/) [题解](./差分/一维差分.md#3356.-零数组变换-ii)
 - [3362. 零数组变换 III](https://leetcode.cn/problems/zero-array-transformation-iii/) [题解](./差分/一维差分.md#3362.-零数组变换-iii)
+- [3346. 执行操作后元素的最高频率 I](https://leetcode.cn/problems/maximum-frequency-of-an-element-after-performing-operations-i/) [题解](./差分/一维差分.md#3346.-执行操作后元素的最高频率-i)
 # 常用枚举技巧
 
 ## 枚举共同
@@ -474,6 +487,7 @@ Table of Contents
 
 - [模版](./并查集/基础.md#模版)
 - [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/) [题解](./并查集/基础.md#547.-省份数量)
+- [3607. 电网维护](https://leetcode.cn/problems/power-grid-maintenance/) [题解](./并查集/基础.md#3607.-电网维护)
 ## 边权并查集
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
@@ -546,6 +560,9 @@ Table of Contents
 ## 乘法原理
 
 - [1922. 统计好数字的数目](https://leetcode.cn/problems/count-good-numbers/) [题解](./数学/乘法原理.md#1922.-统计好数字的数目)
+## 同余
+
+- [2598. 执行操作后的最大 MEX](https://leetcode.cn/problems/smallest-missing-non-negative-integer-after-operations/) [题解](./数学/同余.md#2598.-执行操作后的最大-mex)
 ## 容斥原理
 
 - [2929. 给小朋友们分糖果 II](https://leetcode.cn/problems/distribute-candies-among-children-ii/) [题解](./数学/容斥原理.md#2929.-给小朋友们分糖果-ii)
@@ -646,6 +663,7 @@ Table of Contents
 - [695. 岛屿的最大面积](https://leetcode.cn/problems/max-area-of-island/) [题解](./网格图/网格图 DFS.md#695.-岛屿的最大面积)
 - [463. 岛屿的周长](https://leetcode.cn/problems/island-perimeter/) [题解](./网格图/网格图 DFS.md#463.-岛屿的周长)
 - [529. 扫雷游戏](https://leetcode.cn/problems/minesweeper/) [题解](./网格图/网格图 DFS.md#529.-扫雷游戏)
+- [417. 太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/) [题解](./网格图/网格图 DFS.md#417.-太平洋大西洋水流问题)
 # 贪心
 
 ## 字符串贪心
@@ -734,6 +752,7 @@ Table of Contents
 - [2012. 数组美丽值求和](https://leetcode.cn/problems/sum-of-beauty-in-the-array/) [题解](./前后缀分解.md#2012.-数组美丽值求和)
 - [2680. 最大或值](https://leetcode.cn/problems/maximum-or/) [题解](./前后缀分解.md#2680.-最大或值)
 - [2711. 对角线上不同值的数量差](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) [题解](./前后缀分解.md#2711.-对角线上不同值的数量差)
+- [3003. 执行操作后的最大分割数量](https://leetcode.cn/problems/maximize-the-number-of-partitions-after-operations/) [题解](./前后缀分解.md#3003.-执行操作后的最大分割数量)
 # 博弈论
 
 - [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
@@ -752,6 +771,7 @@ Table of Contents
 - [1706. 球会落何处](https://leetcode.cn/problems/where-will-the-ball-fall/) [题解](./模拟.md#1706.-球会落何处)
 - [498. 对角线遍历](https://leetcode.cn/problems/diagonal-traverse/) [题解](./模拟.md#498.-对角线遍历)
 - [3446. 按对角线进行矩阵排序](https://leetcode.cn/problems/sort-matrix-by-diagonals/) [题解](./模拟.md#3446.-按对角线进行矩阵排序)
+- [166. 分数到小数](https://leetcode.cn/problems/fraction-to-recurring-decimal/) [题解](./模拟.md#166.-分数到小数)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -764,15 +784,16 @@ Table of Contents
 - [781. 森林中的兔子](https://leetcode.cn/problems/rabbits-in-forest/) [题解](./脑筋急转弯.md#781.-森林中的兔子)
 - [2311. 小于等于 K 的最长二进制子序列](https://leetcode.cn/problems/longest-binary-subsequence-less-than-or-equal-to-k/) [题解](./脑筋急转弯.md#2311.-小于等于-k-的最长二进制子序列)
 - [3195. 包含所有 1 的最小矩形面积 I](https://leetcode.cn/problems/find-the-minimum-area-to-cover-all-ones-i/) [题解](./脑筋急转弯.md#3195.-包含所有-1-的最小矩形面积-i)
+- [3227. 字符串元音游戏](https://leetcode.cn/problems/vowels-game-in-a-string/) [题解](./脑筋急转弯.md#3227.-字符串元音游戏)
 
 
 # Summary
 
-Total problems: **344**
+Total problems: **359**
 
 Still working on ...
 
-Last updated: 2025-09-11 09:28:40
+Last updated: 2025-11-10 11:50:23
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

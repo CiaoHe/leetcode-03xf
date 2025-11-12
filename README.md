@@ -52,6 +52,7 @@ Table of Contents
 - [494. 目标和](https://leetcode.cn/problems/target-sum/) [题解](./DP/3-背包/0-1背包.md#494.-目标和)
 - [416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) [题解](./DP/3-背包/0-1背包.md#416.-分割等和子集)
 - [2787. 将一个数字表示成幂的和的方案数](https://leetcode.cn/problems/ways-to-express-an-integer-as-sum-of-powers/) [题解](./DP/3-背包/0-1背包.md#2787.-将一个数字表示成幂的和的方案数)
+- [474. 一和零](https://leetcode.cn/problems/ones-and-zeroes/) [题解](./DP/3-背包/0-1背包.md#474.-一和零)
 ### 分组背包
 
 - [2218. 从栈中取出 K 个硬币的最大面值和](https://leetcode.cn/problems/maximum-value-of-k-coins-from-piles/) [题解](./DP/3-背包/分组背包.md#2218.-从栈中取出-k-个硬币的最大面值和)
@@ -533,6 +534,7 @@ Table of Contents
 
 - [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](./数学/数论/6. 最大公约数(GCD).md#1979.-找出数组的最大公约数)
 - [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/6. 最大公约数(GCD).md#365.-水壶问题)
+- [2654. 使数组所有元素变成 1 的最少操作次数](https://leetcode.cn/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) [题解](./数学/数论/6. 最大公约数(GCD).md#2654.-使数组所有元素变成-1-的最少操作次数)
 ### 7. 最小公倍数(LCM)
 
 ### 8. 余数
@@ -789,11 +791,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **359**
+Total problems: **361**
 
 Still working on ...
 
-Last updated: 2025-11-10 11:50:23
+Last updated: 2025-11-12 10:02:57
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

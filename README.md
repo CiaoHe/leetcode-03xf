@@ -522,31 +522,31 @@ Table of Contents
 
 ## 数论
 
-### 1. 判断质数
+### 余数
 
-- [埃氏筛](./数学/数论/1. 判断质数.md#埃氏筛)
-- [204. 计数质数](https://leetcode.cn/problems/count-primes/) [题解](./数学/数论/1. 判断质数.md#204.-计数质数)
-### 3. 质因数分解
+- [3201. 找出有效子序列的最大长度 I](https://leetcode.cn/problems/find-the-maximum-length-of-valid-subsequence-i/) [题解](./数学/数论/余数.md#3201.-找出有效子序列的最大长度-i)
+- [3202. 找出有效子序列的最大长度 II](https://leetcode.cn/problems/find-the-maximum-length-of-valid-subsequence-ii/) [题解](./数学/数论/余数.md#3202.-找出有效子序列的最大长度-ii)
+### 判断质数
 
-- [2338. 统计理想数组的数目](https://leetcode.cn/problems/count-the-number-of-ideal-arrays/) [题解](./数学/数论/3. 质因数分解.md#2338.-统计理想数组的数目)
-### 4. 阶乘分解
+- [埃氏筛](./数学/数论/判断质数.md#埃氏筛)
+- [204. 计数质数](https://leetcode.cn/problems/count-primes/) [题解](./数学/数论/判断质数.md#204.-计数质数)
+### 因子
 
-- [172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) [题解](./数学/数论/4. 阶乘分解.md#172.-阶乘后的零)
-### 5. 因子
+- [1492. n 的第 k 个因子](https://leetcode.cn/problems/the-kth-factor-of-n/) [题解](./数学/数论/因子.md#1492.-n-的第-k-个因子)
+- [952. 按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor/) [题解](./数学/数论/因子.md#952.-按公因数计算最大组件大小)
+### 最大公约数(GCD)
 
-- [1492. n 的第 k 个因子](https://leetcode.cn/problems/the-kth-factor-of-n/) [题解](./数学/数论/5. 因子.md#1492.-n-的第-k-个因子)
-- [952. 按公因数计算最大组件大小](https://leetcode.cn/problems/largest-component-size-by-common-factor/) [题解](./数学/数论/5. 因子.md#952.-按公因数计算最大组件大小)
-### 6. 最大公约数(GCD)
+- [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](./数学/数论/最大公约数(GCD).md#1979.-找出数组的最大公约数)
+- [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/最大公约数(GCD).md#365.-水壶问题)
+- [2654. 使数组所有元素变成 1 的最少操作次数](https://leetcode.cn/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) [题解](./数学/数论/最大公约数(GCD).md#2654.-使数组所有元素变成-1-的最少操作次数)
+### 最小公倍数(LCM)
 
-- [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](./数学/数论/6. 最大公约数(GCD).md#1979.-找出数组的最大公约数)
-- [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/6. 最大公约数(GCD).md#365.-水壶问题)
-- [2654. 使数组所有元素变成 1 的最少操作次数](https://leetcode.cn/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) [题解](./数学/数论/6. 最大公约数(GCD).md#2654.-使数组所有元素变成-1-的最少操作次数)
-### 7. 最小公倍数(LCM)
+### 质因数分解
 
-### 8. 余数
+- [2338. 统计理想数组的数目](https://leetcode.cn/problems/count-the-number-of-ideal-arrays/) [题解](./数学/数论/质因数分解.md#2338.-统计理想数组的数目)
+### 阶乘分解
 
-- [3201. 找出有效子序列的最大长度 I](https://leetcode.cn/problems/find-the-maximum-length-of-valid-subsequence-i/) [题解](./数学/数论/8. 余数.md#3201.-找出有效子序列的最大长度-i)
-- [3202. 找出有效子序列的最大长度 II](https://leetcode.cn/problems/find-the-maximum-length-of-valid-subsequence-ii/) [题解](./数学/数论/8. 余数.md#3202.-找出有效子序列的最大长度-ii)
+- [172. 阶乘后的零](https://leetcode.cn/problems/factorial-trailing-zeroes/) [题解](./数学/数论/阶乘分解.md#172.-阶乘后的零)
 ## 杂项
 
 ### 回文数
@@ -810,7 +810,7 @@ Total problems: **369**
 
 Still working on ...
 
-Last updated: 2025-11-28 08:31:34
+Last updated: 2025-11-28 08:34:11
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

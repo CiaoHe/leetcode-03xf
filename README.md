@@ -274,7 +274,7 @@ Table of Contents
 - [2275. 按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) [题解](./位运算/拆位or贡献法.md#2275.-按位与结果大于零的最长组合)
 ## 试填法
 
-- [[3287. 求出数组中最大序列值](https://leetcode.cn/problems/find-the-maximum-sequence-value-of-array/](./位运算/试填法.md#[3287.-求出数组中最大序列值](https://leetcode.cn/problems/find-the-maximum-sequence-value-of-array/)
+- [3287. 求出数组中最大序列值](https://leetcode.cn/problems/find-the-maximum-sequence-value-of-array/) [题解](./位运算/试填法.md#3287.-求出数组中最大序列值)
 # 前缀和
 
 ## 二维前缀和
@@ -806,11 +806,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **368**
+Total problems: **369**
 
 Still working on ...
 
-Last updated: 2025-11-28 08:27:57
+Last updated: 2025-11-28 08:31:34
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

@@ -205,3 +205,39 @@ class Solution:
             dfs(m-1, j, atlantic)
         return list(pacific & atlantic)
 ```
+
+# [3551. 数位和排序需要的最小交换次数](https://leetcode.cn/problems/minimum-swaps-to-sort-by-digit-sum/)
+给你一个由 **互不相同** 的正整数组成的数组 `nums`，需要根据每个数字的数位和（即每一位数字相加求和）按 **升序** 对数组进行排序。如果两个数字的数位和相等，则较小的数字排在前面。
+
+返回将 `nums` 排列为上述排序顺序所需的 **最小** 交换次数。
+
+一次 **交换** 定义为交换数组中两个不同位置的值。
+
+ #置换环
+```python
+class Solution:
+    def minSwaps(self, nums: List[int]) -> int:
+        # 按照数位和从小到大排序，找到需要交换的次数
+        nums = [(sum(int(c) for c in str(num)), num, i) for i, num in enumerate(nums)]
+        nums.sort(key=lambda x: (x[0], x[1]))
+        
+        n = len(nums)
+        pos = [0] * n 
+        for new_idx, (_, _, old_idx) in enumerate(nums):
+            pos[old_idx] = new_idx
+        
+        # 使用visited数组找到置换环
+        visited = [False] * n
+        swaps = 0
+
+        for i in range(n):
+            if not visited[i] and pos[i] != i:
+                cycle_len = 0
+                j = i
+                while not visited[j]:
+                    visited[j] = True
+                    j = pos[j]
+                    cycle_len += 1
+                swaps += cycle_len - 1
+        return swaps
+```

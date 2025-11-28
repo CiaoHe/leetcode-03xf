@@ -38,6 +38,7 @@ Table of Contents
 
 - [64. 最小路径和](https://leetcode.cn/problems/minimum-path-sum/) [题解](./DP/2-网格图DP/网格图DP-基础.md#64.-最小路径和)
 - [63. 不同路径 II](https://leetcode.cn/problems/unique-paths-ii/) [题解](./DP/2-网格图DP/网格图DP-基础.md#63.-不同路径-ii)
+- [2435. 矩阵中和能被 K 整除的路径](https://leetcode.cn/problems/paths-in-matrix-whose-sum-is-divisible-by-k/) [题解](./DP/2-网格图DP/网格图DP-基础.md#2435.-矩阵中和能被-k-整除的路径)
 - [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/) [题解](./DP/2-网格图DP/网格图DP-基础.md#120.-三角形最小路径和)
 - [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) [题解](./DP/2-网格图DP/网格图DP-基础.md#718.-最长重复子数组)
 ### 网格图DP-进阶
@@ -387,6 +388,7 @@ Table of Contents
 - [207. 课程表](https://leetcode.cn/problems/course-schedule/) [题解](./图论算法/拓扑排序.md#207.-课程表)
 - [210. 课程表 II](https://leetcode.cn/problems/course-schedule-ii/) [题解](./图论算法/拓扑排序.md#210.-课程表-ii)
 - [1857. 有向图中最大颜色值](https://leetcode.cn/problems/largest-color-value-in-a-directed-graph/) [题解](./图论算法/拓扑排序.md#1857.-有向图中最大颜色值)
+- [2872. 可以被 K 整除连通块的最大数目](https://leetcode.cn/problems/maximum-number-of-k-divisible-components/) [题解](./图论算法/拓扑排序.md#2872.-可以被-k-整除连通块的最大数目)
 # 堆(优先队列)
 
 ## 堆（基础）
@@ -468,6 +470,9 @@ Table of Contents
 - [3346. 执行操作后元素的最高频率 I](https://leetcode.cn/problems/maximum-frequency-of-an-element-after-performing-operations-i/) [题解](./差分/一维差分.md#3346.-执行操作后元素的最高频率-i)
 # 常用枚举技巧
 
+## 枚举中间
+
+- [1930. 长度为 3 的不同回文子序列](https://leetcode.cn/problems/unique-length-3-palindromic-subsequences/) [题解](./常用枚举技巧/枚举中间.md#1930.-长度为-3-的不同回文子序列)
 ## 枚举共同
 
 - [1733. 需要教语言的最少人数](https://leetcode.cn/problems/minimum-number-of-people-to-teach/) [题解](./常用枚举技巧/枚举共同.md#1733.-需要教语言的最少人数)
@@ -479,6 +484,7 @@ Table of Contents
 - [2845. 统计趣味子数组的数目](https://leetcode.cn/problems/count-of-interesting-subarrays/) [题解](./常用枚举技巧/枚举右维护左.md#2845.-统计趣味子数组的数目)
 - [3025. 人员站位的方案数 I](https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-i/) [题解](./常用枚举技巧/枚举右维护左.md#3025.-人员站位的方案数-i)
 - [3027. 人员站位的方案数 II](https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/) [题解](./常用枚举技巧/枚举右维护左.md#3027.-人员站位的方案数-ii)
+- [3381. 长度可被 K 整除的子数组的最大元素和](https://leetcode.cn/problems/maximum-subarray-sum-with-length-divisible-by-k/) [题解](./常用枚举技巧/枚举右维护左.md#3381.-长度可被-k-整除的子数组的最大元素和)
 # 并查集
 
 ## 区间并查集
@@ -666,8 +672,19 @@ Table of Contents
 - [463. 岛屿的周长](https://leetcode.cn/problems/island-perimeter/) [题解](./网格图/网格图 DFS.md#463.-岛屿的周长)
 - [529. 扫雷游戏](https://leetcode.cn/problems/minesweeper/) [题解](./网格图/网格图 DFS.md#529.-扫雷游戏)
 - [417. 太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/) [题解](./网格图/网格图 DFS.md#417.-太平洋大西洋水流问题)
+- [3551. 数位和排序需要的最小交换次数](https://leetcode.cn/problems/minimum-swaps-to-sort-by-digit-sum/) [题解](./网格图/网格图 DFS.md#3551.-数位和排序需要的最小交换次数)
 # 贪心
 
+## 区间贪心
+
+### 区间覆盖
+
+- [1326. 灌溉花园的最少水龙头数目](https://leetcode.cn/problems/minimum-number-of-taps-to-open-to-water-a-garden/) [题解](./贪心/区间贪心/区间覆盖.md#1326.-灌溉花园的最少水龙头数目)
+- [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) [题解](./贪心/区间贪心/区间覆盖.md#45.-跳跃游戏-ii)
+### 区间选点
+
+- [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) [题解](./贪心/区间贪心/区间选点.md#452.-用最少数量的箭引爆气球)
+- [757. 设置交集大小至少为2](https://leetcode.cn/problems/set-intersection-size-at-least-two/) [题解](./贪心/区间贪心/区间选点.md#757.-设置交集大小至少为2)
 ## 字符串贪心
 
 ### 回文串贪心
@@ -685,6 +702,9 @@ Table of Contents
 - [1561. 你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1561.-你可以获得的最大硬币数目)
 - [2412. 完成所有交易的初始最少钱数](https://leetcode.cn/problems/minimum-money-required-before-transactions/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2412.-完成所有交易的初始最少钱数)
 - [3440. 重新安排会议得到最多空余时间 II](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-ii/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3440.-重新安排会议得到最多空余时间-ii)
+### 从最左or最右开始贪心
+
+- [3228. 将 1 移动到末尾的最大操作次数](https://leetcode.cn/problems/maximum-number-of-operations-to-move-ones-to-the-end/) [题解](./贪心/贪心策略/从最左or最右开始贪心.md#3228.-将-1-移动到末尾的最大操作次数)
 ### 先枚举，再贪心
 
 - [3085. 成为 K 特殊字符串需要删除的最少字符数](https://leetcode.cn/problems/minimum-deletions-to-make-string-k-special/) [题解](./贪心/贪心策略/先枚举，再贪心.md#3085.-成为-k-特殊字符串需要删除的最少字符数)
@@ -700,11 +720,6 @@ Table of Contents
 
 - [56. 合并区间](https://leetcode.cn/problems/merge-intervals/) [题解](./贪心/区间合并.md#56.-合并区间)
 - [3169. 无需开会的工作日](https://leetcode.cn/problems/count-days-without-meetings/) [题解](./贪心/区间合并.md#3169.-无需开会的工作日)
-## 区间贪心
-
-- [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) [题解](./贪心/区间贪心.md#45.-跳跃游戏-ii)
-- [1326. 灌溉花园的最少水龙头数目](https://leetcode.cn/problems/minimum-number-of-taps-to-open-to-water-a-garden/) [题解](./贪心/区间贪心.md#1326.-灌溉花园的最少水龙头数目)
-- [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) [题解](./贪心/区间贪心.md#452.-用最少数量的箭引爆气球)
 # 链表
 
 ## 其他
@@ -791,11 +806,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **361**
+Total problems: **368**
 
 Still working on ...
 
-Last updated: 2025-11-12 10:02:57
+Last updated: 2025-11-28 08:27:57
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

@@ -64,7 +64,7 @@ for i in range(n):
 ```
 
 # [3292. 形成目标字符串需要的最少字符串数 II](https://leetcode.cn/problems/minimum-number-of-valid-strings-to-form-target-ii/)
-主要是z函数 + [[45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/)](区间贪心.md#[45.%20跳跃游戏%20II](https%20//leetcode.cn/problems/jump-game-ii/)) / [[1326. 灌溉花园的最少水龙头数目](https://leetcode.cn/problems/minimum-number-of-taps-to-open-to-water-a-garden/)](区间贪心.md#[1326.%20灌溉花园的最少水龙头数目](https%20//leetcode.cn/problems/minimum-number-of-taps-to-open-to-water-a-garden/))]
+主要是z函数 + [[45. 跳跃游戏 II](区间选点.md#[45.%20跳跃游戏%20II](https%20//leetcode.cn/problems/jump-game-ii/)) / [[1326. 灌溉花园的最少水龙头数目](区间选点.md#[1326.%20灌溉花园的最少水龙头数目](https%20//leetcode.cn/problems/minimum-number-of-taps-to-open-to-water-a-garden/))]
 ```python fold
 class Solution:
     def calc_z(self, s:str)->List[int]:

@@ -61,6 +61,9 @@ Table of Contents
 
 - [322. 零钱兑换](https://leetcode.cn/problems/coin-change/) [题解](./DP/3-背包/完全背包.md#322.-零钱兑换)
 - [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/) [题解](./DP/3-背包/完全背包.md#518.-零钱兑换-ii)
+### 树上背包
+
+- [3562. 折扣价交易股票的最大利润](https://leetcode.cn/problems/maximum-profit-from-trading-stocks-with-discounts/) [题解](./DP/3-背包/树上背包.md#3562.-折扣价交易股票的最大利润)
 ## 4-经典线形DP
 
 ### 最长公共子串(LCS)
@@ -70,6 +73,7 @@ Table of Contents
 ### 最长递增子序列 (LIS)
 
 - [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) [题解](./DP/4-经典线形DP/最长递增子序列 (LIS).md#300.-最长递增子序列)
+- [960. 删列造序 III](https://leetcode.cn/problems/delete-columns-to-make-sorted-iii/) [题解](./DP/4-经典线形DP/最长递增子序列 (LIS).md#960.-删列造序-iii)
 ## 5-状态机DP
 
 ### 买卖股票
@@ -80,6 +84,7 @@ Table of Contents
 - [188. 买卖股票的最佳时机 IV](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iv/) [题解](./DP/5-状态机DP/买卖股票.md#188.-买卖股票的最佳时机-iv)
 - [309 买卖股票的最佳时机含冷冻期](./DP/5-状态机DP/买卖股票.md#309-买卖股票的最佳时机含冷冻期)
 - [714 买卖股票的最佳时机含手续费](./DP/5-状态机DP/买卖股票.md#714-买卖股票的最佳时机含手续费)
+- [3573. 买卖股票的最佳时机 V](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-v/) [题解](./DP/5-状态机DP/买卖股票.md#3573.-买卖股票的最佳时机-v)
 ### 其他
 
 - [935. 骑士拨号器](https://leetcode.cn/problems/knight-dialer/) [题解](./DP/5-状态机DP/其他.md#935.-骑士拨号器)
@@ -94,6 +99,7 @@ Table of Contents
 ### 最优划分
 
 - [132. 分割回文串 II](https://leetcode.cn/problems/palindrome-partitioning-ii/) [题解](./DP/6-划分型DP/最优划分.md#132.-分割回文串-ii)
+- [3578. 统计极差最大为 K 的分割方式数](https://leetcode.cn/problems/count-partitions-with-max-min-difference-at-most-k/) [题解](./DP/6-划分型DP/最优划分.md#3578.-统计极差最大为-k-的分割方式数)
 ### 约束划分个数
 
 - [1278. 分割回文串 III](https://leetcode.cn/problems/palindrome-partitioning-iii/) [题解](./DP/6-划分型DP/约束划分个数.md#1278.-分割回文串-iii)
@@ -169,6 +175,7 @@ Table of Contents
 ### 求最大
 
 - [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/) [题解](./二分/二分答案/求最大.md#2071.-你可以安排的最多任务数目)
+- [2141. 同时运行 N 台电脑的最长时间](https://leetcode.cn/problems/maximum-running-time-of-n-computers/) [题解](./二分/二分答案/求最大.md#2141.-同时运行-n-台电脑的最长时间)
 ### 第k小or大
 
 - [2040. 两个有序数组的第 K 小乘积](https://leetcode.cn/problems/kth-smallest-product-of-two-sorted-arrays/) [题解](./二分/二分答案/第k小or大.md#2040.-两个有序数组的第-k-小乘积)
@@ -283,9 +290,11 @@ Table of Contents
 ## 前缀和与哈希表
 
 - [2588. 统计美丽子数组数目](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) [题解](./前缀和/前缀和与哈希表.md#2588.-统计美丽子数组数目)
+- [1590. 使数组和能被 P 整除](https://leetcode.cn/problems/make-sum-divisible-by-p/) [题解](./前缀和/前缀和与哈希表.md#1590.-使数组和能被-p-整除)
 ## 基础
 
 - [2270. 分割数组的方案数](https://leetcode.cn/problems/number-of-ways-to-split-array/) [题解](./前缀和/基础.md#2270.-分割数组的方案数)
+- [3652. 按策略买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-using-strategy) [题解](./前缀和/基础.md#3652. 按策略买卖股票的最佳时机)
 # 单调栈
 
 ## 基础
@@ -485,6 +494,8 @@ Table of Contents
 - [3025. 人员站位的方案数 I](https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-i/) [题解](./常用枚举技巧/枚举右维护左.md#3025.-人员站位的方案数-i)
 - [3027. 人员站位的方案数 II](https://leetcode.cn/problems/find-the-number-of-ways-to-place-people-ii/) [题解](./常用枚举技巧/枚举右维护左.md#3027.-人员站位的方案数-ii)
 - [3381. 长度可被 K 整除的子数组的最大元素和](https://leetcode.cn/problems/maximum-subarray-sum-with-length-divisible-by-k/) [题解](./常用枚举技巧/枚举右维护左.md#3381.-长度可被-k-整除的子数组的最大元素和)
+- [3623. 统计梯形的数目 I](https://leetcode.cn/problems/count-number-of-trapezoids-i/) [题解](./常用枚举技巧/枚举右维护左.md#3623.-统计梯形的数目-i)
+- [3625. 统计梯形的数目 II](https://leetcode.cn/problems/count-number-of-trapezoids-ii/) [题解](./常用枚举技巧/枚举右维护左.md#3625.-统计梯形的数目-ii)
 # 并查集
 
 ## 区间并查集
@@ -495,6 +506,7 @@ Table of Contents
 - [模版](./并查集/基础.md#模版)
 - [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/) [题解](./并查集/基础.md#547.-省份数量)
 - [3607. 电网维护](https://leetcode.cn/problems/power-grid-maintenance/) [题解](./并查集/基础.md#3607.-电网维护)
+- [2092. 找出知晓秘密的所有专家](https://leetcode.cn/problems/find-all-people-with-secret/) [题解](./并查集/基础.md#2092.-找出知晓秘密的所有专家)
 ## 边权并查集
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
@@ -505,6 +517,7 @@ Table of Contents
 
 - [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii/) [题解](./排序/其他.md#324.-摆动排序-ii)
 - [2274. 不含特殊楼层的最大连续楼层数](https://leetcode.cn/problems/maximum-consecutive-floors-without-special-floors/) [题解](./排序/其他.md#2274.-不含特殊楼层的最大连续楼层数)
+- [3531. 统计被覆盖的建筑](https://leetcode.cn/problems/count-covered-buildings/) [题解](./排序/其他.md#3531.-统计被覆盖的建筑)
 ## 归并排序
 
 - [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) [题解](./排序/归并排序.md#lcr-170.-交易逆序对的总数)
@@ -568,6 +581,7 @@ Table of Contents
 ## 乘法原理
 
 - [1922. 统计好数字的数目](https://leetcode.cn/problems/count-good-numbers/) [题解](./数学/乘法原理.md#1922.-统计好数字的数目)
+- [2147. 分隔长廊的方案数](https://leetcode.cn/problems/number-of-ways-to-divide-a-long-corridor/) [题解](./数学/乘法原理.md#2147.-分隔长廊的方案数)
 ## 同余
 
 - [2598. 执行操作后的最大 MEX](https://leetcode.cn/problems/smallest-missing-non-negative-integer-after-operations/) [题解](./数学/同余.md#2598.-执行操作后的最大-mex)
@@ -705,6 +719,7 @@ Table of Contents
 ### 从最左or最右开始贪心
 
 - [3228. 将 1 移动到末尾的最大操作次数](https://leetcode.cn/problems/maximum-number-of-operations-to-move-ones-to-the-end/) [题解](./贪心/贪心策略/从最左or最右开始贪心.md#3228.-将-1-移动到末尾的最大操作次数)
+- [955. 删列造序 II](https://leetcode.cn/problems/delete-columns-to-make-sorted-ii/) [题解](./贪心/贪心策略/从最左or最右开始贪心.md#955.-删列造序-ii)
 ### 先枚举，再贪心
 
 - [3085. 成为 K 特殊字符串需要删除的最少字符数](https://leetcode.cn/problems/minimum-deletions-to-make-string-k-special/) [题解](./贪心/贪心策略/先枚举，再贪心.md#3085.-成为-k-特殊字符串需要删除的最少字符数)
@@ -789,6 +804,7 @@ Table of Contents
 - [498. 对角线遍历](https://leetcode.cn/problems/diagonal-traverse/) [题解](./模拟.md#498.-对角线遍历)
 - [3446. 按对角线进行矩阵排序](https://leetcode.cn/problems/sort-matrix-by-diagonals/) [题解](./模拟.md#3446.-按对角线进行矩阵排序)
 - [166. 分数到小数](https://leetcode.cn/problems/fraction-to-recurring-decimal/) [题解](./模拟.md#166.-分数到小数)
+- [3433. 统计用户被提及情况](https://leetcode.cn/problems/count-mentions-per-user/) [题解](./模拟.md#3433.-统计用户被提及情况)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -802,15 +818,17 @@ Table of Contents
 - [2311. 小于等于 K 的最长二进制子序列](https://leetcode.cn/problems/longest-binary-subsequence-less-than-or-equal-to-k/) [题解](./脑筋急转弯.md#2311.-小于等于-k-的最长二进制子序列)
 - [3195. 包含所有 1 的最小矩形面积 I](https://leetcode.cn/problems/find-the-minimum-area-to-cover-all-ones-i/) [题解](./脑筋急转弯.md#3195.-包含所有-1-的最小矩形面积-i)
 - [3227. 字符串元音游戏](https://leetcode.cn/problems/vowels-game-in-a-string/) [题解](./脑筋急转弯.md#3227.-字符串元音游戏)
+- [2211. 统计道路上的碰撞次数](https://leetcode.cn/problems/count-collisions-on-a-road/) [题解](./脑筋急转弯.md#2211.-统计道路上的碰撞次数)
+- [3577. 统计计算机解锁顺序排列数](https://leetcode.cn/problems/count-the-number-of-computer-unlocking-permutations/) [题解](./脑筋急转弯.md#3577.-统计计算机解锁顺序排列数)
 
 
 # Summary
 
-Total problems: **369**
+Total problems: **385**
 
 Still working on ...
 
-Last updated: 2025-11-28 08:34:50
+Last updated: 2025-12-22 08:32:29
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

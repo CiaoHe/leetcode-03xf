@@ -32,3 +32,31 @@ class Solution:
                     i += 1
         return ans
 ```
+# [955. 删列造序 II](https://leetcode.cn/problems/delete-columns-to-make-sorted-ii/)
+给定由 `n` 个字符串组成的数组 `strs`，其中每个字符串长度相等。
+
+选取一个删除索引序列，对于 `strs` 中的每个字符串，删除对应每个索引处的字符。
+
+比如，有 `strs = ["abcdef", "uvwxyz"]`，删除索引序列 `{0, 2, 3}`，删除后 `strs` 为`["bef", "vyz"]`。
+
+假设，我们选择了一组删除索引 `answer`，那么在执行删除操作之后，最终得到的数组的元素是按 **字典序**（`strs[0] <= strs[1] <= strs[2] ... <= strs[n - 1]`）排列的，然后请你返回 `answer.length` 的最小可能值。
+
+```python
+class Solution:
+    def minDeletionSize(self, strs: List[str]) -> int:
+        n = len(strs)
+        m = len(strs[0])
+        ans = 0
+        a = [''] * n #维护每个str删除列后剩下的chars
+
+        for j in range(m):
+            for i in range(n-1):
+	            # 如果当前这一列保留 会导致s[i]>s[i+1]那么需要舍去
+                if a[i] + strs[i][j] > a[i+1] + strs[i+1][j]:
+                    ans += 1
+                    break
+            else:
+                for i in range(n):
+                    a[i] += strs[i][j]
+        return ans
+```

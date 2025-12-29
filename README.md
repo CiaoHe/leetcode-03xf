@@ -112,6 +112,7 @@ Table of Contents
 ### 不相交区间
 
 - [1751. 最多可以参加的会议数目 II](https://leetcode.cn/problems/maximum-number-of-events-that-can-be-attended-ii/) [题解](./DP/7-其他线形DP/不相交区间.md#1751.-最多可以参加的会议数目-ii)
+- [2054. 两个最好的不重叠活动](https://leetcode.cn/problems/two-best-non-overlapping-events) [题解](./DP/7-其他线形DP/不相交区间.md#2054. 两个最好的不重叠活动)
 ### 合法子序列DP(特殊子序列DP)
 
 - [2900. 最长相邻不相等子序列 I](https://leetcode.cn/problems/longest-unequal-adjacent-groups-subsequence-i/) [题解](./DP/7-其他线形DP/合法子序列DP(特殊子序列DP).md#2900.-最长相邻不相等子序列-i)
@@ -353,6 +354,7 @@ Table of Contents
 - [79. 单词搜索](https://leetcode.cn/problems/word-search/) [题解](./回溯/暴搜+剪枝.md#79.-单词搜索)
 - [2056. 棋盘上有效移动组合的数目](https://leetcode.cn/problems/number-of-valid-move-combinations-on-chessboard/) [题解](./回溯/暴搜+剪枝.md#2056.-棋盘上有效移动组合的数目)
 - [679. 24 点游戏](https://leetcode.cn/problems/24-game/) [题解](./回溯/暴搜+剪枝.md#679.-24-点游戏)
+- [756. 金字塔转换矩阵](https://leetcode.cn/problems/pyramid-transition-matrix/) [题解](./回溯/暴搜+剪枝.md#756.-金字塔转换矩阵)
 ## 有重复元素的回溯
 
 - [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/) [题解](./回溯/有重复元素的回溯.md#40.-组合总和-ii)
@@ -400,6 +402,9 @@ Table of Contents
 - [2872. 可以被 K 整除连通块的最大数目](https://leetcode.cn/problems/maximum-number-of-k-divisible-components/) [题解](./图论算法/拓扑排序.md#2872.-可以被-k-整除连通块的最大数目)
 # 堆(优先队列)
 
+## 双堆模拟
+
+- [2402. 会议室 III](https://leetcode.cn/problems/meeting-rooms-iii/) [题解](./堆(优先队列)/双堆模拟.md#2402.-会议室-iii)
 ## 堆（基础）
 
 - [215. 数组中的第K个最大元素](https://leetcode.cn/problems/kth-largest-element-in-an-array/) [题解](./堆(优先队列)/堆（基础）.md#215.-数组中的第k个最大元素)
@@ -716,6 +721,7 @@ Table of Contents
 - [1561. 你可以获得的最大硬币数目](https://leetcode.cn/problems/maximum-number-of-coins-you-can-get/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1561.-你可以获得的最大硬币数目)
 - [2412. 完成所有交易的初始最少钱数](https://leetcode.cn/problems/minimum-money-required-before-transactions/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2412.-完成所有交易的初始最少钱数)
 - [3440. 重新安排会议得到最多空余时间 II](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-ii/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3440.-重新安排会议得到最多空余时间-ii)
+- [3075. 幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3075. 幸福值最大化的选择方案)
 ### 从最左or最右开始贪心
 
 - [3228. 将 1 移动到末尾的最大操作次数](https://leetcode.cn/problems/maximum-number-of-operations-to-move-ones-to-the-end/) [题解](./贪心/贪心策略/从最左or最右开始贪心.md#3228.-将-1-移动到末尾的最大操作次数)
@@ -785,6 +791,7 @@ Table of Contents
 - [2680. 最大或值](https://leetcode.cn/problems/maximum-or/) [题解](./前后缀分解.md#2680.-最大或值)
 - [2711. 对角线上不同值的数量差](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) [题解](./前后缀分解.md#2711.-对角线上不同值的数量差)
 - [3003. 执行操作后的最大分割数量](https://leetcode.cn/problems/maximize-the-number-of-partitions-after-operations/) [题解](./前后缀分解.md#3003.-执行操作后的最大分割数量)
+- [2483. 商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) [题解](./前后缀分解.md#2483.-商店的最少代价)
 # 博弈论
 
 - [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
@@ -824,11 +831,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **385**
+Total problems: **390**
 
 Still working on ...
 
-Last updated: 2025-12-22 08:32:29
+Last updated: 2025-12-29 08:47:07
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

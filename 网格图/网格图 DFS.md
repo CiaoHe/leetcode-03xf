@@ -239,3 +239,55 @@ class Solution:
                 swaps += cycle_len - 1
         return swaps
 ```
+
+# [1970. 你能穿过矩阵的最后一天](https://leetcode.cn/problems/last-day-where-you-can-still-cross/)
+
+难度分 2123[第254场周赛Q4](https://leetcode.cn/contest/weekly-contest-254 "访问LeetCode竞赛链接")等级 6 困难
+
+给你一个下标从 **1** 开始的二进制矩阵，其中 `0` 表示陆地，`1` 表示水域。同时给你 `row` 和 `col` 分别表示矩阵中行和列的数目。
+
+一开始在第 `0` 天，**整个** 矩阵都是 **陆地** 。但每一天都会有一块新陆地被 **水** 淹没变成水域。给你一个下标从 **1** 开始的二维数组 `cells` ，其中 `cells[i] = [ri, ci]` 表示在第 `i` 天，第 `ri` 行 `ci` 列（下标都是从 **1** 开始）的陆地会变成 **水域** （也就是 `0` 变成 `1` ）。
+
+你想知道从矩阵最 **上面** 一行走到最 **下面** 一行，且只经过陆地格子的 **最后一天** 是哪一天。你可以从最上面一行的 **任意** 格子出发，到达最下面一行的 **任意** 格子。你只能沿着 **四个** 基本方向移动（也就是上下左右）。
+
+请返回只经过陆地格子能从最 **上面** 一行走到最 **下面** 一行的 **最后一天** 。
+
+```python
+class Solution:
+    def latestDayToCross(self, row: int, col: int, cells: List[List[int]]) -> int:
+        def can_cross(day: int) -> bool:
+            # 不做grid, 只记录water
+            water = set()
+            for i in range(day):
+                water.add((cells[i][0]-1, cells[i][1]-1))
+
+            visited = set()
+            stack = deque()
+
+            for j in range(col):
+                if (0, j) not in water:
+                    stack.appendleft((0, j))
+                    visited.add((0, j))
+
+            while stack:
+                i, j = stack.popleft()
+                if i == row-1:
+                    return True
+                for di, dj in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+                    ni, nj = i+di, j+dj
+                    if 0 <= ni < row and 0 <= nj < col and (ni, nj) not in water and (ni, nj) not in visited:
+                        stack.appendleft((ni, nj))
+                        visited.add((ni, nj))
+            return False
+
+        # 二分法
+        left, right = 0, len(cells)
+        ans = 0
+        while left < right:
+            mid = (left + right + 1) // 2
+            if can_cross(mid):
+                left = mid
+            else:
+                right = mid - 1
+        return left
+```

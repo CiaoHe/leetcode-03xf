@@ -138,6 +138,9 @@ Table of Contents
 ### 其他状态压缩DP
 
 - [1931. 用三种不同颜色为网格涂色](https://leetcode.cn/problems/painting-a-grid-with-three-different-colors/) [题解](./DP/9-状态压缩DP/其他状态压缩DP.md#1931.-用三种不同颜色为网格涂色)
+### 轮廓线DP
+
+- [1411. 给 N x 3 网格图涂色的方案数](https://leetcode.cn/problems/number-of-ways-to-paint-n-3-grid/) [题解](./DP/9-状态压缩DP/轮廓线DP.md#1411.-给-n-x-3-网格图涂色的方案数)
 ## 10-数位DP
 
 - [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/) [题解](./DP/10-数位DP.md#60.-排列序列)
@@ -692,6 +695,7 @@ Table of Contents
 - [529. 扫雷游戏](https://leetcode.cn/problems/minesweeper/) [题解](./网格图/网格图 DFS.md#529.-扫雷游戏)
 - [417. 太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/) [题解](./网格图/网格图 DFS.md#417.-太平洋大西洋水流问题)
 - [3551. 数位和排序需要的最小交换次数](https://leetcode.cn/problems/minimum-swaps-to-sort-by-digit-sum/) [题解](./网格图/网格图 DFS.md#3551.-数位和排序需要的最小交换次数)
+- [1970. 你能穿过矩阵的最后一天](https://leetcode.cn/problems/last-day-where-you-can-still-cross/) [题解](./网格图/网格图 DFS.md#1970.-你能穿过矩阵的最后一天)
 # 贪心
 
 ## 区间贪心
@@ -827,15 +831,16 @@ Table of Contents
 - [3227. 字符串元音游戏](https://leetcode.cn/problems/vowels-game-in-a-string/) [题解](./脑筋急转弯.md#3227.-字符串元音游戏)
 - [2211. 统计道路上的碰撞次数](https://leetcode.cn/problems/count-collisions-on-a-road/) [题解](./脑筋急转弯.md#2211.-统计道路上的碰撞次数)
 - [3577. 统计计算机解锁顺序排列数](https://leetcode.cn/problems/count-the-number-of-computer-unlocking-permutations/) [题解](./脑筋急转弯.md#3577.-统计计算机解锁顺序排列数)
+- [1975. 最大方阵和](https://leetcode.cn/problems/maximum-matrix-sum/) [题解](./脑筋急转弯.md#1975.-最大方阵和)
 
 
 # Summary
 
-Total problems: **390**
+Total problems: **393**
 
 Still working on ...
 
-Last updated: 2025-12-29 08:47:07
+Last updated: 2026-01-05 09:51:34
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

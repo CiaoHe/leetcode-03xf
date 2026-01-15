@@ -70,6 +70,7 @@ Table of Contents
 
 - [72. 编辑距离](https://leetcode.cn/problems/edit-distance/) [题解](./DP/4-经典线形DP/最长公共子串(LCS).md#72.-编辑距离)
 - [97. 交错字符串](https://leetcode.cn/problems/interleaving-string/) [题解](./DP/4-经典线形DP/最长公共子串(LCS).md#97.-交错字符串)
+- [1458. 两个子序列的最大点积](https://leetcode.cn/problems/max-dot-product-of-two-subsequences/) [题解](./DP/4-经典线形DP/最长公共子串(LCS).md#1458.-两个子序列的最大点积)
 ### 最长递增子序列 (LIS)
 
 - [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/) [题解](./DP/4-经典线形DP/最长递增子序列 (LIS).md#300.-最长递增子序列)
@@ -180,6 +181,9 @@ Table of Contents
 
 - [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/) [题解](./二分/二分答案/求最大.md#2071.-你可以安排的最多任务数目)
 - [2141. 同时运行 N 台电脑的最长时间](https://leetcode.cn/problems/maximum-running-time-of-n-computers/) [题解](./二分/二分答案/求最大.md#2141.-同时运行-n-台电脑的最长时间)
+### 求最小
+
+- [3453. 分割正方形 I](https://leetcode.cn/problems/separate-squares-i/) [题解](./二分/二分答案/求最小.md#3453.-分割正方形-i)
 ### 第k小or大
 
 - [2040. 两个有序数组的第 K 小乘积](https://leetcode.cn/problems/kth-smallest-product-of-two-sorted-arrays/) [题解](./二分/二分答案/第k小or大.md#2040.-两个有序数组的第-k-小乘积)
@@ -221,6 +225,7 @@ Table of Contents
 ## 公共祖先
 
 - [236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) [题解](./二叉树/公共祖先.md#236.-二叉树的最近公共祖先)
+- [865. 具有所有最深节点的最小子树](https://leetcode.cn/problems/smallest-subtree-with-all-the-deepest-nodes/) [题解](./二叉树/公共祖先.md#865.-具有所有最深节点的最小子树)
 ## 其他
 
 - [173. 二叉搜索树迭代器](https://leetcode.cn/problems/binary-search-tree-iterator/) [题解](./二叉树/其他.md#173.-二叉搜索树迭代器)
@@ -239,6 +244,7 @@ Table of Contents
 ## 自底向上DFS
 
 - [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/) [题解](./二叉树/自底向上DFS.md#101.-对称二叉树)
+- [1339. 分裂二叉树的最大乘积](https://leetcode.cn/problems/maximum-product-of-splitted-binary-tree/) [题解](./二叉树/自底向上DFS.md#1339.-分裂二叉树的最大乘积)
 ## 自顶向下DFS
 
 - [104. 二叉树的最大深度](https://leetcode.cn/problems/maximum-depth-of-binary-tree/) [题解](./二叉树/自顶向下DFS.md#104.-二叉树的最大深度)
@@ -477,6 +483,10 @@ Table of Contents
 ## 拓扑排序
 
 - [936. 戳印序列](https://leetcode.cn/problems/stamping-the-sequence/) [题解](./字符串/拓扑排序.md#936.-戳印序列)
+## 最长连续数组
+
+- [128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/) [题解](./字符串/最长连续数组.md#128.-最长连续序列)
+- [2943. 最大化网格图中正方形空洞的面积](https://leetcode.cn/problems/maximize-area-of-square-hole-in-grid/) [题解](./字符串/最长连续数组.md#2943.-最大化网格图中正方形空洞的面积)
 # 差分
 
 ## 一维差分
@@ -623,6 +633,9 @@ Table of Contents
 - [1717. 删除子字符串的最大得分](https://leetcode.cn/problems/maximum-score-from-removing-substrings/) [题解](./栈/邻项消除.md#1717.-删除子字符串的最大得分)
 # 树状数组和线段树
 
+## Lazy线段树
+
+- [3454. 分割正方形 II](https://leetcode.cn/problems/separate-squares-ii/) [题解](./树状数组和线段树/Lazy线段树.md#3454.-分割正方形-ii)
 ## 树状数组
 
 - [基础：发明树状数组](./树状数组和线段树/树状数组.md#基础：发明树状数组)
@@ -836,11 +849,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **393**
+Total problems: **400**
 
 Still working on ...
 
-Last updated: 2026-01-05 10:07:24
+Last updated: 2026-01-15 10:08:44
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

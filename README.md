@@ -44,7 +44,7 @@ Table of Contents
 ### 网格图DP-进阶
 
 - [329. 矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#329.-矩阵中的最长递增路径)
-- [[3363. 最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/](./DP/2-网格图DP/网格图DP-进阶.md#[3363.-最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/)
+- [3363. 最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#3363.-最多可收集的水果数目)
 - [3459. 最长 V 形对角线段的长度](https://leetcode.cn/problems/length-of-longest-v-shaped-diagonal-segment/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#3459.-最长-v-形对角线段的长度)
 ## 3-背包
 
@@ -849,11 +849,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **400**
+Total problems: **401**
 
 Still working on ...
 
-Last updated: 2026-01-15 10:08:44
+Last updated: 2026-01-15 10:09:36
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

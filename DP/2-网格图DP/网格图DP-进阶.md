@@ -18,7 +18,8 @@ class Solution:
                 ans = max(ans, dfs(i,j))
         return ans
 ```
-# [3363. 最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/
+# [3363. 最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/)
+
 有一个游戏，游戏由 `n x n` 个房间网格状排布组成。
 
 给你一个大小为 `n x n` 的二维整数数组 `fruits` ，其中 `fruits[i][j]` 表示房间 `(i, j)` 中的水果数目。有三个小朋友 **一开始** 分别从角落房间 `(0, 0)` ，`(0, n - 1)` 和 `(n - 1, 0)` 出发。

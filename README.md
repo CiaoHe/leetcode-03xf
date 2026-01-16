@@ -514,6 +514,8 @@ Table of Contents
 - [3381. 长度可被 K 整除的子数组的最大元素和](https://leetcode.cn/problems/maximum-subarray-sum-with-length-divisible-by-k/) [题解](./常用枚举技巧/枚举右维护左.md#3381.-长度可被-k-整除的子数组的最大元素和)
 - [3623. 统计梯形的数目 I](https://leetcode.cn/problems/count-number-of-trapezoids-i/) [题解](./常用枚举技巧/枚举右维护左.md#3623.-统计梯形的数目-i)
 - [3625. 统计梯形的数目 II](https://leetcode.cn/problems/count-number-of-trapezoids-ii/) [题解](./常用枚举技巧/枚举右维护左.md#3625.-统计梯形的数目-ii)
+- [3805. 统计凯撒加密对数目](https://leetcode.cn/problems/count-caesar-cipher-pairs/) [题解](./常用枚举技巧/枚举右维护左.md#3805.-统计凯撒加密对数目)
+- [3804. 中心子数组的数量](https://leetcode.cn/problems/number-of-centered-subarrays/) [题解](./常用枚举技巧/枚举右维护左.md#3804.-中心子数组的数量)
 # 并查集
 
 ## 区间并查集
@@ -758,6 +760,9 @@ Table of Contents
 
 - [56. 合并区间](https://leetcode.cn/problems/merge-intervals/) [题解](./贪心/区间合并.md#56.-合并区间)
 - [3169. 无需开会的工作日](https://leetcode.cn/problems/count-days-without-meetings/) [题解](./贪心/区间合并.md#3169.-无需开会的工作日)
+## 暴力枚举
+
+- [2975. 移除栅栏得到的正方形田地的最大面积](https://leetcode.cn/problems/maximum-square-area-by-removing-fences-from-a-field/) [题解](./贪心/暴力枚举.md#2975.-移除栅栏得到的正方形田地的最大面积)
 # 链表
 
 ## 其他
@@ -849,11 +854,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **401**
+Total problems: **404**
 
 Still working on ...
 
-Last updated: 2026-01-15 10:09:36
+Last updated: 2026-01-16 09:54:49
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

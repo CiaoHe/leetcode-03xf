@@ -278,6 +278,7 @@ Table of Contents
 - [2419. 按位与最大的最长子数组](https://leetcode.cn/problems/longest-subarray-with-maximum-bitwise-and/) [题解](./位运算/与或-LogTrick.md#2419.-按位与最大的最长子数组)
 ## 与或（AND OR）的性质
 
+- [3314. 构造最小位运算数组 I](https://leetcode.cn/problems/construct-the-minimum-bitwise-array-i/) [题解](./位运算/与或（AND OR）的性质.md#3314.-构造最小位运算数组-i)
 ## 位运算（其他）
 
 - [137. 只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) [题解](./位运算/位运算（其他）.md#137.-只出现一次的数字-ii)
@@ -297,6 +298,8 @@ Table of Contents
 ## 二维前缀和
 
 - [1738. 找出第 K 大的异或坐标值](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/) [题解](./前缀和/二维前缀和.md#1738.-找出第-k-大的异或坐标值)
+- [1895. 最大的幻方](https://leetcode.cn/problems/largest-magic-square/) [题解](./前缀和/二维前缀和.md#1895.-最大的幻方)
+- [1292. 元素和小于等于阈值的正方形的最大边长](https://leetcode.cn/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/) [题解](./前缀和/二维前缀和.md#1292.-元素和小于等于阈值的正方形的最大边长)
 ## 前缀和与哈希表
 
 - [2588. 统计美丽子数组数目](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) [题解](./前缀和/前缀和与哈希表.md#2588.-统计美丽子数组数目)
@@ -411,6 +414,9 @@ Table of Contents
 - [2872. 可以被 K 整除连通块的最大数目](https://leetcode.cn/problems/maximum-number-of-k-divisible-components/) [题解](./图论算法/拓扑排序.md#2872.-可以被-k-整除连通块的最大数目)
 # 堆(优先队列)
 
+## 删除懒堆
+
+- [3510. 移除最小数对使数组有序 II](https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-ii/) [题解](./堆(优先队列)/删除懒堆.md#3510.-移除最小数对使数组有序-ii)
 ## 双堆模拟
 
 - [2402. 会议室 III](https://leetcode.cn/problems/meeting-rooms-iii/) [题解](./堆(优先队列)/双堆模拟.md#2402.-会议室-iii)
@@ -763,6 +769,7 @@ Table of Contents
 ## 暴力枚举
 
 - [2975. 移除栅栏得到的正方形田地的最大面积](https://leetcode.cn/problems/maximum-square-area-by-removing-fences-from-a-field/) [题解](./贪心/暴力枚举.md#2975.-移除栅栏得到的正方形田地的最大面积)
+- [3047. 求交集区域内的最大正方形面积](https://leetcode.cn/problems/find-the-largest-area-of-square-inside-two-rectangles/) [题解](./贪心/暴力枚举.md#3047.-求交集区域内的最大正方形面积)
 # 链表
 
 ## 其他
@@ -834,6 +841,7 @@ Table of Contents
 - [3446. 按对角线进行矩阵排序](https://leetcode.cn/problems/sort-matrix-by-diagonals/) [题解](./模拟.md#3446.-按对角线进行矩阵排序)
 - [166. 分数到小数](https://leetcode.cn/problems/fraction-to-recurring-decimal/) [题解](./模拟.md#166.-分数到小数)
 - [3433. 统计用户被提及情况](https://leetcode.cn/problems/count-mentions-per-user/) [题解](./模拟.md#3433.-统计用户被提及情况)
+- [3507. 移除最小数对使数组有序 I](https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/) [题解](./模拟.md#3507.-移除最小数对使数组有序-i)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -854,11 +862,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **404**
+Total problems: **410**
 
 Still working on ...
 
-Last updated: 2026-01-16 09:54:49
+Last updated: 2026-01-22 14:41:16
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

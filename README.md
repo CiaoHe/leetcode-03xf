@@ -402,6 +402,12 @@ Table of Contents
 - [1928. 规定时间内到达终点的最小花费](https://leetcode.cn/problems/minimum-cost-to-reach-destination-in-time/) [题解](./图论算法/Dijkstra-单源最短路径.md#1928.-规定时间内到达终点的最小花费)
 - [3341. 到达最后一个房间的最少时间 I](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-i/) [题解](./图论算法/Dijkstra-单源最短路径.md#3341.-到达最后一个房间的最少时间-i)
 - [3342. 到达最后一个房间的最少时间 II](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-ii/) [题解](./图论算法/Dijkstra-单源最短路径.md#3342.-到达最后一个房间的最少时间-ii)
+- [3650. 边反转的最小路径总成本](https://leetcode.cn/problems/minimum-cost-path-with-edge-reversals/) [题解](./图论算法/Dijkstra-单源最短路径.md#3650.-边反转的最小路径总成本)
+- [3651. 带传送的最小路径成本](https://leetcode.cn/problems/minimum-cost-path-with-teleportations/) [题解](./图论算法/Dijkstra-单源最短路径.md#3651.-带传送的最小路径成本)
+## Floyd算法
+
+- [2976. 转换字符串的最小成本 I](https://leetcode.cn/problems/minimum-cost-to-convert-string-i/) [题解](./图论算法/Floyd算法.md#2976.-转换字符串的最小成本-i)
+- [2977. 转换字符串的最小成本 II](https://leetcode.cn/problems/minimum-cost-to-convert-string-ii/) [题解](./图论算法/Floyd算法.md#2977.-转换字符串的最小成本-ii)
 ## 二分图染色
 
 - [785. 判断二分图](https://leetcode.cn/problems/is-graph-bipartite/) [题解](./图论算法/二分图染色.md#785.-判断二分图)
@@ -437,6 +443,7 @@ Table of Contents
 ## 对顶堆（滑动窗口第K小或者大）
 
 - [295. 数据流的中位数](https://leetcode.cn/problems/find-median-from-data-stream/) [题解](./堆(优先队列)/对顶堆（滑动窗口第K小或者大）.md#295.-数据流的中位数)
+- [3013. 将数组分成最小总代价的子数组 II](https://leetcode.cn/problems/divide-an-array-into-subarrays-with-minimum-cost-ii/) [题解](./堆(优先队列)/对顶堆（滑动窗口第K小或者大）.md#3013.-将数组分成最小总代价的子数组-ii)
 ## 有序集合
 
 - [855. 考场就座](https://leetcode.cn/problems/exam-room/) [题解](./堆(优先队列)/有序集合.md#855.-考场就座)
@@ -858,15 +865,16 @@ Table of Contents
 - [2211. 统计道路上的碰撞次数](https://leetcode.cn/problems/count-collisions-on-a-road/) [题解](./脑筋急转弯.md#2211.-统计道路上的碰撞次数)
 - [3577. 统计计算机解锁顺序排列数](https://leetcode.cn/problems/count-the-number-of-computer-unlocking-permutations/) [题解](./脑筋急转弯.md#3577.-统计计算机解锁顺序排列数)
 - [1975. 最大方阵和](https://leetcode.cn/problems/maximum-matrix-sum/) [题解](./脑筋急转弯.md#1975.-最大方阵和)
+- [1877. 数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) [题解](./脑筋急转弯.md#1877.-数组中最大数对和的最小值)
 
 
 # Summary
 
-Total problems: **410**
+Total problems: **416**
 
 Still working on ...
 
-Last updated: 2026-01-22 14:41:16
+Last updated: 2026-02-02 09:53:41
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

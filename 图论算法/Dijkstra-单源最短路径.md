@@ -200,3 +200,127 @@ class Solution:
                         dist[nx][ny][(step+1)%2] = new_time
                         heappush(h, (new_time, nx, ny, step+1))
 ```
+# [3650. 边反转的最小路径总成本](https://leetcode.cn/problems/minimum-cost-path-with-edge-reversals/)
+给你一个包含 `n` 个节点的有向带权图，节点编号从 `0` 到 `n - 1`。同时给你一个数组 `edges`，其中 `edges[i] = [ui, vi, wi]` 表示一条从节点 `ui` 到节点 `vi` 的有向边，其成本为 `wi`。
+
+每个节点 `ui` 都有一个 **最多可使用一次** 的开关：当你到达 `ui` 且尚未使用其开关时，你可以对其一条入边 `vi` → `ui` 激活开关，将该边反转为 `ui` → `vi` 并 **立即** 穿过它。
+
+反转仅对那一次移动有效，使用反转边的成本为 `2 * wi`。
+
+返回从节点 `0` 到达节点 `n - 1` 的 **最小** 总成本。如果无法到达，则返回 -1。
+
+```python
+class Solution:
+    def minCost(self, n: int, edges: List[List[int]]) -> int:
+        # build graph first, 有向图, 边权重有w
+        # add reverse edges {u,v,w} -> {v,u,w*2}
+        graph = defaultdict(list)
+        for u, v, w in edges:
+            graph[u].append((v, w))
+            graph[v].append((u, w*2))
+        # dijkstra
+        dist = [float('inf')] * n
+        dist[0] = 0
+        pq = [(0, 0)]
+        while pq:
+            d, u = heappop(pq)
+            if d > dist[u]:
+                continue
+            for v, w in graph[u]:
+                if dist[v] > dist[u] + w:
+                    dist[v] = dist[u] + w
+                    heappush(pq, (dist[v], v))
+        return dist[n-1] if dist[n-1] != float('inf') else -1
+```
+
+# [3651. 带传送的最小路径成本](https://leetcode.cn/problems/minimum-cost-path-with-teleportations/)
+给你一个 `m x n` 的二维整数数组 `grid` 和一个整数 `k`。你从左上角的单元格 `(0, 0)` 出发，目标是到达右下角的单元格 `(m - 1, n - 1)`。
+
+有两种移动方式可用：
+
+- **普通移动**：你可以从当前单元格 `(i, j)` 向右或向下移动，即移动到 `(i, j + 1)`（右）或 `(i + 1, j)`（下）。成本为目标单元格的值。
+- **传送**：你可以从任意单元格 `(i, j)` 传送到任意满足 `grid[x][y] <= grid[i][j]` 的单元格 `(x, y)`；此移动的成本为 0。你最多可以传送 `k` 次。
+    
+返回从 `(0, 0)` 到达单元格 `(m - 1, n - 1)` 的 **最小** 总成本。
+```python
+class Solution:
+    def minCost(self, grid: List[List[int]], k: int) -> int:
+        m, n = len(grid), len(grid[0])
+        # djikstra
+        # 3-dim matrix: (i,j,c)
+        dist = [[[inf] * (k+1) for _ in range(n)] for _ in range(m)]
+        dist[0][0][0] = 0
+
+        pq = [(0,0,0,0)] # (dist, k, i, j)
+        # cells: (value, i, j) sorted by value
+        cells = sorted((grid[i][j], i, j) for i in range(m) for j in range(n))
+        ptrs = [0] * (k+1) # 每个k对应的cells中的索引，防止重复访问
+        # 记录每个 k 维度下，通过传送已经处理过的最大数值, 避免重复将低数值的格子加入队列
+
+        while pq:
+            curDist, curK, x, y = heappop(pq)
+            if x == m-1 and y == n-1:
+                return curDist
+            if curDist > dist[x][y][curK]:
+                continue
+            
+            # normal move
+            for nx, ny in [(x+1,y),(x,y+1)]:
+                if 0<=nx<m and 0<=ny<n:
+                    nextDist = curDist + grid[nx][ny]
+                    if nextDist < dist[nx][ny][curK]:
+                       dist[nx][ny][curK] = nextDist
+                       heappush(pq, (nextDist, curK, nx, ny))
+
+            # transmit
+            if curK < k:
+                v = grid[x][y]
+                p = ptrs[curK]
+                while p < len(cells) and cells[p][0] <= v:
+                    _, nx, ny = cells[p]
+                    if curDist < dist[nx][ny][curK+1]:
+                        dist[nx][ny][curK+1] = curDist
+                        heappush(pq, (curDist, curK+1, nx, ny))
+                    p += 1
+                ptrs[curK] = p
+        return -1
+```
+或者使用DP 更清晰
+```python
+class Solution:
+    def minCost(self, grid: List[List[int]], k: int) -> int:
+        m, n = len(grid), len(grid[0])
+        dist = [[[inf] * n for _ in range(m)] for _ in range(k+1)]
+        dist[0][0][0] = 0
+
+        for i in range(m):
+            for j in range(n):
+                if i>0:
+                    dist[0][i][j] = min(dist[0][i][j], dist[0][i-1][j] + grid[i][j])
+                if j>0:
+                    dist[0][i][j] = min(dist[0][i][j], dist[0][i][j-1] + grid[i][j])
+
+        g = defaultdict(list)
+        for i, row in enumerate(grid):
+            for j, v in enumerate(row):
+                g[v].append((i, j))
+        keys = sorted(g, reverse=True)
+        for t in range(1, k+1):
+            mn = inf
+            for v in keys:
+                pos_list = g[v]
+                # transmit, 找到上一次传输的点，使得dist[t][i][j]最小
+                for i, j in pos_list:
+                    mn = min(mn, dist[t-1][i][j])
+                for i, j in pos_list:
+                    dist[t][i][j] = mn
+
+            # normal move
+            for i in range(m):
+                for j in range(n):
+                    if i>0:
+                        dist[t][i][j] = min(dist[t][i][j], dist[t][i-1][j] + grid[i][j])
+                    if j>0:
+                        dist[t][i][j] = min(dist[t][i][j], dist[t][i][j-1] + grid[i][j])
+        return min(dist[t][m-1][n-1] for t in range(k+1))
+```

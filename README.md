@@ -92,6 +92,7 @@ Table of Contents
 ### 进阶
 
 - [2272. 最大波动的子字符串](https://leetcode.cn/problems/substring-with-largest-variance/) [题解](./DP/5-状态机DP/进阶.md#2272.-最大波动的子字符串)
+- [3640. 三段式数组 II](https://leetcode.cn/problems/trionic-array-ii/) [题解](./DP/5-状态机DP/进阶.md#3640.-三段式数组-ii)
 ## 6-划分型DP
 
 ### 划分能否判定
@@ -688,6 +689,7 @@ Table of Contents
 - [209. 长度最小的子数组l](https://leetcode.cn/problems/minimum-size-subarray-sum/description/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#209.-长度最小的子数组l)
 - [76. 最小覆盖子串](https://leetcode.cn/problems/minimum-window-substring/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#76.-最小覆盖子串)
 - [632. 最小区间](https://leetcode.cn/problems/smallest-range-covering-elements-from-k-lists/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#632.-最小区间)
+- [3634. 使数组平衡的最少移除数目](https://leetcode.cn/problems/minimum-removals-to-balance-array/) [题解](./滑动窗口/不定长滑动窗口/求最短or最小.md#3634.-使数组平衡的最少移除数目)
 ### 求最长or最大
 
 - [3. 无重复数字的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#3.-无重复数字的最长子串)
@@ -712,6 +714,9 @@ Table of Contents
 - [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#30.-串联所有单词的子串)
 - [480. 滑动窗口中位数](https://leetcode.cn/problems/sliding-window-median/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#480.-滑动窗口中位数)
 - [3439. 重新安排会议得到最多空余时间 I](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-i/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#3439.-重新安排会议得到最多空余时间-i)
+## 分组循环
+
+- [3637. 三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) [题解](./滑动窗口/分组循环.md#3637.-三段式数组-i)
 # 网格图
 
 ## 网格图 DFS
@@ -828,6 +833,8 @@ Table of Contents
 - [2711. 对角线上不同值的数量差](https://leetcode.cn/problems/difference-of-number-of-distinct-values-on-diagonals/) [题解](./前后缀分解.md#2711.-对角线上不同值的数量差)
 - [3003. 执行操作后的最大分割数量](https://leetcode.cn/problems/maximize-the-number-of-partitions-after-operations/) [题解](./前后缀分解.md#3003.-执行操作后的最大分割数量)
 - [2483. 商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) [题解](./前后缀分解.md#2483.-商店的最少代价)
+- [3738. 替换至多一个元素后最长非递减子数组](https://leetcode.cn/problems/longest-non-decreasing-subarray-after-replacing-at-most-one-element/) [题解](./前后缀分解.md#3738.-替换至多一个元素后最长非递减子数组)
+- [1653. 使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) [题解](./前后缀分解.md#1653.-使字符串平衡的最少删除次数)
 # 博弈论
 
 - [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
@@ -870,11 +877,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **416**
+Total problems: **421**
 
 Still working on ...
 
-Last updated: 2026-02-02 09:53:41
+Last updated: 2026-02-07 19:11:36
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

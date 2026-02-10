@@ -203,6 +203,10 @@ Table of Contents
 - [4. 寻找两个正序数组的中位数](https://leetcode.cn/problems/median-of-two-sorted-arrays/) [题解](./二分/其他.md#4.-寻找两个正序数组的中位数)
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./二分/其他.md#69.-x-的平方根)
 - [436. 寻找右区间](https://leetcode.cn/problems/find-right-interval/) [题解](./二分/其他.md#436.-寻找右区间)
+## 平衡二叉树
+
+- [110. 平衡二叉树](https://leetcode.cn/problems/balanced-binary-tree/) [题解](./二分/平衡二叉树.md#110.-平衡二叉树)
+- [1382. 将二叉搜索树变平衡](https://leetcode.cn/problems/balance-a-binary-search-tree/) [题解](./二分/平衡二叉树.md#1382.-将二叉搜索树变平衡)
 ## 最大化最小值
 
 - [1552. 两球之间的磁力](https://leetcode.cn/problems/magnetic-force-between-two-balls/) [题解](./二分/最大化最小值.md#1552.-两球之间的磁力)
@@ -305,6 +309,7 @@ Table of Contents
 
 - [2588. 统计美丽子数组数目](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) [题解](./前缀和/前缀和与哈希表.md#2588.-统计美丽子数组数目)
 - [1590. 使数组和能被 P 整除](https://leetcode.cn/problems/make-sum-divisible-by-p/) [题解](./前缀和/前缀和与哈希表.md#1590.-使数组和能被-p-整除)
+- [525. 连续数组](https://leetcode.cn/problems/contiguous-array/) [题解](./前缀和/前缀和与哈希表.md#525.-连续数组)
 ## 基础
 
 - [2270. 分割数组的方案数](https://leetcode.cn/problems/number-of-ways-to-split-array/) [题解](./前缀和/基础.md#2270.-分割数组的方案数)
@@ -652,6 +657,8 @@ Table of Contents
 ## Lazy线段树
 
 - [3454. 分割正方形 II](https://leetcode.cn/problems/separate-squares-ii/) [题解](./树状数组和线段树/Lazy线段树.md#3454.-分割正方形-ii)
+- [3719. 最长平衡子数组 I](https://leetcode.cn/problems/longest-balanced-subarray-i/) [题解](./树状数组和线段树/Lazy线段树.md#3719.-最长平衡子数组-i)
+- [3721. 最长平衡子数组 II](https://leetcode.cn/problems/longest-balanced-subarray-ii/) [题解](./树状数组和线段树/Lazy线段树.md#3721.-最长平衡子数组-ii)
 ## 树状数组
 
 - [基础：发明树状数组](./树状数组和线段树/树状数组.md#基础：发明树状数组)
@@ -877,11 +884,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **421**
+Total problems: **426**
 
 Still working on ...
 
-Last updated: 2026-02-07 19:11:36
+Last updated: 2026-02-10 09:13:56
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

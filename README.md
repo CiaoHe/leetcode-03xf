@@ -26,6 +26,7 @@ Table of Contents
 - [2327. 知道秘密的人数](https://leetcode.cn/problems/number-of-people-aware-of-a-secret/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#2327.-知道秘密的人数)
 - [1871. 跳跃游戏 VII](https://leetcode.cn/problems/jump-game-vii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#1871.-跳跃游戏-vii)
 - [3473. 长度至少为 M 的 K 个子数组之和](https://leetcode.cn/problems/sum-of-k-subarrays-with-length-at-least-m/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3473.-长度至少为-m-的-k-个子数组之和)
+- [3130. 找出所有稳定的二进制数组 II](https://leetcode.cn/problems/find-all-possible-stable-binary-arrays-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3130.-找出所有稳定的二进制数组-ii)
 ## 12-树形DP
 
 ### 其他树形DP
@@ -260,6 +261,7 @@ Table of Contents
 - [199. 二叉树的右视图](https://leetcode.cn/problems/binary-tree-right-side-view/) [题解](./二叉树/自顶向下DFS.md#199.-二叉树的右视图)
 - [3372. 连接两棵树后最大目标节点数目 I](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) [题解](./二叉树/自顶向下DFS.md#3372.-连接两棵树后最大目标节点数目-i)
 - [3373. 连接两棵树后最大目标节点数目 II](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) [题解](./二叉树/自顶向下DFS.md#3373.-连接两棵树后最大目标节点数目-ii)
+- [1022. 从根到叶的二进制数之和](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/) [题解](./二叉树/自顶向下DFS.md#1022.-从根到叶的二进制数之和)
 ## 遍历
 
 - [102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal) [题解](./二叉树/遍历.md#102. 二叉树的层序遍历)
@@ -310,6 +312,7 @@ Table of Contents
 - [2588. 统计美丽子数组数目](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) [题解](./前缀和/前缀和与哈希表.md#2588.-统计美丽子数组数目)
 - [1590. 使数组和能被 P 整除](https://leetcode.cn/problems/make-sum-divisible-by-p/) [题解](./前缀和/前缀和与哈希表.md#1590.-使数组和能被-p-整除)
 - [525. 连续数组](https://leetcode.cn/problems/contiguous-array/) [题解](./前缀和/前缀和与哈希表.md#525.-连续数组)
+- [3714. 最长的平衡子串 II](https://leetcode.cn/problems/longest-balanced-substring-ii/) [题解](./前缀和/前缀和与哈希表.md#3714.-最长的平衡子串-ii)
 ## 基础
 
 - [2270. 分割数组的方案数](https://leetcode.cn/problems/number-of-ways-to-split-array/) [题解](./前缀和/基础.md#2270.-分割数组的方案数)
@@ -546,6 +549,10 @@ Table of Contents
 - [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/) [题解](./并查集/基础.md#547.-省份数量)
 - [3607. 电网维护](https://leetcode.cn/problems/power-grid-maintenance/) [题解](./并查集/基础.md#3607.-电网维护)
 - [2092. 找出知晓秘密的所有专家](https://leetcode.cn/problems/find-all-people-with-secret/) [题解](./并查集/基础.md#2092.-找出知晓秘密的所有专家)
+## 数组上的并查集
+
+- [2612. 最少翻转操作数](https://leetcode.cn/problems/minimum-reverse-operations) [题解](./并查集/数组上的并查集.md#2612. 最少翻转操作数)
+- [3666. 使二进制字符串全为 1 的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-equalize-binary-string/) [题解](./并查集/数组上的并查集.md#3666.-使二进制字符串全为-1-的最少操作次数)
 ## 边权并查集
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
@@ -557,6 +564,9 @@ Table of Contents
 - [324. 摆动排序 II](https://leetcode.cn/problems/wiggle-sort-ii/) [题解](./排序/其他.md#324.-摆动排序-ii)
 - [2274. 不含特殊楼层的最大连续楼层数](https://leetcode.cn/problems/maximum-consecutive-floors-without-special-floors/) [题解](./排序/其他.md#2274.-不含特殊楼层的最大连续楼层数)
 - [3531. 统计被覆盖的建筑](https://leetcode.cn/problems/count-covered-buildings/) [题解](./排序/其他.md#3531.-统计被覆盖的建筑)
+## 冒泡排序
+
+- [1536. 排布二进制网格的最少交换次数](https://leetcode.cn/problems/minimum-swaps-to-arrange-a-binary-grid/) [题解](./排序/冒泡排序.md#1536.-排布二进制网格的最少交换次数)
 ## 归并排序
 
 - [LCR 170. 交易逆序对的总数](https://leetcode.cn/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) [题解](./排序/归并排序.md#lcr-170.-交易逆序对的总数)
@@ -640,6 +650,7 @@ Table of Contents
 
 - [1963. 使字符串平衡的最小交换次数](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/) [题解](./栈/合法括号字符串.md#1963.-使字符串平衡的最小交换次数)
 - [2116. 判断一个括号字符串是否有效](https://leetcode.cn/problems/check-if-a-parentheses-string-can-be-valid/) [题解](./栈/合法括号字符串.md#2116.-判断一个括号字符串是否有效)
+- [761. 特殊的二进制字符串](https://leetcode.cn/problems/special-binary-string/) [题解](./栈/合法括号字符串.md#761.-特殊的二进制字符串)
 ## 栈（基础）
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./栈/栈（基础）.md#402.-移掉-k-位数字)
@@ -721,9 +732,11 @@ Table of Contents
 - [30. 串联所有单词的子串](https://leetcode.cn/problems/substring-with-concatenation-of-all-words/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#30.-串联所有单词的子串)
 - [480. 滑动窗口中位数](https://leetcode.cn/problems/sliding-window-median/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#480.-滑动窗口中位数)
 - [3439. 重新安排会议得到最多空余时间 I](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-i/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#3439.-重新安排会议得到最多空余时间-i)
+- [1888. 使二进制字符串字符交替的最少反转次数](https://leetcode.cn/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/) [题解](./滑动窗口/定长滑动窗口/定长滑动窗口-进阶.md#1888.-使二进制字符串字符交替的最少反转次数)
 ## 分组循环
 
 - [3637. 三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) [题解](./滑动窗口/分组循环.md#3637.-三段式数组-i)
+- [696. 计数二进制子串](https://leetcode.cn/problems/count-binary-substrings/) [题解](./滑动窗口/分组循环.md#696.-计数二进制子串)
 # 网格图
 
 ## 网格图 DFS
@@ -863,6 +876,9 @@ Table of Contents
 - [166. 分数到小数](https://leetcode.cn/problems/fraction-to-recurring-decimal/) [题解](./模拟.md#166.-分数到小数)
 - [3433. 统计用户被提及情况](https://leetcode.cn/problems/count-mentions-per-user/) [题解](./模拟.md#3433.-统计用户被提及情况)
 - [3507. 移除最小数对使数组有序 I](https://leetcode.cn/problems/minimum-pair-removal-to-sort-array-i/) [题解](./模拟.md#3507.-移除最小数对使数组有序-i)
+- [799. 香槟塔](https://leetcode.cn/problems/champagne-tower/) [题解](./模拟.md#799.-香槟塔)
+- [1680. 连接连续二进制数字](https://leetcode.cn/problems/concatenation-of-consecutive-binary-numbers/) [题解](./模拟.md#1680.-连接连续二进制数字)
+- [1758. 生成交替二进制字符串的最少操作数](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/) [题解](./模拟.md#1758.-生成交替二进制字符串的最少操作数)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -880,15 +896,16 @@ Table of Contents
 - [3577. 统计计算机解锁顺序排列数](https://leetcode.cn/problems/count-the-number-of-computer-unlocking-permutations/) [题解](./脑筋急转弯.md#3577.-统计计算机解锁顺序排列数)
 - [1975. 最大方阵和](https://leetcode.cn/problems/maximum-matrix-sum/) [题解](./脑筋急转弯.md#1975.-最大方阵和)
 - [1877. 数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) [题解](./脑筋急转弯.md#1877.-数组中最大数对和的最小值)
+- [1689. 十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) [题解](./脑筋急转弯.md#1689.-十-二进制数的最少数目)
 
 
 # Summary
 
-Total problems: **426**
+Total problems: **439**
 
 Still working on ...
 
-Last updated: 2026-02-10 09:13:56
+Last updated: 2026-03-09 08:33:14
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

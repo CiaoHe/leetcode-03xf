@@ -226,3 +226,49 @@ class Solution:
 
         return f[k][n]
 ```
+
+# [3130. 找出所有稳定的二进制数组 II](https://leetcode.cn/problems/find-all-possible-stable-binary-arrays-ii/)
+
+给你 3 个正整数 `zero` ，`one` 和 `limit` 。
+
+一个 二进制数组 `arr` 如果满足以下条件，那么我们称它是 **稳定的** ：
+
+- 0 在 `arr` 中出现次数 **恰好** 为 `zero` 。
+- 1 在 `arr` 中出现次数 **恰好** 为 `one` 。
+- `arr` 中每个长度超过 `limit` 的 子数组 都 **同时** 包含 0 和 1 。
+
+请你返回 **稳定** 二进制数组的 _总_ 数目。
+
+由于答案可能很大，将它对 `10^9 + 7` **取余** 后返回。
+
+
+```python
+class Solution:
+    def numberOfStableArrays(self, zero: int, one: int, limit: int) -> int:
+        # 限制连续0和连续1的数量都不超过limit
+        MOD = 10**9+7
+        @cache
+        def dfs(i:int, j:int, k:int) -> int:
+            # i: 还剩下i个0
+            # j: 还剩下j个1
+            # k: 当前位置(i+j)的值 0/1
+            if i == 0:
+                return 1 if k == 1 and j <= limit else 0
+            if j == 0:
+                return 1 if k == 0 and i <= limit else 0
+            if k == 0:
+                # 总体来说 放置0，但需要排除已经连续放置了limit个0的情况
+                
+                # dfs(i-(limit+1), j, 1)表示的是这样一种错误的情况：
+                # - 在 i-(limit+1)的位置，状态是 1（因为后面连续了 limit+1 个 0）
+                # - 从 i-(limit)到 i-1连续放了 limit个 0
+                # - 如果在 i的位置又放 0，就会形成 limit+1个连续的 0，这是不允许的
+                exclude = dfs(i-(limit+1), j, 1) if i >= limit+1 else 0
+                return (dfs(i-1, j, 0) + dfs(i-1, j, 1) - exclude) % MOD
+            else:
+                exclude = dfs(i, j-(limit+1), 0) if j >= limit+1 else 0
+                return (dfs(i, j-1, 0) + dfs(i, j-1, 1) - exclude) % MOD
+        res = (dfs(zero, one, 0) + dfs(zero, one, 1)) % MOD
+        dfs.cache_clear()
+        return res
+```

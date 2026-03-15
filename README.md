@@ -217,6 +217,7 @@ Table of Contents
 - [410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) [题解](./二分/最小化最大值.md#410.-分割数组的最大值)
 - [1760. 袋子里最少数目的球](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) [题解](./二分/最小化最大值.md#1760.-袋子里最少数目的球)
 - [2616. 最小化数对的最大差值](https://leetcode.cn/problems/minimize-the-maximum-difference-of-pairs/) [题解](./二分/最小化最大值.md#2616.-最小化数对的最大差值)
+- [3296. 移山所需的最少秒数](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) [题解](./二分/最小化最大值.md#3296.-移山所需的最少秒数)
 # 二叉树
 
 ## N叉树
@@ -294,6 +295,9 @@ Table of Contents
 ## 其他
 
 - [3307. 找出第 K 个字符 II](https://leetcode.cn/problems/find-the-k-th-character-in-string-game-ii/) [题解](./位运算/其他.md#3307.-找出第-k-个字符-ii)
+## 基础
+
+- [1009. 十进制整数的反码](https://leetcode.cn/problems/complement-of-base-10-integer/) [题解](./位运算/基础.md#1009.-十进制整数的反码)
 ## 拆位or贡献法
 
 - [2275. 按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) [题解](./位运算/拆位or贡献法.md#2275.-按位与结果大于零的最长组合)
@@ -370,6 +374,7 @@ Table of Contents
 - [51. N 皇后](https://leetcode.cn/problems/n-queens/) [题解](./回溯/排列型回溯.md#51.-n-皇后)
 - [52. N 皇后 II](https://leetcode.cn/problems/n-queens-ii/) [题解](./回溯/排列型回溯.md#52.-n-皇后-ii)
 - [3001. 捕获黑皇后需要的最少移动次数](https://leetcode.cn/problems/minimum-moves-to-capture-the-queen/) [题解](./回溯/排列型回溯.md#3001.-捕获黑皇后需要的最少移动次数)
+- [1415. 长度为 n 的开心字符串中字典序第 k 小的字符串](https://leetcode.cn/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) [题解](./回溯/排列型回溯.md#1415.-长度为-n-的开心字符串中字典序第-k-小的字符串)
 ## 暴搜+剪枝
 
 - [79. 单词搜索](https://leetcode.cn/problems/word-search/) [题解](./回溯/暴搜+剪枝.md#79.-单词搜索)
@@ -557,6 +562,9 @@ Table of Contents
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
 - [1061. 按字典序排列最小的等效字符串](https://leetcode.cn/problems/lexicographically-smallest-equivalent-string/) [题解](./并查集/边权并查集.md#1061.-按字典序排列最小的等效字符串)
+## 进阶
+
+- [3600. 升级后最大生成树稳定性](https://leetcode.cn/problems/maximize-spanning-tree-stability-with-upgrades/) [题解](./并查集/进阶.md#3600.-升级后最大生成树稳定性)
 # 排序
 
 ## 其他
@@ -879,6 +887,7 @@ Table of Contents
 - [799. 香槟塔](https://leetcode.cn/problems/champagne-tower/) [题解](./模拟.md#799.-香槟塔)
 - [1680. 连接连续二进制数字](https://leetcode.cn/problems/concatenation-of-consecutive-binary-numbers/) [题解](./模拟.md#1680.-连接连续二进制数字)
 - [1758. 生成交替二进制字符串的最少操作数](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/) [题解](./模拟.md#1758.-生成交替二进制字符串的最少操作数)
+- [1622. 奇妙序列](https://leetcode.cn/problems/fancy-sequence/) [题解](./模拟.md#1622.-奇妙序列)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -901,11 +910,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **439**
+Total problems: **444**
 
 Still working on ...
 
-Last updated: 2026-03-09 08:33:14
+Last updated: 2026-03-15 09:58:36
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

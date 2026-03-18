@@ -311,6 +311,7 @@ Table of Contents
 - [1738. 找出第 K 大的异或坐标值](https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/) [题解](./前缀和/二维前缀和.md#1738.-找出第-k-大的异或坐标值)
 - [1895. 最大的幻方](https://leetcode.cn/problems/largest-magic-square/) [题解](./前缀和/二维前缀和.md#1895.-最大的幻方)
 - [1292. 元素和小于等于阈值的正方形的最大边长](https://leetcode.cn/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/) [题解](./前缀和/二维前缀和.md#1292.-元素和小于等于阈值的正方形的最大边长)
+- [3070. 元素和小于等于 k 的子矩阵的数目](https://leetcode.cn/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) [题解](./前缀和/二维前缀和.md#3070.-元素和小于等于-k-的子矩阵的数目)
 ## 前缀和与哈希表
 
 - [2588. 统计美丽子数组数目](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) [题解](./前缀和/前缀和与哈希表.md#2588.-统计美丽子数组数目)
@@ -795,6 +796,7 @@ Table of Contents
 
 - [3085. 成为 K 特殊字符串需要删除的最少字符数](https://leetcode.cn/problems/minimum-deletions-to-make-string-k-special/) [题解](./贪心/贪心策略/先枚举，再贪心.md#3085.-成为-k-特殊字符串需要删除的最少字符数)
 - [2749. 得到整数零需要执行的最少操作数](https://leetcode.cn/problems/minimum-operations-to-make-the-integer-zero/) [题解](./贪心/贪心策略/先枚举，再贪心.md#2749.-得到整数零需要执行的最少操作数)
+- [1727. 重新排列后的最大子矩阵](https://leetcode.cn/problems/largest-submatrix-with-rearrangements/) [题解](./贪心/贪心策略/先枚举，再贪心.md#1727.-重新排列后的最大子矩阵)
 ### 双序列配对
 
 - [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/) [题解](./贪心/贪心策略/双序列配对.md#455.-分发饼干)
@@ -888,6 +890,7 @@ Table of Contents
 - [1680. 连接连续二进制数字](https://leetcode.cn/problems/concatenation-of-consecutive-binary-numbers/) [题解](./模拟.md#1680.-连接连续二进制数字)
 - [1758. 生成交替二进制字符串的最少操作数](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/) [题解](./模拟.md#1758.-生成交替二进制字符串的最少操作数)
 - [1622. 奇妙序列](https://leetcode.cn/problems/fancy-sequence/) [题解](./模拟.md#1622.-奇妙序列)
+- [1878. 矩阵中最大的三个菱形和](https://leetcode.cn/problems/get-biggest-three-rhombus-sums-in-a-grid/) [题解](./模拟.md#1878.-矩阵中最大的三个菱形和)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -910,11 +913,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **444**
+Total problems: **447**
 
 Still working on ...
 
-Last updated: 2026-03-15 09:58:36
+Last updated: 2026-03-18 14:38:39
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

@@ -42,6 +42,7 @@ Table of Contents
 - [2435. 矩阵中和能被 K 整除的路径](https://leetcode.cn/problems/paths-in-matrix-whose-sum-is-divisible-by-k/) [题解](./DP/2-网格图DP/网格图DP-基础.md#2435.-矩阵中和能被-k-整除的路径)
 - [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/) [题解](./DP/2-网格图DP/网格图DP-基础.md#120.-三角形最小路径和)
 - [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) [题解](./DP/2-网格图DP/网格图DP-基础.md#718.-最长重复子数组)
+- [1594. 矩阵的最大非负积](https://leetcode.cn/problems/maximum-non-negative-product-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-基础.md#1594.-矩阵的最大非负积)
 ### 网格图DP-进阶
 
 - [329. 矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#329.-矩阵中的最长递增路径)
@@ -312,6 +313,7 @@ Table of Contents
 - [1895. 最大的幻方](https://leetcode.cn/problems/largest-magic-square/) [题解](./前缀和/二维前缀和.md#1895.-最大的幻方)
 - [1292. 元素和小于等于阈值的正方形的最大边长](https://leetcode.cn/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/) [题解](./前缀和/二维前缀和.md#1292.-元素和小于等于阈值的正方形的最大边长)
 - [3070. 元素和小于等于 k 的子矩阵的数目](https://leetcode.cn/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) [题解](./前缀和/二维前缀和.md#3070.-元素和小于等于-k-的子矩阵的数目)
+- [3212. 统计 X 和 Y 频数相等的子矩阵数量](https://leetcode.cn/problems/count-submatrices-with-equal-frequency-of-x-and-y/) [题解](./前缀和/二维前缀和.md#3212.-统计-x-和-y-频数相等的子矩阵数量)
 ## 前缀和与哈希表
 
 - [2588. 统计美丽子数组数目](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) [题解](./前缀和/前缀和与哈希表.md#2588.-统计美丽子数组数目)
@@ -812,6 +814,7 @@ Table of Contents
 
 - [2975. 移除栅栏得到的正方形田地的最大面积](https://leetcode.cn/problems/maximum-square-area-by-removing-fences-from-a-field/) [题解](./贪心/暴力枚举.md#2975.-移除栅栏得到的正方形田地的最大面积)
 - [3047. 求交集区域内的最大正方形面积](https://leetcode.cn/problems/find-the-largest-area-of-square-inside-two-rectangles/) [题解](./贪心/暴力枚举.md#3047.-求交集区域内的最大正方形面积)
+- [3567. 子矩阵的最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference-in-sliding-submatrix/) [题解](./贪心/暴力枚举.md#3567.-子矩阵的最小绝对差)
 # 链表
 
 ## 其他
@@ -865,6 +868,7 @@ Table of Contents
 - [2483. 商店的最少代价](https://leetcode.cn/problems/minimum-penalty-for-a-shop/) [题解](./前后缀分解.md#2483.-商店的最少代价)
 - [3738. 替换至多一个元素后最长非递减子数组](https://leetcode.cn/problems/longest-non-decreasing-subarray-after-replacing-at-most-one-element/) [题解](./前后缀分解.md#3738.-替换至多一个元素后最长非递减子数组)
 - [1653. 使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) [题解](./前后缀分解.md#1653.-使字符串平衡的最少删除次数)
+- [2906. 构造乘积矩阵](https://leetcode.cn/problems/construct-product-matrix/) [题解](./前后缀分解.md#2906.-构造乘积矩阵)
 # 博弈论
 
 - [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
@@ -913,11 +917,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **447**
+Total problems: **451**
 
 Still working on ...
 
-Last updated: 2026-03-18 14:38:39
+Last updated: 2026-03-24 09:09:02
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

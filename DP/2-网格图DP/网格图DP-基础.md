@@ -87,3 +87,56 @@ class Solution:
                     ans = max(ans, dp[i][j])
         return ans
 ```
+
+# [1594. 矩阵的最大非负积](https://leetcode.cn/problems/maximum-non-negative-product-in-a-matrix/)
+给你一个大小为 `m x n` 的矩阵 `grid` 。最初，你位于左上角 `(0, 0)` ，每一步，你可以在矩阵中 **向右** 或 **向下** 移动。
+
+在从左上角 `(0, 0)` 开始到右下角 `(m - 1, n - 1)` 结束的所有路径中，找出具有 **最大非负积** 的路径。路径的积是沿路径访问的单元格中所有整数的乘积。
+
+返回 **最大非负积** 对 **`109 + 7`** **取余** 的结果。如果最大积为 **负数** ，则返回 `-1` 。
+
+**注意，**取余是在得到最大积之后执行的。
+
+```python
+class Solution:
+    def maxProductPath(self, grid: List[List[int]]) -> int:
+        mod = 10**9 + 7
+        m,n = len(grid), len(grid[0])
+        @cache
+        def dfs(i, j, product):
+            if i == m-1 and j == n-1:
+                return product
+            if i == m-1:
+                return dfs(i, j+1, product * grid[i][j+1])
+            if j == n-1:
+                return dfs(i+1, j, product * grid[i+1][j])
+            return max(dfs(i+1, j, product * grid[i+1][j]), dfs(i, j+1, product * grid[i][j+1]))
+        mx = dfs(0, 0, grid[0][0])
+        return mx % mod if mx >= 0 else -1
+```
+
+更快一点的做法
+```python
+class Solution:
+    def maxProductPath(self, grid: List[List[int]]) -> int:
+        mod = 10**9 + 7
+        m,n = len(grid), len(grid[0])
+        @cache
+        def dfs(i, j):
+            if i == 0 and j == 0:
+                return grid[i][j], grid[i][j]
+            mx = float('-inf')
+            mn = float('inf')
+            x = grid[i][j]
+            if i > 0:
+                mx1, mn1 = dfs(i-1, j)
+                mx = max(mx, mx1 * x, mn1 * x)
+                mn = min(mn, mx1 * x, mn1 * x)
+            if j > 0:
+                mx2, mn2 = dfs(i, j-1)
+                mx = max(mx, mx2 * x, mn2 * x)
+                mn = min(mn, mx2 * x, mn2 * x)
+            return mx, mn
+        mx, mn = dfs(m-1, n-1)
+        return mx % mod if mx >=0 else -1
+```

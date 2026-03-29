@@ -314,6 +314,7 @@ Table of Contents
 - [1292. 元素和小于等于阈值的正方形的最大边长](https://leetcode.cn/problems/maximum-side-length-of-a-square-with-sum-less-than-or-equal-to-threshold/) [题解](./前缀和/二维前缀和.md#1292.-元素和小于等于阈值的正方形的最大边长)
 - [3070. 元素和小于等于 k 的子矩阵的数目](https://leetcode.cn/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/) [题解](./前缀和/二维前缀和.md#3070.-元素和小于等于-k-的子矩阵的数目)
 - [3212. 统计 X 和 Y 频数相等的子矩阵数量](https://leetcode.cn/problems/count-submatrices-with-equal-frequency-of-x-and-y/) [题解](./前缀和/二维前缀和.md#3212.-统计-x-和-y-频数相等的子矩阵数量)
+- [3546. 等和矩阵分割 I](https://leetcode.cn/problems/equal-sum-grid-partition-i/) [题解](./前缀和/二维前缀和.md#3546.-等和矩阵分割-i)
 ## 前缀和与哈希表
 
 - [2588. 统计美丽子数组数目](https://leetcode.cn/problems/count-the-number-of-beautiful-subarrays/) [题解](./前缀和/前缀和与哈希表.md#2588.-统计美丽子数组数目)
@@ -493,6 +494,9 @@ Table of Contents
 
 - [KMP template](./字符串/KMP.md#kmp-template)
 - [3008. 找出数组中的美丽下标 II](https://leetcode.cn/problems/find-beautiful-indices-in-the-given-array-ii/) [题解](./字符串/KMP.md#3008.-找出数组中的美丽下标-ii)
+## LCP数组
+
+- [2573. 找出对应 LCP 矩阵的字符串](https://leetcode.cn/problems/find-the-string-with-lcp/) [题解](./字符串/LCP数组.md#2573.-找出对应-lcp-矩阵的字符串)
 ## Manacher算法
 
 - [5. 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/) [题解](./字符串/Manacher算法.md#5.-最长回文子串)
@@ -546,6 +550,7 @@ Table of Contents
 - [3625. 统计梯形的数目 II](https://leetcode.cn/problems/count-number-of-trapezoids-ii/) [题解](./常用枚举技巧/枚举右维护左.md#3625.-统计梯形的数目-ii)
 - [3805. 统计凯撒加密对数目](https://leetcode.cn/problems/count-caesar-cipher-pairs/) [题解](./常用枚举技巧/枚举右维护左.md#3805.-统计凯撒加密对数目)
 - [3804. 中心子数组的数量](https://leetcode.cn/problems/number-of-centered-subarrays/) [题解](./常用枚举技巧/枚举右维护左.md#3804.-中心子数组的数量)
+- [3548. 等和矩阵分割 II](https://leetcode.cn/problems/equal-sum-grid-partition-ii/) [题解](./常用枚举技巧/枚举右维护左.md#3548.-等和矩阵分割-ii)
 # 并查集
 
 ## 区间并查集
@@ -913,15 +918,16 @@ Table of Contents
 - [1975. 最大方阵和](https://leetcode.cn/problems/maximum-matrix-sum/) [题解](./脑筋急转弯.md#1975.-最大方阵和)
 - [1877. 数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) [题解](./脑筋急转弯.md#1877.-数组中最大数对和的最小值)
 - [1689. 十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) [题解](./脑筋急转弯.md#1689.-十-二进制数的最少数目)
+- [2840. 判断通过操作能否让字符串相等 II](https://leetcode.cn/problems/check-if-strings-can-be-made-equal-with-operations-ii/) [题解](./脑筋急转弯.md#2840.-判断通过操作能否让字符串相等-ii)
 
 
 # Summary
 
-Total problems: **451**
+Total problems: **455**
 
 Still working on ...
 
-Last updated: 2026-03-24 09:09:02
+Last updated: 2026-03-30 07:32:03
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

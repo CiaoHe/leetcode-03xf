@@ -140,3 +140,41 @@ class Solution:
         mx, mn = dfs(m-1, n-1)
         return mx % mod if mx >=0 else -1
 ```
+
+# [3418. 机器人可以获得的最大金币数](https://leetcode.cn/problems/maximum-amount-of-money-robot-can-earn/)
+给你一个 `m x n` 的网格。一个机器人从网格的左上角 `(0, 0)` 出发，目标是到达网格的右下角 `(m - 1, n - 1)`。在任意时刻，机器人只能向右或向下移动。
+
+网格中的每个单元格包含一个值 `coins[i][j]`：
+
+- 如果 `coins[i][j] >= 0`，机器人可以获得该单元格的金币。
+- 如果 `coins[i][j] < 0`，机器人会遇到一个强盗，强盗会抢走该单元格数值的 **绝对值** 的金币。
+
+机器人有一项特殊能力，可以在行程中 **最多感化** 2个单元格的强盗，从而防止这些单元格的金币被抢走。
+
+**注意：**机器人的总金币数可以是负数。
+
+返回机器人在路径上可以获得的 **最大金币数** 。
+
+```python
+class Solution:
+    def maximumAmount(self, coins: List[List[int]]) -> int:
+        m,n = len(coins), len(coins[0])
+        # 最多可以感化两个海盗
+        @cache
+        def dfs(i:int, j:int, k:int) -> int:
+            if i<0 or j<0:
+                return -inf
+            x = coins[i][j]
+            if i == 0 and j == 0:
+                if k>0:
+                    return max(x, 0)
+                else:
+                    return x
+            res = max(dfs(i-1, j, k), dfs(i, j-1, k)) + x
+            if k>0 and x<0:
+                res = max(res, dfs(i-1, j, k-1), dfs(i, j-1, k-1))
+            return res
+        ans = dfs(m-1, n-1, 2)
+        dfs.cache_clear()
+        return ans
+```

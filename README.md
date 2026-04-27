@@ -43,6 +43,7 @@ Table of Contents
 - [120. 三角形最小路径和](https://leetcode.cn/problems/triangle/) [题解](./DP/2-网格图DP/网格图DP-基础.md#120.-三角形最小路径和)
 - [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/) [题解](./DP/2-网格图DP/网格图DP-基础.md#718.-最长重复子数组)
 - [1594. 矩阵的最大非负积](https://leetcode.cn/problems/maximum-non-negative-product-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-基础.md#1594.-矩阵的最大非负积)
+- [3418. 机器人可以获得的最大金币数](https://leetcode.cn/problems/maximum-amount-of-money-robot-can-earn/) [题解](./DP/2-网格图DP/网格图DP-基础.md#3418.-机器人可以获得的最大金币数)
 ### 网格图DP-进阶
 
 - [329. 矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#329.-矩阵中的最长递增路径)
@@ -95,6 +96,7 @@ Table of Contents
 
 - [2272. 最大波动的子字符串](https://leetcode.cn/problems/substring-with-largest-variance/) [题解](./DP/5-状态机DP/进阶.md#2272.-最大波动的子字符串)
 - [3640. 三段式数组 II](https://leetcode.cn/problems/trionic-array-ii/) [题解](./DP/5-状态机DP/进阶.md#3640.-三段式数组-ii)
+- [3661. 可以被机器人摧毁的最大墙壁数目](https://leetcode.cn/problems/maximum-walls-destroyed-by-robots/) [题解](./DP/5-状态机DP/进阶.md#3661.-可以被机器人摧毁的最大墙壁数目)
 ## 6-划分型DP
 
 ### 划分能否判定
@@ -104,6 +106,7 @@ Table of Contents
 
 - [132. 分割回文串 II](https://leetcode.cn/problems/palindrome-partitioning-ii/) [题解](./DP/6-划分型DP/最优划分.md#132.-分割回文串-ii)
 - [3578. 统计极差最大为 K 的分割方式数](https://leetcode.cn/problems/count-partitions-with-max-min-difference-at-most-k/) [题解](./DP/6-划分型DP/最优划分.md#3578.-统计极差最大为-k-的分割方式数)
+- [2463. 最小移动总距离](https://leetcode.cn/problems/minimum-total-distance-traveled/) [题解](./DP/6-划分型DP/最优划分.md#2463.-最小移动总距离)
 ### 约束划分个数
 
 - [1278. 分割回文串 III](https://leetcode.cn/problems/palindrome-partitioning-iii/) [题解](./DP/6-划分型DP/约束划分个数.md#1278.-分割回文串-iii)
@@ -127,6 +130,7 @@ Table of Contents
 - [3219. 切蛋糕的最小总开销 II](https://leetcode.cn/problems/minimum-cost-for-cutting-cake-ii/) [题解](./DP/7-其他线形DP/多维DP.md#3219.-切蛋糕的最小总开销-ii)
 - [403. 青蛙过河](https://leetcode.cn/problems/frog-jump/) [题解](./DP/7-其他线形DP/多维DP.md#403.-青蛙过河)
 - [2209. 用地毯覆盖后的最少白色砖块](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/) [题解](./DP/7-其他线形DP/多维DP.md#2209.-用地毯覆盖后的最少白色砖块)
+- [1320. 二指输入的的最小距离](https://leetcode.cn/problems/minimum-distance-to-type-a-word-using-two-fingers/) [题解](./DP/7-其他线形DP/多维DP.md#1320.-二指输入的的最小距离)
 ### 子矩形DP
 
 - [1277. 统计全为 1 的正方形子矩阵](https://leetcode.cn/problems/count-square-submatrices-with-all-ones/) [题解](./DP/7-其他线形DP/子矩形DP.md#1277.-统计全为-1-的正方形子矩阵)
@@ -213,12 +217,17 @@ Table of Contents
 
 - [1552. 两球之间的磁力](https://leetcode.cn/problems/magnetic-force-between-two-balls/) [题解](./二分/最大化最小值.md#1552.-两球之间的磁力)
 - [2528. 最大化城市的最小电量](https://leetcode.cn/problems/maximize-the-minimum-powered-city/) [题解](./二分/最大化最小值.md#2528.-最大化城市的最小电量)
+- [3464. 正方形上的点之间的最大距离](https://leetcode.cn/problems/maximize-the-distance-between-points-on-a-square/) [题解](./二分/最大化最小值.md#3464.-正方形上的点之间的最大距离)
 ## 最小化最大值
 
 - [410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) [题解](./二分/最小化最大值.md#410.-分割数组的最大值)
 - [1760. 袋子里最少数目的球](https://leetcode.cn/problems/minimum-limit-of-balls-in-a-bag/) [题解](./二分/最小化最大值.md#1760.-袋子里最少数目的球)
 - [2616. 最小化数对的最大差值](https://leetcode.cn/problems/minimize-the-maximum-difference-of-pairs/) [题解](./二分/最小化最大值.md#2616.-最小化数对的最大差值)
 - [3296. 移山所需的最少秒数](https://leetcode.cn/problems/minimum-number-of-seconds-to-make-mountain-height-zero/) [题解](./二分/最小化最大值.md#3296.-移山所需的最少秒数)
+## 进阶
+
+- [3488. 距离最小相等元素查询](https://leetcode.cn/problems/closest-equal-element-queries/) [题解](./二分/进阶.md#3488.-距离最小相等元素查询)
+- [3761. 镜像对之间最小绝对距离](https://leetcode.cn/problems/minimum-absolute-distance-between-mirror-pairs/) [题解](./二分/进阶.md#3761.-镜像对之间最小绝对距离)
 # 二叉树
 
 ## N叉树
@@ -325,6 +334,9 @@ Table of Contents
 
 - [2270. 分割数组的方案数](https://leetcode.cn/problems/number-of-ways-to-split-array/) [题解](./前缀和/基础.md#2270.-分割数组的方案数)
 - [3652. 按策略买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-using-strategy) [题解](./前缀和/基础.md#3652. 按策略买卖股票的最佳时机)
+## 距离和
+
+- [2615. 等值距离和](https://leetcode.cn/problems/sum-of-distances) [题解](./前缀和/距离和.md#2615.-等值距离和)
 # 单调栈
 
 ## 基础
@@ -358,10 +370,16 @@ Table of Contents
 - [31. 下一个排列](https://leetcode.cn/problems/next-permutation/) [题解](./双指针/同向双指针.md#31.-下一个排列)
 - [88. 合并两个有序数组](https://leetcode.cn/problems/merge-sorted-array/) [题解](./双指针/同向双指针.md#88.-合并两个有序数组)
 - [443. 压缩字符串](https://leetcode.cn/problems/string-compression/) [题解](./双指针/同向双指针.md#443.-压缩字符串)
+- [1855. 下标对中的最大距离](https://leetcode.cn/problems/maximum-distance-between-a-pair-of-values/) [题解](./双指针/同向双指针.md#1855.-下标对中的最大距离)
 ## 相向双指针
 
 - [11. 盛最多水的容器](https://leetcode.cn/problems/container-with-most-water/) [题解](./双指针/相向双指针.md#11.-盛最多水的容器)
 - [1498. 满足条件的子序列数目](https://leetcode.cn/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/) [题解](./双指针/相向双指针.md#1498.-满足条件的子序列数目)
+# 哈希
+
+## 分组哈希
+
+- [3741. 三个相等元素之间的最小距离 II](https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-ii/) [题解](./哈希/分组哈希.md#3741.-三个相等元素之间的最小距离-ii)
 # 回溯
 
 ## 入门
@@ -476,6 +494,9 @@ Table of Contents
 ## 第K小（大）
 
 - [373. 查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) [题解](./堆(优先队列)/第K小（大）.md#373.-查找和最小的-k-对数字)
+## 邻项消除
+
+- [2751. 机器人碰撞](https://leetcode.cn/problems/robot-collisions/) [题解](./堆(优先队列)/邻项消除.md#2751.-机器人碰撞)
 # 字典树trie
 
 ## 基础
@@ -529,6 +550,9 @@ Table of Contents
 - [3356. 零数组变换 II](https://leetcode.cn/problems/zero-array-transformation-ii/) [题解](./差分/一维差分.md#3356.-零数组变换-ii)
 - [3362. 零数组变换 III](https://leetcode.cn/problems/zero-array-transformation-iii/) [题解](./差分/一维差分.md#3362.-零数组变换-iii)
 - [3346. 执行操作后元素的最高频率 I](https://leetcode.cn/problems/maximum-frequency-of-an-element-after-performing-operations-i/) [题解](./差分/一维差分.md#3346.-执行操作后元素的最高频率-i)
+## 商分
+
+- [3655. 区间乘法查询后的异或 II](https://leetcode.cn/problems/xor-after-range-multiplication-queries-ii/) [题解](./差分/商分.md#3655.-区间乘法查询后的异或-ii)
 # 常用枚举技巧
 
 ## 枚举中间
@@ -566,6 +590,9 @@ Table of Contents
 
 - [2612. 最少翻转操作数](https://leetcode.cn/problems/minimum-reverse-operations) [题解](./并查集/数组上的并查集.md#2612. 最少翻转操作数)
 - [3666. 使二进制字符串全为 1 的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-equalize-binary-string/) [题解](./并查集/数组上的并查集.md#3666.-使二进制字符串全为-1-的最少操作次数)
+## 联通块交换元素
+
+- [1722. 执行交换操作后的最小汉明距离](https://leetcode.cn/problems/minimize-hamming-distance-after-swap-operations/) [题解](./并查集/联通块交换元素.md#1722.-执行交换操作后的最小汉明距离)
 ## 边权并查集
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
@@ -765,6 +792,8 @@ Table of Contents
 - [417. 太平洋大西洋水流问题](https://leetcode.cn/problems/pacific-atlantic-water-flow/) [题解](./网格图/网格图 DFS.md#417.-太平洋大西洋水流问题)
 - [3551. 数位和排序需要的最小交换次数](https://leetcode.cn/problems/minimum-swaps-to-sort-by-digit-sum/) [题解](./网格图/网格图 DFS.md#3551.-数位和排序需要的最小交换次数)
 - [1970. 你能穿过矩阵的最后一天](https://leetcode.cn/problems/last-day-where-you-can-still-cross/) [题解](./网格图/网格图 DFS.md#1970.-你能穿过矩阵的最后一天)
+- [1559. 二维网格图中探测环](https://leetcode.cn/problems/detect-cycles-in-2d-grid/) [题解](./网格图/网格图 DFS.md#1559.-二维网格图中探测环)
+- [1391. 检查网格中是否存在有效路径](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/) [题解](./网格图/网格图 DFS.md#1391.-检查网格中是否存在有效路径)
 # 贪心
 
 ## 区间贪心
@@ -783,6 +812,9 @@ Table of Contents
 
 - [409. 最长回文串](https://leetcode.cn/problems/longest-palindrome/) [题解](./贪心/字符串贪心/回文串贪心.md#409.-最长回文串)
 - [1328. 破坏回文串](https://leetcode.cn/problems/break-a-palindrome/) [题解](./贪心/字符串贪心/回文串贪心.md#1328.-破坏回文串)
+### 字典序最小or最大
+
+- [3474. 字典序最小的生成字符串](https://leetcode.cn/problems/lexicographically-smallest-generated-string/) [题解](./贪心/字符串贪心/字典序最小or最大.md#3474.-字典序最小的生成字符串)
 ## 思维题目
 
 ### 从特殊到一般
@@ -900,6 +932,7 @@ Table of Contents
 - [1758. 生成交替二进制字符串的最少操作数](https://leetcode.cn/problems/minimum-changes-to-make-alternating-binary-string/) [题解](./模拟.md#1758.-生成交替二进制字符串的最少操作数)
 - [1622. 奇妙序列](https://leetcode.cn/problems/fancy-sequence/) [题解](./模拟.md#1622.-奇妙序列)
 - [1878. 矩阵中最大的三个菱形和](https://leetcode.cn/problems/get-biggest-three-rhombus-sums-in-a-grid/) [题解](./模拟.md#1878.-矩阵中最大的三个菱形和)
+- [2069. 模拟行走机器人 II](https://leetcode.cn/problems/walking-robot-simulation-ii/) [题解](./模拟.md#2069.-模拟行走机器人-ii)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -919,15 +952,16 @@ Table of Contents
 - [1877. 数组中最大数对和的最小值](https://leetcode.cn/problems/minimize-maximum-pair-sum-in-array/) [题解](./脑筋急转弯.md#1877.-数组中最大数对和的最小值)
 - [1689. 十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) [题解](./脑筋急转弯.md#1689.-十-二进制数的最少数目)
 - [2840. 判断通过操作能否让字符串相等 II](https://leetcode.cn/problems/check-if-strings-can-be-made-equal-with-operations-ii/) [题解](./脑筋急转弯.md#2840.-判断通过操作能否让字符串相等-ii)
+- [2087. 网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) [题解](./脑筋急转弯.md#2087.-网格图中机器人回家的最小代价)
 
 
 # Summary
 
-Total problems: **455**
+Total problems: **473**
 
 Still working on ...
 
-Last updated: 2026-03-30 07:32:03
+Last updated: 2026-04-27 08:35:51
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

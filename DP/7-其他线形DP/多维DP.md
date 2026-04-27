@@ -92,3 +92,60 @@ class Solution:
         return dp[0][numCarpets]
 
 ```
+
+# [1320. 二指输入的的最小距离](https://leetcode.cn/problems/minimum-distance-to-type-a-word-using-two-fingers/)
+
+二指输入法定制键盘在 **X-Y** 平面上的布局如上图所示，其中每个大写英文字母都位于某个坐标处。
+
+- 例如字母 **A** 位于坐标 **(0,0)**，字母 **B** 位于坐标 **(0,1)**，字母 **P** 位于坐标 **(2,3)** 且字母 **Z** 位于坐标 **(4,1)**。
+
+给你一个待输入字符串 `word`，请你计算并返回在仅使用两根手指的情况下，键入该字符串需要的最小移动总距离。
+
+坐标 `**(x1,y1)**` 和 `**(x2,y2)**` 之间的 **距离** 是 `**|x1 - x2| + |y1 - y2|**`。 
+
+**注意**，两根手指的起始位置是零代价的，不计入移动总距离。你的两根手指的起始位置也不必从首字母或者前两个字母开始。
+```python
+from functools import cache
+
+class Solution:
+    def minimumDistance(self, word: str) -> int:
+        # 坐标位置
+        pos = {
+            'A': (0, 0), 'B': (0, 1), 'C': (0, 2), 'D': (0, 3), 'E': (0, 4), 'F': (0, 5),
+            'G': (1, 0), 'H': (1, 1), 'I': (1, 2), 'J': (1, 3), 'K': (1, 4), 'L': (1, 5),
+            'M': (2, 0), 'N': (2, 1), 'O': (2, 2), 'P': (2, 3), 'Q': (2, 4), 'R': (2, 5),
+            'S': (3, 0), 'T': (3, 1), 'U': (3, 2), 'V': (3, 3), 'W': (3, 4), 'X': (3, 5),
+            'Y': (4, 0), 'Z': (4, 1),
+        }
+        
+        def distance(p1, p2):
+            return abs(p1[0] - p2[0]) + abs(p1[1] - p2[1])
+        
+        @cache
+        def dfs(i, f1, f2):
+            # i: 当前需要输入的字符索引
+            # f1: 手指1所在的字符 (如果未放置则为 None)
+            # f2: 手指2所在的字符 (如果未放置则为 None)
+            
+            # 已经输入完所有字符，后续移动距离为 0
+            if i == len(word):
+                return 0
+            
+            target = word[i]
+            
+            # 方案一：用手指 1 去按 target
+            # 如果 f1 是 None，说明手指1是第一次放上去，代价为0
+            cost1 = 0 if f1 is None else distance(pos[f1], pos[target])
+            res1 = cost1 + dfs(i + 1, target, f2)
+            
+            # 方案二：用手指 2 去按 target
+            # 如果 f2 是 None，说明手指2是第一次放上去，代价为0
+            cost2 = 0 if f2 is None else distance(pos[f2], pos[target])
+            res2 = cost2 + dfs(i + 1, f1, target)
+            
+            # 返回两种方案中的较小值
+            return min(res1, res2)
+        
+        # 初始状态：要输入第 0 个字符，两根手指都还没放在键盘上 (None)
+        return dfs(0, None, None)
+```

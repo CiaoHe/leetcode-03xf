@@ -291,3 +291,82 @@ class Solution:
                 right = mid - 1
         return left
 ```
+
+# [1559. 二维网格图中探测环](https://leetcode.cn/problems/detect-cycles-in-2d-grid/)
+难度分 1837[第33场双周赛Q4](https://leetcode.cn/contest/biweekly-contest-33 "访问LeetCode竞赛链接")等级 7
+
+给你一个二维字符网格数组 `grid` ，大小为 `m x n` ，你需要检查 `grid` 中是否存在 **相同值** 形成的环。
+
+一个环是一条开始和结束于同一个格子的长度 **大于等于 4** 的路径。对于一个给定的格子，你可以移动到它上、下、左、右四个方向相邻的格子之一，可以移动的前提是这两个格子有 **相同的值** 。
+
+同时，你也不能回到上一次移动时所在的格子。比方说，环  `(1, 1) -> (1, 2) -> (1, 1)` 是不合法的，因为从 `(1, 2)` 移动到 `(1, 1)` 回到了上一次移动时的格子。
+
+如果 `grid` 中有相同值形成的环，请你返回 `true` ，否则返回 `false` 。
+
+```python
+class Solution:
+    def containsCycle(self, grid: List[List[str]]) -> bool:
+        m, n = len(grid), len(grid[0])
+        # dfs探索
+        visited = [[False] * n for _ in range(m)]
+        def dfs(x, y, px, py):
+            if visited[x][y]:
+                return True
+            visited[x][y] = True
+            for dx, dy in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
+                nx, ny = x + dx, y + dy
+                if 0 <= nx < m and 0 <= ny < n and grid[nx][ny] == grid[x][y] and (nx != px or ny != py):
+                    if dfs(nx, ny, x, y):
+                        return True
+            return False
+        for i in range(m):
+            for j in range(n):
+                if not visited[i][j] and dfs(i, j, -1, -1):
+                    return True
+        return False
+```
+
+# [1391. 检查网格中是否存在有效路径](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/)
+给你一个 _m_ x _n_ 的网格 `grid`。网格里的每个单元都代表一条街道。`grid[i][j]` 的街道可以是：
+
+- **1** 表示连接左单元格和右单元格的街道。
+- **2** 表示连接上单元格和下单元格的街道。
+- **3** 表示连接左单元格和下单元格的街道。
+- **4** 表示连接右单元格和下单元格的街道。
+- **5** 表示连接左单元格和上单元格的街道。
+- **6** 表示连接右单元格和上单元格的街道。
+
+![](https://assets.leetcode.cn/aliyun-lc-upload/uploads/2020/03/21/main.png)
+
+你最开始从左上角的单元格 `(0,0)` 开始出发，网格中的「有效路径」是指从左上方的单元格 `(0,0)` 开始、一直到右下方的 `(m-1,n-1)` 结束的路径。**该路径必须只沿着街道走**。
+
+**注意：**你 **不能** 变更街道。
+
+如果网格中存在有效的路径，则返回 `true`，否则返回 `false` 。
+
+```python
+class Solution:
+    def hasValidPath(self, grid: List[List[int]]) -> bool:
+        m,n = len(grid), len(grid[0])
+        choice = {
+            1: [(0,1),(0,-1)],
+            2: [(1,0),(-1,0)],
+            3: [(0,-1),(1,0)],
+            4: [(0,1),(1,0)],
+            5: [(0,-1),(-1,0)],
+            6: [(0,1),(-1,0)],
+        }
+        visited = [[False]*n for _ in range(m)]
+        def dfs(i,j):
+            if i==m-1 and j==n-1:
+                return True
+            visited[i][j] = True
+            for di,dj in choice[grid[i][j]]:
+                x,y = i+di, j+dj
+                if 0<=x<m and 0<=y<n and not visited[x][y] and (-di,-dj) in choice[grid[x][y]]:
+                    if dfs(x,y):
+                        return True
+            visited[i][j] = False
+            return False
+        return dfs(0,0)
+```

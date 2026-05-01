@@ -149,3 +149,51 @@ class Solution:
         # 初始状态：要输入第 0 个字符，两根手指都还没放在键盘上 (None)
         return dfs(0, None, None)
 ```
+# [3225. 网格图操作后的最大分数](https://leetcode.cn/problems/maximum-score-from-grid-operations/)
+难度分 3027[第135场双周赛Q4](https://leetcode.cn/contest/biweekly-contest-135 "访问LeetCode竞赛链接")等级 10 困难 IOI2022
+
+给你一个大小为 `n x n` 的二维矩阵 `grid` ，一开始所有格子都是白色的。一次操作中，你可以选择任意下标为 `(i, j)` 的格子，并将第 `j` 列中从最上面到第 `i` 行所有格子改成黑色。
+
+如果格子 `(i, j)` 为白色，且左边或者右边的格子至少一个格子为黑色，那么我们将 `grid[i][j]` 加到最后网格图的总分中去。
+
+请你返回执行任意次操作以后，最终网格图的 **最大** 总分数。
+
+```python
+class Solution:
+    def maximumScore(self, grid: List[List[int]]) -> int:
+        n = len(grid)
+        # 每一列的前缀和
+        col_sum = [list(accumulate(col, initial=0)) for col in zip(*grid)]
+
+        # pre: 第j+1列的黑格的个数
+        # dec = True: 第j+1列的黑格个数(pre) < 第j+2列的黑格个数
+        @cache
+        def dfs(j: int, pre: int, dec: bool) -> int:
+            # j: 当前列
+            # pre: 第j+1列的黑格的个数
+            # dec: 是否已经递减过了
+            if j < 0:
+                return 0
+            res = 0
+            # 枚举第j列的黑格个数，记为cur
+            for cur in range(n+1):
+                # 情况一：第j列的黑格个数 = 第j+1列的黑格个数
+                if cur == pre:
+                    # 没有可以计入总分的格子
+                    res = max(res, dfs(j-1, cur, dec=False))
+                # 情况二：第j列的黑格个数 < 第j+1列的黑格个数
+                elif cur < pre:
+                    # 可以计入总分的格子个数 = pre - cur
+                    res = max(res, dfs(j-1, cur, dec=True) + col_sum[j][pre] - col_sum[j][cur])
+                # 情况三：第j列的黑格个数 > 第j+1列的黑格个数 >= 第j+2列的黑格个数
+                elif not dec:
+                    # 第j+1列的[pre, cur)区间内的黑格个数可以计入总分
+                    res = max(res, dfs(j-1, cur, dec=False) + col_sum[j+1][cur] - col_sum[j+1][pre])
+                # 情况四（凹形）：cur > pre < 第 j+2 列的黑格个数
+                elif pre == 0:
+                    # 此时第 j+2 列全黑最优（递归过程中一定可以枚举到这种情况）
+                    # 第 j+1 列全白是最优的，所以只需考虑 pre=0 的情况
+                    res = max(res, dfs(j-1, cur, dec=False))
+            return res
+        return max(dfs(n-2, pre, dec=False) for pre in range(n+1))
+```

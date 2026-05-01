@@ -131,6 +131,7 @@ Table of Contents
 - [403. 青蛙过河](https://leetcode.cn/problems/frog-jump/) [题解](./DP/7-其他线形DP/多维DP.md#403.-青蛙过河)
 - [2209. 用地毯覆盖后的最少白色砖块](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/) [题解](./DP/7-其他线形DP/多维DP.md#2209.-用地毯覆盖后的最少白色砖块)
 - [1320. 二指输入的的最小距离](https://leetcode.cn/problems/minimum-distance-to-type-a-word-using-two-fingers/) [题解](./DP/7-其他线形DP/多维DP.md#1320.-二指输入的的最小距离)
+- [3225. 网格图操作后的最大分数](https://leetcode.cn/problems/maximum-score-from-grid-operations/) [题解](./DP/7-其他线形DP/多维DP.md#3225.-网格图操作后的最大分数)
 ### 子矩形DP
 
 - [1277. 统计全为 1 的正方形子矩阵](https://leetcode.cn/problems/count-square-submatrices-with-all-ones/) [题解](./DP/7-其他线形DP/子矩形DP.md#1277.-统计全为-1-的正方形子矩阵)
@@ -677,6 +678,9 @@ Table of Contents
 ## 同余
 
 - [2598. 执行操作后的最大 MEX](https://leetcode.cn/problems/smallest-missing-non-negative-integer-after-operations/) [题解](./数学/同余.md#2598.-执行操作后的最大-mex)
+## 增量法
+
+- [396. 旋转函数](https://leetcode.cn/problems/rotate-function/) [题解](./数学/增量法.md#396.-旋转函数)
 ## 容斥原理
 
 - [2929. 给小朋友们分糖果 II](https://leetcode.cn/problems/distribute-candies-among-children-ii/) [题解](./数学/容斥原理.md#2929.-给小朋友们分糖果-ii)
@@ -794,6 +798,7 @@ Table of Contents
 - [1970. 你能穿过矩阵的最后一天](https://leetcode.cn/problems/last-day-where-you-can-still-cross/) [题解](./网格图/网格图 DFS.md#1970.-你能穿过矩阵的最后一天)
 - [1559. 二维网格图中探测环](https://leetcode.cn/problems/detect-cycles-in-2d-grid/) [题解](./网格图/网格图 DFS.md#1559.-二维网格图中探测环)
 - [1391. 检查网格中是否存在有效路径](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/) [题解](./网格图/网格图 DFS.md#1391.-检查网格中是否存在有效路径)
+- [3742. 网格中得分最大的路径](https://leetcode.cn/problems/maximum-path-score-in-a-grid/) [题解](./网格图/网格图 DFS.md#3742.-网格中得分最大的路径)
 # 贪心
 
 ## 区间贪心
@@ -843,6 +848,9 @@ Table of Contents
 
 - [3495. 使数组元素都变为零的最少操作次数](https://leetcode.cn/problems/minimum-operations-to-make-array-elements-zero/) [题解](./贪心/贪心策略/相邻不同.md#3495.-使数组元素都变为零的最少操作次数)
 - [3659. 数组元素分组](https://leetcode.cn/problems/partition-array-into-k-distinct-groups/) [题解](./贪心/贪心策略/相邻不同.md#3659.-数组元素分组)
+## 中位数贪心
+
+- [2033. 获取单值网格的最小操作数](https://leetcode.cn/problems/minimum-operations-to-make-a-uni-value-grid/) [题解](./贪心/中位数贪心.md#2033.-获取单值网格的最小操作数)
 ## 区间合并
 
 - [56. 合并区间](https://leetcode.cn/problems/merge-intervals/) [题解](./贪心/区间合并.md#56.-合并区间)
@@ -957,11 +965,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **473**
+Total problems: **477**
 
 Still working on ...
 
-Last updated: 2026-04-27 08:35:51
+Last updated: 2026-05-01 22:50:58
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

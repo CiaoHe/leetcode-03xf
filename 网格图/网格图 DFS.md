@@ -370,3 +370,53 @@ class Solution:
             return False
         return dfs(0,0)
 ```
+
+# [3742. 网格中得分最大的路径](https://leetcode.cn/problems/maximum-path-score-in-a-grid/)
+
+给你一个 `m x n` 的网格 `grid`，其中每个单元格包含以下值之一：`0`、`1` 或 `2`。另给你一个整数 `k`。
+
+你从左上角 `(0, 0)` 出发，目标是到达右下角 `(m - 1, n - 1)`，只能向 **右** 或 **下** 移动。
+
+每个单元格根据其值对路径有以下贡献：
+
+- 值为 `0` 的单元格：分数增加 `0`，花费 `0`。
+- 值为 `1` 的单元格：分数增加 `1`，花费 `1`。
+- 值为 `2` 的单元格：分数增加 `2`，花费 `1`。
+
+返回在总花费不超过 `k` 的情况下可以获得的 **最大分数** ，如果不存在有效路径，则返回 `-1`。
+
+**注意：** 如果到达最后一个单元格时总花费超过 `k`，则该路径无效。
+
+```python
+class Solution:
+    def maxPathScore(self, grid: List[List[int]], k: int) -> int:
+        m, n = len(grid), len(grid[0])
+        @cache
+        def dfs(i, j, k):
+            if k < 0:
+                return -inf
+            if i == m-1 and j == n-1:
+                return grid[i][j]
+            # 只能向下或者向右走
+            res = -inf
+            if i < m-1:
+                nx = grid[i+1][j]
+                if nx == 0:
+                    res = max(res, dfs(i+1, j, k))
+                elif nx > 0:
+                    res = max(res, dfs(i+1, j, k-1))
+            if j < n-1:
+                nx = grid[i][j+1]
+                if nx == 0:
+                    res = max(res, dfs(i, j+1, k))
+                elif nx > 0:
+                    res = max(res, dfs(i, j+1, k-1))
+            return res + grid[i][j]
+        
+        start_cost = 1 if grid[0][0] > 0 else 0
+        if start_cost > k:
+            return -1
+        ans = dfs(0, 0, k - start_cost)
+        dfs.cache_clear()
+        return ans if ans != -inf else -1
+```

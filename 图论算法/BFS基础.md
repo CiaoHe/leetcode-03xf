@@ -196,3 +196,60 @@ class Solution:
                         ans += candies[b]
         return ans
 ```
+
+# [3629. 通过质数传送到达终点的最少跳跃次数](https://leetcode.cn/problems/minimum-jumps-to-reach-end-via-prime-teleportation/)
+给你一个长度为 `n` 的整数数组 `nums`。
+你从下标 0 开始，目标是到达下标 `n - 1`。
+在任何下标 `i` 处，你可以执行以下操作之一：
+- **移动到相邻格子**：跳到下标 `i + 1` 或 `i - 1`，如果该下标在边界内。
+- **质数传送**：如果 `nums[i]` 是一个**质数** `p`，你可以立即跳到任何满足 `nums[j] % p == 0` 的下标 `j` 处，且下标 `j != i` 。
+
+返回到达下标 `n - 1` 所需的 **最少** 跳跃次数。
+
+**质数** 是一个大于 1 的自然数，只有两个因子，1 和它本身。
+
+```python
+MX = 1_000_001
+prime_factors = [[] for _ in range(MX)]
+for i in range(2, MX):
+    if not prime_factors[i]:
+        for j in range(i, MX, i):
+            prime_factors[j].append(i)
+
+class Solution:
+    def minJumps(self, nums: List[int]) -> int:
+        n = len(nums)
+        if n == 1:
+            return 0
+        groups = defaultdict(list)
+        for i, num in enumerate(nums):
+            for p in prime_factors[num]:
+                groups[p].append(i)  # 对于质数 p，可以跳到下标 i
+    
+        step = 0
+        visited = [False] * n
+        visited[0] = True
+        q = [0]
+
+        while True:
+            tmp = q
+            q = []
+            for i in tmp:
+                if i == n - 1:
+                    return step
+                x = nums[i]
+                indices = groups[x]
+                # left and right -> indices
+                indices.append(i+1)
+                if i > 0:
+                    indices.append(i-1)
+                
+                # prime jumps
+                for j in indices:
+                    if not visited[j]:
+                        visited[j] = True
+                        q.append(j)
+                indices.clear()
+            step += 1
+```
+

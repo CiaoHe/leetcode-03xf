@@ -1,6 +1,5 @@
 # [3251. 单调数组对的数目 II](https://leetcode.cn/problems/find-the-count-of-monotonic-pairs-ii/)
-```python fold
-
+```python 
 # consider to enumerate all possible values for k:=arr1[i-1],
 # 1. since arr1[i-1] <= j and arr2[i-1] >= j
 #    then we get k<=j and nums[i-1]-k>=nums[i]-j
@@ -271,4 +270,40 @@ class Solution:
         res = (dfs(zero, one, 0) + dfs(zero, one, 1)) % MOD
         dfs.cache_clear()
         return res
+```
+
+# [3660. 跳跃游戏 IX](https://leetcode.cn/problems/jump-game-ix/)
+给你一个整数数组 `nums`。
+
+从任意下标 `i` 出发，你可以根据以下规则跳跃到另一个下标 `j`：
+
+- 仅当 `nums[j] < nums[i]` 时，才允许跳跃到下标 `j`，其中 `j > i`。
+- 仅当 `nums[j] > nums[i]` 时，才允许跳跃到下标 `j`，其中 `j < i`。
+
+对于每个下标 `i`，找出从 `i` 出发且可以跳跃 **任意** 次，能够到达 `nums` 中的 **最大值** 是多少。
+
+返回一个数组 `ans`，其中 `ans[i]` 是从下标 `i` 出发可以到达的**最大值**。
+
+```python
+class Solution:
+    def maxValue(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        # 1. j>i 且 nums[i] < nums[j] 可以 i->j 往前跳只能到更小的数
+        # 2. j<i 且 nums[i] > nums[j] 可以 i->j 往后跳只能到更大的数
+
+        # 设[0,i]中最大值为max_left[i], [i+1,n-1]中最小值为min_right[i+1]
+        # 1. 如果 max_left[i] <= min_right[i+1], 那么[0,i]中任何数字都到不了[i+1,n-1]中的任何数字,
+        #    那么ans[i] = max_left[i]
+        # 2. 否则, i可以跳到max_left[i]所在位置, 然后再跳到min_right[i+1]所在位置, 然后再跳到i+1
+        #    那么ans[i] = ans[i+1]
+
+        max_left = list(accumulate(nums, max))
+        min_right = list(accumulate(nums[::-1], min))[::-1]
+        ans = [0] * n
+        for i in range(n-1, -1, -1):
+            if max_left[i] <= min_right[i+1] if i+1 < n else True:
+                ans[i] = max_left[i]
+            else:
+                ans[i] = ans[i+1]
+        return ans
 ```

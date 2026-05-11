@@ -27,6 +27,7 @@ Table of Contents
 - [1871. 跳跃游戏 VII](https://leetcode.cn/problems/jump-game-vii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#1871.-跳跃游戏-vii)
 - [3473. 长度至少为 M 的 K 个子数组之和](https://leetcode.cn/problems/sum-of-k-subarrays-with-length-at-least-m/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3473.-长度至少为-m-的-k-个子数组之和)
 - [3130. 找出所有稳定的二进制数组 II](https://leetcode.cn/problems/find-all-possible-stable-binary-arrays-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3130.-找出所有稳定的二进制数组-ii)
+- [3660. 跳跃游戏 IX](https://leetcode.cn/problems/jump-game-ix/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3660.-跳跃游戏-ix)
 ## 12-树形DP
 
 ### 其他树形DP
@@ -170,6 +171,9 @@ Table of Contents
 ## 前后缀分解
 
 - [2163. 删除元素后和的最小差值](https://leetcode.cn/problems/minimum-difference-in-sums-after-removal-of-elements/) [题解](./DP/前后缀分解.md#2163.-删除元素后和的最小差值)
+## 跳跃游戏
+
+- [2770. 达到末尾下标所需的最大跳跃次数](https://leetcode.cn/problems/maximum-number-of-jumps-to-reach-the-last-index/) [题解](./DP/跳跃游戏.md#2770.-达到末尾下标所需的最大跳跃次数)
 # graph路径
 
 ## Floyd 求任意两点的最短路径
@@ -422,6 +426,7 @@ Table of Contents
 - [433. 最小基因变化](https://leetcode.cn/problems/minimum-genetic-mutation/) [题解](./图论算法/BFS基础.md#433.-最小基因变化)
 - [127. 单词接龙](https://leetcode.cn/problems/word-ladder/) [题解](./图论算法/BFS基础.md#127.-单词接龙)
 - [1298. 你能从盒子里获得的最大糖果数](https://leetcode.cn/problems/maximum-candies-you-can-get-from-boxes/) [题解](./图论算法/BFS基础.md#1298.-你能从盒子里获得的最大糖果数)
+- [3629. 通过质数传送到达终点的最少跳跃次数](https://leetcode.cn/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) [题解](./图论算法/BFS基础.md#3629.-通过质数传送到达终点的最少跳跃次数)
 ## Bellman-Ford
 
 - [和Dijkstra的对比](./图论算法/Bellman-Ford.md#和dijkstra的对比)
@@ -784,6 +789,7 @@ Table of Contents
 
 - [3637. 三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) [题解](./滑动窗口/分组循环.md#3637.-三段式数组-i)
 - [696. 计数二进制子串](https://leetcode.cn/problems/count-binary-substrings/) [题解](./滑动窗口/分组循环.md#696.-计数二进制子串)
+- [1861. 旋转盒子](https://leetcode.cn/problems/rotating-the-box/) [题解](./滑动窗口/分组循环.md#1861.-旋转盒子)
 # 网格图
 
 ## 网格图 DFS
@@ -948,6 +954,7 @@ Table of Contents
 # 脑筋急转弯
 
 - [189. 轮转数组](https://leetcode.cn/problems/rotate-array/) [题解](./脑筋急转弯.md#189.-轮转数组)
+- [1914. 循环轮转矩阵](https://leetcode.cn/problems/cyclically-rotating-a-grid/) [题解](./脑筋急转弯.md#1914.-循环轮转矩阵)
 - [6. Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/) [题解](./脑筋急转弯.md#6.-z-字形变换)
 - [406. 根据身高重建队列](https://leetcode.cn/problems/queue-reconstruction-by-height/) [题解](./脑筋急转弯.md#406.-根据身高重建队列)
 - [781. 森林中的兔子](https://leetcode.cn/problems/rabbits-in-forest/) [题解](./脑筋急转弯.md#781.-森林中的兔子)
@@ -961,15 +968,16 @@ Table of Contents
 - [1689. 十-二进制数的最少数目](https://leetcode.cn/problems/partitioning-into-minimum-number-of-deci-binary-numbers/) [题解](./脑筋急转弯.md#1689.-十-二进制数的最少数目)
 - [2840. 判断通过操作能否让字符串相等 II](https://leetcode.cn/problems/check-if-strings-can-be-made-equal-with-operations-ii/) [题解](./脑筋急转弯.md#2840.-判断通过操作能否让字符串相等-ii)
 - [2087. 网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) [题解](./脑筋急转弯.md#2087.-网格图中机器人回家的最小代价)
+- [796. 旋转字符串](https://leetcode.cn/problems/rotate-string/) [题解](./脑筋急转弯.md#796.-旋转字符串)
 
 
 # Summary
 
-Total problems: **477**
+Total problems: **483**
 
 Still working on ...
 
-Last updated: 2026-05-01 22:50:58
+Last updated: 2026-05-11 09:41:14
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

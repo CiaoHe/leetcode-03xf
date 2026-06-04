@@ -253,3 +253,45 @@ class Solution:
             step += 1
 ```
 
+# [1345. 跳跃游戏 IV](https://leetcode.cn/problems/jump-game-iv/)
+给你一个整数数组 `arr` ，你一开始在数组的第一个元素处（下标为 0）。
+
+每一步，你可以从下标 `i` 跳到下标 `i + 1` 、`i - 1` 或者 `j` ：
+
+- `i + 1` 需满足：`i + 1 < arr.length`
+- `i - 1` 需满足：`i - 1 >= 0`
+- `j` 需满足：`arr[i] == arr[j]` 且 `i != j`
+
+请你返回到达数组最后一个元素的下标处所需的 **最少操作次数** 。
+
+注意：任何时候你都不能跳到数组外面。
+
+```python
+class Solution:
+    def minJumps(self, arr: List[int]) -> int:
+        n = len(arr)
+        if n == 1:
+            return 0
+        idxs = defaultdict(list)
+        for i, v in enumerate(arr):
+            idxs[v].append(i)
+        q = deque([0])
+        visited = set([0])
+        steps = 0
+        while q:
+            for _ in range(len(q)):
+                i = q.popleft()
+                if i == n - 1:
+                    return steps
+                for j in [i - 1, i + 1] + idxs[arr[i]]:
+                    if 0 <= j < n and j not in visited:
+                        visited.add(j)
+                        q.append(j)
+                idxs[arr[i]].clear()
+            steps += 1
+        return -1
+```
+
+> 为什么不能用dfs?
+> 在没有加缓存（记忆化）的情况下，你的 DFS 会尝试所有可能的路径。即便加上记忆化，由于图中存在**环路**（你可以走到 $i+1$，再走回 $i$，或者通过相同数字的索引来回跳），DFS 在第一次访问某个节点时，**并不能保证此时的步数 `step` 是最短的**。
+> - **举个例子：** 如果 DFS 先走了一条很绕的远路到达了索引 `k`，把它标记为了 `visited`。后续有一条极短的路径也能到达 `k`，但由于 `k` 已经在 `visited` 中，短路径就会被直接剪枝（返回 `inf`）。这会导致最终求出的结果不是全局最优解，甚至根本找不到解。

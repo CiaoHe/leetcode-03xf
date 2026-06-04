@@ -160,6 +160,39 @@ class Solution:
                 f[i] = True
         return f[-1]
 ```
+
+或者我们用一个far来记录目前为止已经加入队列的最远位置。下一次搜索的时候不需要从i + minjump开始遍历，可以尝试从far+1开始遍历。
+```python
+class Solution:
+    def canReach(self, s: str, minJump: int, maxJump: int) -> bool:
+        n = len(s)
+        if s[n - 1] != '0':
+            return False
+        
+        queue = deque([0])
+        # far 记录目前已经探索到的最远边界
+        far = 0 
+        
+        while queue:
+            i = queue.popleft()
+            if i == n - 1:
+                return True
+            
+            # 下一次遍历的起点：跳跃的常规起点，和已探索最远边界+1 的较大值
+            start = max(i + minJump, far + 1)
+            end = min(i + maxJump, n - 1)
+            
+            for j in range(start, end + 1):
+                if s[j] == '0':
+                    if j == n - 1: # 提前终止
+                        return True
+                    queue.append(j)
+            
+            # 更新最远边界，避免后面的节点重复扫描到 end 之前的位置
+            far = max(far, end)
+            
+        return False
+```
 # [3473. 长度至少为 M 的 K 个子数组之和](https://leetcode.cn/problems/sum-of-k-subarrays-with-length-at-least-m/)
 给你一个整数数组 nums 和两个整数 k 和 m。
 返回数组 nums 中 k 个不重叠子数组的 最大 和，其中每个子数组的长度 至少 为 m。

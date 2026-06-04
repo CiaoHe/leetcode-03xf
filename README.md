@@ -156,6 +156,7 @@ Table of Contents
 - [60. 排列序列](https://leetcode.cn/problems/permutation-sequence/) [题解](./DP/10-数位DP.md#60.-排列序列)
 - [2999. 统计强大整数的数目](https://leetcode.cn/problems/count-the-number-of-powerful-integers/) [题解](./DP/10-数位DP.md#2999.-统计强大整数的数目)
 - [2843. 统计对称整数的数目](https://leetcode.cn/problems/count-symmetric-integers/) [题解](./DP/10-数位DP.md#2843.-统计对称整数的数目)
+- [3753. 范围内总波动值 II](https://leetcode.cn/problems/total-waviness-of-numbers-in-range-ii/) [题解](./DP/10-数位DP.md#3753.-范围内总波动值-ii)
 ## 14-博弈DP
 
 - [486. 预测赢家](https://leetcode.cn/problems/predict-the-winner/) [题解](./DP/14-博弈DP.md#486.-预测赢家)
@@ -193,6 +194,7 @@ Table of Contents
 
 - [2071. 你可以安排的最多任务数目](https://leetcode.cn/problems/maximum-number-of-tasks-you-can-assign/) [题解](./二分/二分答案/求最大.md#2071.-你可以安排的最多任务数目)
 - [2141. 同时运行 N 台电脑的最长时间](https://leetcode.cn/problems/maximum-running-time-of-n-computers/) [题解](./二分/二分答案/求最大.md#2141.-同时运行-n-台电脑的最长时间)
+- [1665. 完成所有任务的最少初始能量](https://leetcode.cn/problems/minimum-initial-energy-to-finish-tasks/) [题解](./二分/二分答案/求最大.md#1665.-完成所有任务的最少初始能量)
 ### 求最小
 
 - [3453. 分割正方形 I](https://leetcode.cn/problems/separate-squares-i/) [题解](./二分/二分答案/求最小.md#3453.-分割正方形-i)
@@ -302,6 +304,7 @@ Table of Contents
 ## 与或（AND OR）的性质
 
 - [3314. 构造最小位运算数组 I](https://leetcode.cn/problems/construct-the-minimum-bitwise-array-i/) [题解](./位运算/与或（AND OR）的性质.md#3314.-构造最小位运算数组-i)
+- [2657. 找到两个数组的前缀公共数组](https://leetcode.cn/problems/find-the-prefix-common-array-of-two-arrays/) [题解](./位运算/与或（AND OR）的性质.md#2657.-找到两个数组的前缀公共数组)
 ## 位运算（其他）
 
 - [137. 只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) [题解](./位运算/位运算（其他）.md#137.-只出现一次的数字-ii)
@@ -385,6 +388,7 @@ Table of Contents
 ## 分组哈希
 
 - [3741. 三个相等元素之间的最小距离 II](https://leetcode.cn/problems/minimum-distance-between-three-equal-elements-ii/) [题解](./哈希/分组哈希.md#3741.-三个相等元素之间的最小距离-ii)
+- [3121. 统计特殊字母的数量 II](https://leetcode.cn/problems/count-the-number-of-special-characters-ii/) [题解](./哈希/分组哈希.md#3121.-统计特殊字母的数量-ii)
 # 回溯
 
 ## 入门
@@ -427,6 +431,7 @@ Table of Contents
 - [127. 单词接龙](https://leetcode.cn/problems/word-ladder/) [题解](./图论算法/BFS基础.md#127.-单词接龙)
 - [1298. 你能从盒子里获得的最大糖果数](https://leetcode.cn/problems/maximum-candies-you-can-get-from-boxes/) [题解](./图论算法/BFS基础.md#1298.-你能从盒子里获得的最大糖果数)
 - [3629. 通过质数传送到达终点的最少跳跃次数](https://leetcode.cn/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) [题解](./图论算法/BFS基础.md#3629.-通过质数传送到达终点的最少跳跃次数)
+- [1345. 跳跃游戏 IV](https://leetcode.cn/problems/jump-game-iv/) [题解](./图论算法/BFS基础.md#1345.-跳跃游戏-iv)
 ## Bellman-Ford
 
 - [和Dijkstra的对比](./图论算法/Bellman-Ford.md#和dijkstra的对比)
@@ -435,6 +440,8 @@ Table of Contents
 
 - [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/) [题解](./图论算法/DFS基础.md#797.-所有可能的路径)
 - [133. 克隆图](https://leetcode.cn/problems/clone-graph/) [题解](./图论算法/DFS基础.md#133.-克隆图)
+- [1306. 跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/) [题解](./图论算法/DFS基础.md#1306.-跳跃游戏-iii)
+- [1340. 跳跃游戏 V](https://leetcode.cn/problems/jump-game-v/) [题解](./图论算法/DFS基础.md#1340.-跳跃游戏-v)
 ## Dijkstra-单源最短路径
 
 - [基础模版](./图论算法/Dijkstra-单源最短路径.md#基础模版)
@@ -509,12 +516,14 @@ Table of Contents
 
 - [208. 实现 Trie (前缀树)](https://leetcode.cn/problems/implement-trie-prefix-tree/) [题解](./字典树trie/基础.md#208.-实现-trie-(前缀树))
 - [211. 添加与搜索单词 - 数据结构设计](https://leetcode.cn/problems/design-add-and-search-words-data-structure/) [题解](./字典树trie/基础.md#211.-添加与搜索单词---数据结构设计)
+- [3043. 最长公共前缀的长度](https://leetcode.cn/problems/find-the-length-of-the-longest-common-prefix/) [题解](./字典树trie/基础.md#3043.-最长公共前缀的长度)
 ## 字典树优化DP
 
 - [440. 字典序的第K小数字](https://leetcode.cn/problems/k-th-smallest-in-lexicographical-order/) [题解](./字典树trie/字典树优化DP.md#440.-字典序的第k小数字)
 ## 进阶
 
 - [212. 单词搜索 II](https://leetcode.cn/problems/word-search-ii/) [题解](./字典树trie/进阶.md#212.-单词搜索-ii)
+- [3093. 最长公共后缀查询](https://leetcode.cn/problems/longest-common-suffix-queries/) [题解](./字典树trie/进阶.md#3093.-最长公共后缀查询)
 # 字符串
 
 ## KMP
@@ -556,6 +565,7 @@ Table of Contents
 - [3356. 零数组变换 II](https://leetcode.cn/problems/zero-array-transformation-ii/) [题解](./差分/一维差分.md#3356.-零数组变换-ii)
 - [3362. 零数组变换 III](https://leetcode.cn/problems/zero-array-transformation-iii/) [题解](./差分/一维差分.md#3362.-零数组变换-iii)
 - [3346. 执行操作后元素的最高频率 I](https://leetcode.cn/problems/maximum-frequency-of-an-element-after-performing-operations-i/) [题解](./差分/一维差分.md#3346.-执行操作后元素的最高频率-i)
+- [1674. 使数组互补的最少操作次数](https://leetcode.cn/problems/minimum-moves-to-make-array-complementary/) [题解](./差分/一维差分.md#1674.-使数组互补的最少操作次数)
 ## 商分
 
 - [3655. 区间乘法查询后的异或 II](https://leetcode.cn/problems/xor-after-range-multiplication-queries-ii/) [题解](./差分/商分.md#3655.-区间乘法查询后的异或-ii)
@@ -730,6 +740,7 @@ Table of Contents
 
 - [3479. 水果成篮 III](https://leetcode.cn/problems/fruits-into-baskets-iii/) [题解](./树状数组和线段树/线段树.md#3479.-水果成篮-iii)
 - [3477. 水果成篮 II](https://leetcode.cn/problems/fruits-into-baskets-ii/) [题解](./树状数组和线段树/线段树.md#3477.-水果成篮-ii)
+- [3161. 物块放置查询](https://leetcode.cn/problems/block-placement-queries/) [题解](./树状数组和线段树/线段树.md#3161.-物块放置查询)
 # 滑动窗口
 
 ## 不定长滑动窗口
@@ -838,6 +849,7 @@ Table of Contents
 - [2412. 完成所有交易的初始最少钱数](https://leetcode.cn/problems/minimum-money-required-before-transactions/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2412.-完成所有交易的初始最少钱数)
 - [3440. 重新安排会议得到最多空余时间 II](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-ii/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3440.-重新安排会议得到最多空余时间-ii)
 - [3075. 幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3075. 幸福值最大化的选择方案)
+- [2144. 打折购买糖果的最小开销](https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2144.-打折购买糖果的最小开销)
 ### 从最左or最右开始贪心
 
 - [3228. 将 1 移动到末尾的最大操作次数](https://leetcode.cn/problems/maximum-number-of-operations-to-move-ones-to-the-end/) [题解](./贪心/贪心策略/从最左or最右开始贪心.md#3228.-将-1-移动到末尾的最大操作次数)
@@ -906,6 +918,7 @@ Table of Contents
 # 分治
 
 - [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/) [题解](./分治.md#395.-至少有-k-个重复字符的最长子串)
+- [3633. 最早完成陆地和水上游乐设施的时间 I](https://leetcode.cn/problems/earliest-finish-time-for-land-and-water-rides-i/) [题解](./分治.md#3633.-最早完成陆地和水上游乐设施的时间-i)
 # 前后缀分解
 
 - [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/description/) [题解](./前后缀分解.md#42.-接雨水)
@@ -973,11 +986,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **483**
+Total problems: **496**
 
 Still working on ...
 
-Last updated: 2026-05-11 09:47:24
+Last updated: 2026-06-04 10:17:19
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

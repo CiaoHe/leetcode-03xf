@@ -507,6 +507,7 @@ Table of Contents
 ## 第K小（大）
 
 - [373. 查找和最小的 K 对数字](https://leetcode.cn/problems/find-k-pairs-with-smallest-sums/) [题解](./堆(优先队列)/第K小（大）.md#373.-查找和最小的-k-对数字)
+- [3691. 最大子数组总值 II](https://leetcode.cn/problems/maximum-total-subarray-value-ii/) [题解](./堆(优先队列)/第K小（大）.md#3691.-最大子数组总值-ii)
 ## 邻项消除
 
 - [2751. 机器人碰撞](https://leetcode.cn/problems/robot-collisions/) [题解](./堆(优先队列)/邻项消除.md#2751.-机器人碰撞)
@@ -933,6 +934,7 @@ Table of Contents
 - [3738. 替换至多一个元素后最长非递减子数组](https://leetcode.cn/problems/longest-non-decreasing-subarray-after-replacing-at-most-one-element/) [题解](./前后缀分解.md#3738.-替换至多一个元素后最长非递减子数组)
 - [1653. 使字符串平衡的最少删除次数](https://leetcode.cn/problems/minimum-deletions-to-make-string-balanced/) [题解](./前后缀分解.md#1653.-使字符串平衡的最少删除次数)
 - [2906. 构造乘积矩阵](https://leetcode.cn/problems/construct-product-matrix/) [题解](./前后缀分解.md#2906.-构造乘积矩阵)
+- [2574. 左右元素和的差值](https://leetcode.cn/problems/left-and-right-sum-differences/) [题解](./前后缀分解.md#2574.-左右元素和的差值)
 # 博弈论
 
 - [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
@@ -982,15 +984,16 @@ Table of Contents
 - [2840. 判断通过操作能否让字符串相等 II](https://leetcode.cn/problems/check-if-strings-can-be-made-equal-with-operations-ii/) [题解](./脑筋急转弯.md#2840.-判断通过操作能否让字符串相等-ii)
 - [2087. 网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) [题解](./脑筋急转弯.md#2087.-网格图中机器人回家的最小代价)
 - [796. 旋转字符串](https://leetcode.cn/problems/rotate-string/) [题解](./脑筋急转弯.md#796.-旋转字符串)
+- [3689. 最大子数组总值 I](https://leetcode.cn/problems/maximum-total-subarray-value-i/) [题解](./脑筋急转弯.md#3689.-最大子数组总值-i)
 
 
 # Summary
 
-Total problems: **496**
+Total problems: **499**
 
 Still working on ...
 
-Last updated: 2026-06-04 10:17:42
+Last updated: 2026-06-10 08:57:16
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

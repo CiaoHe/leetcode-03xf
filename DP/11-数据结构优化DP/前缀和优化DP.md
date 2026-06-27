@@ -340,3 +340,85 @@ class Solution:
                 ans[i] = ans[i+1]
         return ans
 ```
+
+# [3699. 锯齿形数组的总数 I](https://leetcode.cn/problems/number-of-zigzag-arrays-i/)
+给你 三个整数 `n`、`l` 和 `r`。
+
+长度为 `n` 的锯齿形数组定义如下：
+
+- 每个元素的取值范围为 `[l, r]`。
+- 任意 **两个** 相邻的元素都不相等。
+- 任意 **三个** 连续的元素不能构成一个 **严格递增** 或 **严格递减** 的序列。
+
+返回满足条件的锯齿形数组的总数。
+
+由于答案可能很大，请将结果对 `109 + 7` 取余数。
+
+**序列** 被称为 **严格递增** 需要满足：当且仅当每个元素都严格大于它的前一个元素（如果存在）。
+
+**序列** 被称为 **严格递减** 需要满足，当且仅当每个元素都严格小于它的前一个元素（如果存在）。
+
+```python
+"""
+寻找子问题：前面两个数要么递增 -> 第三个数字小于第二个数字；要么递减 -> 第三个数字大于第二个数字
+状态定义：
+dp0[i][j]: 第i个数为j，且i-1 < i情况下的zigzag数组的数量
+dp1[i][j]: 第i个数为j，且i-1 > i情况下的zigzag数组的数量
+
+l,r = 0, r-l
+
+# 初始化
+dp0[1][j] = 1 for j in [0, r-l]
+dp1[1][j] = 1 for j in [0, r-l]
+
+# 状态转移
+dp0[i][j] = sum(dp1[i-1][k] for k in [0, j-1])
+dp1[i][j] = sum(dp0[i-1][k] for k in [j+1, r-l])
+
+# 最终答案
+sum(dp0[n][j] + dp1[n][j] for j in [0, r-l])
+"""
+
+class Solution:
+    def zigZagArrays(self, n: int, l: int, r: int) -> int:
+        MOD = 10**9 + 7
+        k = r - l + 1
+        dp0 = [[0] * k for _ in range(n + 1)]
+        dp1 = [[0] * k for _ in range(n + 1)]
+        for j in range(k):
+            dp0[1][j] = 1
+            dp1[1][j] = 1
+        for i in range(2, n + 1):
+            for j in range(k):
+                dp0[i][j] = sum(dp1[i-1][k] for k in range(j)) % MOD
+                dp1[i][j] = sum(dp0[i-1][k] for k in range(j + 1, k)) % MOD
+        return sum(dp0[n][j] + dp1[n][j] for j in range(k)) % MOD
+```
+
+ootime 可以压缩成为1D 因为每次`dp[i]` 只和 `dp[i-1]` 相关，所以每次roll $i$的时候可以直接覆盖掉上一轮，然后我们可以用preSum和sufSum来积累
+```python
+class Solution:
+    def zigZagArrays(self, n: int, l: int, r: int) -> int:
+        MOD = 10**9 + 7
+        k = r - l + 1
+        dp0 = [1] * k
+        dp1 = [1] * k
+
+        for i in range(2, n + 1):
+            new_dp0 = [0] * k
+            new_dp1 = [0] * k
+
+            cur_sum = 0
+            for j in range(k):
+                new_dp0[j] = cur_sum
+                cur_sum = (cur_sum + dp1[j]) % MOD
+            
+            cur_sum = 0
+            for j in range(k - 1, -1, -1):
+                new_dp1[j] = cur_sum
+                cur_sum = (cur_sum + dp0[j]) % MOD
+
+            dp0, dp1 = new_dp0, new_dp1
+        
+        return (sum(dp0) + sum(dp1)) % MOD
+```

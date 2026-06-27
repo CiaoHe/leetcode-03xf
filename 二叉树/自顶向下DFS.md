@@ -211,3 +211,45 @@ class Solution:
         dfs(root, 0)
         return ans
 ```
+# [3558. 给边赋权值的方案数 I](https://leetcode.cn/problems/number-of-ways-to-assign-edge-weights-i/)
+给你一棵 `n` 个节点的无向树，节点从 1 到 `n` 编号，树以节点 1 为根。树由一个长度为 `n - 1` 的二维整数数组 `edges` 表示，其中 `edges[i] = [ui, vi]` 表示在节点 `ui` 和 `vi` 之间有一条边。
+
+一开始，所有边的权重为 0。你可以将每条边的权重设为 **1** 或 **2**。
+
+两个节点 `u` 和 `v` 之间路径的 **代价** 是连接它们路径上所有边的权重之和。
+
+选择任意一个 **深度最大** 的节点 `x`。返回从节点 1 到 `x` 的路径中，边权重之和为 **奇数** 的赋值方式数量。
+
+由于答案可能很大，返回它对 `109 + 7` 取模的结果。
+
+**注意：** 忽略从节点 1 到节点 `x` 的路径外的所有边。
+
+```python
+class Solution:
+    def assignEdgeWeights(self, edges: List[List[int]]) -> int:
+        MOD = 10**9 + 7
+        n = len(edges) + 1
+        # 构建邻接表
+        graph = defaultdict(list)
+        for u, v in edges:
+            graph[u].append(v)
+            graph[v].append(u)
+        
+        def dfs(x: int, fa:int)->int:
+            d = 0
+            for y in graph[x]:
+                if y == fa:
+                    continue
+                d = max(d, dfs(y, x) + 1)
+            return d
+            
+        max_depth = dfs(1, 0)
+        # 需要保证1到x的路径中 边权重之和为奇数 每个边要么是1要么是2；找到所有的赋值方法总和
+        # 我们只需要考虑如何让边权重为1的边的数目是奇数即可
+        # 我们可以选 1, 3, 5, ..., max_depth 个边权重为1的边
+        # 那么总和就是 C(max_depth, 1) + C(max_depth, 3) + ... + C(max_depth, max_depth) (如果max_depth是偶数则最后一个是C(max_depth, max_depth-1))
+        # 这个和可以通过二项式定理计算出来 就是 2^(max_depth-1) (如果max_depth>=1)
+        if max_depth < 1:
+            return 0
+        return pow(2, max_depth - 1, MOD)
+```

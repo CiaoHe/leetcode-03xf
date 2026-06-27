@@ -28,6 +28,10 @@ Table of Contents
 - [3473. 长度至少为 M 的 K 个子数组之和](https://leetcode.cn/problems/sum-of-k-subarrays-with-length-at-least-m/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3473.-长度至少为-m-的-k-个子数组之和)
 - [3130. 找出所有稳定的二进制数组 II](https://leetcode.cn/problems/find-all-possible-stable-binary-arrays-ii/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3130.-找出所有稳定的二进制数组-ii)
 - [3660. 跳跃游戏 IX](https://leetcode.cn/problems/jump-game-ix/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3660.-跳跃游戏-ix)
+- [3699. 锯齿形数组的总数 I](https://leetcode.cn/problems/number-of-zigzag-arrays-i/) [题解](./DP/11-数据结构优化DP/前缀和优化DP.md#3699.-锯齿形数组的总数-i)
+### 矩阵快速幂优化DP
+
+- [3700. 锯齿形数组的总数 II](https://leetcode.cn/problems/number-of-zigzag-arrays-ii/) [题解](./DP/11-数据结构优化DP/矩阵快速幂优化DP.md#3700.-锯齿形数组的总数-ii)
 ## 12-树形DP
 
 ### 其他树形DP
@@ -186,6 +190,11 @@ Table of Contents
 ## 7. DFS时间戳
 
 - [2322. 从树中删除边的最小分数](https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree/) [题解](./一般树/7. DFS时间戳.md#2322.-从树中删除边的最小分数)
+## 最近公共祖先(LCA)+倍增算法
+
+- [1483. 树节点的第 K 个祖先 模版题](https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/) [题解](./一般树/最近公共祖先(LCA)+倍增算法.md#1483.-树节点的第-k-个祖先-模版题)
+- [任意两点x和y的lca](./一般树/最近公共祖先(LCA)+倍增算法.md#任意两点x和y的lca)
+- [3559. 给边赋权值的方案数 II](https://leetcode.cn/problems/number-of-ways-to-assign-edge-weights-ii/) [题解](./一般树/最近公共祖先(LCA)+倍增算法.md#3559.-给边赋权值的方案数-ii)
 # 二分
 
 ## 二分答案
@@ -280,6 +289,7 @@ Table of Contents
 - [3372. 连接两棵树后最大目标节点数目 I](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-i/) [题解](./二叉树/自顶向下DFS.md#3372.-连接两棵树后最大目标节点数目-i)
 - [3373. 连接两棵树后最大目标节点数目 II](https://leetcode.cn/problems/maximize-the-number-of-target-nodes-after-connecting-trees-ii/) [题解](./二叉树/自顶向下DFS.md#3373.-连接两棵树后最大目标节点数目-ii)
 - [1022. 从根到叶的二进制数之和](https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/) [题解](./二叉树/自顶向下DFS.md#1022.-从根到叶的二进制数之和)
+- [3558. 给边赋权值的方案数 I](https://leetcode.cn/problems/number-of-ways-to-assign-edge-weights-i/) [题解](./二叉树/自顶向下DFS.md#3558.-给边赋权值的方案数-i)
 ## 遍历
 
 - [102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal) [题解](./二叉树/遍历.md#102. 二叉树的层序遍历)
@@ -338,6 +348,8 @@ Table of Contents
 - [1590. 使数组和能被 P 整除](https://leetcode.cn/problems/make-sum-divisible-by-p/) [题解](./前缀和/前缀和与哈希表.md#1590.-使数组和能被-p-整除)
 - [525. 连续数组](https://leetcode.cn/problems/contiguous-array/) [题解](./前缀和/前缀和与哈希表.md#525.-连续数组)
 - [3714. 最长的平衡子串 II](https://leetcode.cn/problems/longest-balanced-substring-ii/) [题解](./前缀和/前缀和与哈希表.md#3714.-最长的平衡子串-ii)
+- [3737. 统计主要元素子数组数目 I](https://leetcode.cn/problems/count-subarrays-with-majority-element-i/) [题解](./前缀和/前缀和与哈希表.md#3737.-统计主要元素子数组数目-i)
+- [3739. 统计主要元素子数组数目 II](https://leetcode.cn/problems/count-subarrays-with-majority-element-ii/) [题解](./前缀和/前缀和与哈希表.md#3739.-统计主要元素子数组数目-ii)
 ## 基础
 
 - [2270. 分割数组的方案数](https://leetcode.cn/problems/number-of-ways-to-split-array/) [题解](./前缀和/基础.md#2270.-分割数组的方案数)
@@ -851,6 +863,8 @@ Table of Contents
 - [3440. 重新安排会议得到最多空余时间 II](https://leetcode.cn/problems/reschedule-meetings-for-maximum-free-time-ii/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3440.-重新安排会议得到最多空余时间-ii)
 - [3075. 幸福值最大化的选择方案](https://leetcode.cn/problems/maximize-happiness-of-selected-children) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3075. 幸福值最大化的选择方案)
 - [2144. 打折购买糖果的最小开销](https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2144.-打折购买糖果的最小开销)
+- [1833. 雪糕的最大数量](https://leetcode.cn/problems/maximum-ice-cream-bars/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1833.-雪糕的最大数量)
+- [1846. 减小和重新排列数组后的最大元素](https://leetcode.cn/problems/maximum-element-after-decreasing-and-rearranging/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1846.-减小和重新排列数组后的最大元素)
 ### 从最左or最右开始贪心
 
 - [3228. 将 1 移动到末尾的最大操作次数](https://leetcode.cn/problems/maximum-number-of-operations-to-move-ones-to-the-end/) [题解](./贪心/贪心策略/从最左or最右开始贪心.md#3228.-将-1-移动到末尾的最大操作次数)
@@ -879,6 +893,7 @@ Table of Contents
 - [2975. 移除栅栏得到的正方形田地的最大面积](https://leetcode.cn/problems/maximum-square-area-by-removing-fences-from-a-field/) [题解](./贪心/暴力枚举.md#2975.-移除栅栏得到的正方形田地的最大面积)
 - [3047. 求交集区域内的最大正方形面积](https://leetcode.cn/problems/find-the-largest-area-of-square-inside-two-rectangles/) [题解](./贪心/暴力枚举.md#3047.-求交集区域内的最大正方形面积)
 - [3567. 子矩阵的最小绝对差](https://leetcode.cn/problems/minimum-absolute-difference-in-sliding-submatrix/) [题解](./贪心/暴力枚举.md#3567.-子矩阵的最小绝对差)
+- [3020. 子集中元素的最大数量](https://leetcode.cn/problems/find-the-maximum-number-of-elements-in-subset/) [题解](./贪心/暴力枚举.md#3020.-子集中元素的最大数量)
 # 链表
 
 ## 其他
@@ -916,6 +931,10 @@ Table of Contents
 
 - [141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) [题解](./链表/快慢指针.md#141.-环形链表)
 - [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/) [题解](./链表/快慢指针.md#142.-环形链表-ii)
+- [2095. 删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/) [题解](./链表/快慢指针.md#2095.-删除链表的中间节点)
+# 两次扫描
+
+- [1840. 最高建筑高度](https://leetcode.cn/problems/maximum-building-height/) [题解](./两次扫描.md#1840.-最高建筑高度)
 # 分治
 
 - [395. 至少有 K 个重复字符的最长子串](https://leetcode.cn/problems/longest-substring-with-at-least-k-repeating-characters/) [题解](./分治.md#395.-至少有-k-个重复字符的最长子串)
@@ -985,15 +1004,18 @@ Table of Contents
 - [2087. 网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) [题解](./脑筋急转弯.md#2087.-网格图中机器人回家的最小代价)
 - [796. 旋转字符串](https://leetcode.cn/problems/rotate-string/) [题解](./脑筋急转弯.md#796.-旋转字符串)
 - [3689. 最大子数组总值 I](https://leetcode.cn/problems/maximum-total-subarray-value-i/) [题解](./脑筋急转弯.md#3689.-最大子数组总值-i)
+# 逆向思维
+
+- [3614. 用特殊操作处理字符串 II](https://leetcode.cn/problems/process-string-with-special-operations-ii/) [题解](./逆向思维.md#3614.-用特殊操作处理字符串-ii)
 
 
 # Summary
 
-Total problems: **499**
+Total problems: **512**
 
 Still working on ...
 
-Last updated: 2026-06-10 08:57:16
+Last updated: 2026-06-28 07:12:43
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

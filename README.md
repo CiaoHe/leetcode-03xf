@@ -54,6 +54,7 @@ Table of Contents
 - [329. 矩阵中的最长递增路径](https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#329.-矩阵中的最长递增路径)
 - [3363. 最多可收集的水果数目](https://leetcode.cn/problems/find-the-maximum-number-of-fruits-collected/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#3363.-最多可收集的水果数目)
 - [3459. 最长 V 形对角线段的长度](https://leetcode.cn/problems/length-of-longest-v-shaped-diagonal-segment/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#3459.-最长-v-形对角线段的长度)
+- [1301. 最大得分的路径数目](https://leetcode.cn/problems/number-of-paths-with-max-score/) [题解](./DP/2-网格图DP/网格图DP-进阶.md#1301.-最大得分的路径数目)
 ## 3-背包
 
 ### 0-1背包
@@ -234,6 +235,7 @@ Table of Contents
 - [1552. 两球之间的磁力](https://leetcode.cn/problems/magnetic-force-between-two-balls/) [题解](./二分/最大化最小值.md#1552.-两球之间的磁力)
 - [2528. 最大化城市的最小电量](https://leetcode.cn/problems/maximize-the-minimum-powered-city/) [题解](./二分/最大化最小值.md#2528.-最大化城市的最小电量)
 - [3464. 正方形上的点之间的最大距离](https://leetcode.cn/problems/maximize-the-distance-between-points-on-a-square/) [题解](./二分/最大化最小值.md#3464.-正方形上的点之间的最大距离)
+- [3620. 恢复网络路径](https://leetcode.cn/problems/network-recovery-pathways/) [题解](./二分/最大化最小值.md#3620.-恢复网络路径)
 ## 最小化最大值
 
 - [410. 分割数组的最大值](https://leetcode.cn/problems/split-array-largest-sum/) [题解](./二分/最小化最大值.md#410.-分割数组的最大值)
@@ -357,6 +359,9 @@ Table of Contents
 ## 距离和
 
 - [2615. 等值距离和](https://leetcode.cn/problems/sum-of-distances) [题解](./前缀和/距离和.md#2615.-等值距离和)
+## 进阶
+
+- [3756. 连接非零数字并乘以其数字和 II](https://leetcode.cn/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/) [题解](./前缀和/进阶.md#3756.-连接非零数字并乘以其数字和-ii)
 # 单调栈
 
 ## 基础
@@ -763,6 +768,7 @@ Table of Contents
 #### 恰好型滑动窗口
 
 - [3306. 元音辅音字符串计数 II](https://leetcode.cn/problems/count-of-substrings-containing-every-vowel-and-k-consonants-ii/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/恰好型滑动窗口.md#3306.-元音辅音字符串计数-ii)
+- [1358. 包含所有三种字符的子字符串数目](https://leetcode.cn/problems/number-of-substrings-containing-all-three-characters/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/恰好型滑动窗口.md#1358.-包含所有三种字符的子字符串数目)
 #### 越短越合法
 
 - [3258. 统计满足 K 约束的子字符串数量 I](https://leetcode.cn/problems/count-substrings-that-satisfy-k-constraint-i/) [题解](./滑动窗口/不定长滑动窗口/求子数组个数/越短越合法.md#3258.-统计满足-k-约束的子字符串数量-i)
@@ -816,6 +822,10 @@ Table of Contents
 - [1861. 旋转盒子](https://leetcode.cn/problems/rotating-the-box/) [题解](./滑动窗口/分组循环.md#1861.-旋转盒子)
 # 网格图
 
+## 网格图 0-1 BFS
+
+- [3286. 穿越网格图的安全路径](https://leetcode.cn/problems/find-a-safe-walk-through-a-grid/) [题解](./网格图/网格图 0-1 BFS.md#3286.-穿越网格图的安全路径)
+- [2290. 到达角落需要移除障碍物的最小数目](https://leetcode.cn/problems/minimum-obstacle-removal-to-reach-corner/) [题解](./网格图/网格图 0-1 BFS.md#2290.-到达角落需要移除障碍物的最小数目)
 ## 网格图 DFS
 
 - [200. 岛屿数量](https://leetcode.cn/problems/number-of-islands/) [题解](./网格图/网格图 DFS.md#200.-岛屿数量)
@@ -829,6 +839,9 @@ Table of Contents
 - [1559. 二维网格图中探测环](https://leetcode.cn/problems/detect-cycles-in-2d-grid/) [题解](./网格图/网格图 DFS.md#1559.-二维网格图中探测环)
 - [1391. 检查网格中是否存在有效路径](https://leetcode.cn/problems/check-if-there-is-a-valid-path-in-a-grid/) [题解](./网格图/网格图 DFS.md#1391.-检查网格中是否存在有效路径)
 - [3742. 网格中得分最大的路径](https://leetcode.cn/problems/maximum-path-score-in-a-grid/) [题解](./网格图/网格图 DFS.md#3742.-网格中得分最大的路径)
+## 网格图BFS
+
+- [2812. 找出最安全路径](https://leetcode.cn/problems/find-the-safest-path-in-a-grid/) [题解](./网格图/网格图BFS.md#2812.-找出最安全路径)
 # 贪心
 
 ## 区间贪心
@@ -837,6 +850,7 @@ Table of Contents
 
 - [1326. 灌溉花园的最少水龙头数目](https://leetcode.cn/problems/minimum-number-of-taps-to-open-to-water-a-garden/) [题解](./贪心/区间贪心/区间覆盖.md#1326.-灌溉花园的最少水龙头数目)
 - [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) [题解](./贪心/区间贪心/区间覆盖.md#45.-跳跃游戏-ii)
+- [1288. 删除被覆盖区间](https://leetcode.cn/problems/remove-covered-intervals/) [题解](./贪心/区间贪心/区间覆盖.md#1288.-删除被覆盖区间)
 ### 区间选点
 
 - [452. 用最少数量的箭引爆气球](https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/) [题解](./贪心/区间贪心/区间选点.md#452.-用最少数量的箭引爆气球)
@@ -1011,11 +1025,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **512**
+Total problems: **520**
 
 Still working on ...
 
-Last updated: 2026-06-28 07:12:43
+Last updated: 2026-07-08 08:10:00
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

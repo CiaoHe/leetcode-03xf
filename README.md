@@ -162,6 +162,7 @@ Table of Contents
 - [2999. 统计强大整数的数目](https://leetcode.cn/problems/count-the-number-of-powerful-integers/) [题解](./DP/10-数位DP.md#2999.-统计强大整数的数目)
 - [2843. 统计对称整数的数目](https://leetcode.cn/problems/count-symmetric-integers/) [题解](./DP/10-数位DP.md#2843.-统计对称整数的数目)
 - [3753. 范围内总波动值 II](https://leetcode.cn/problems/total-waviness-of-numbers-in-range-ii/) [题解](./DP/10-数位DP.md#3753.-范围内总波动值-ii)
+- [1291. 顺次数](https://leetcode.cn/problems/sequential-digits/) [题解](./DP/10-数位DP.md#1291.-顺次数)
 ## 14-博弈DP
 
 - [486. 预测赢家](https://leetcode.cn/problems/predict-the-winner/) [题解](./DP/14-博弈DP.md#486.-预测赢家)
@@ -191,6 +192,9 @@ Table of Contents
 ## 7. DFS时间戳
 
 - [2322. 从树中删除边的最小分数](https://leetcode.cn/problems/minimum-score-after-removals-on-a-tree/) [题解](./一般树/7. DFS时间戳.md#2322.-从树中删除边的最小分数)
+## 数组上的倍增
+
+- [3534. 针对图的路径存在性查询 II](https://leetcode.cn/problems/path-existence-queries-in-a-graph-ii/) [题解](./一般树/数组上的倍增.md#3534.-针对图的路径存在性查询-ii)
 ## 最近公共祖先(LCA)+倍增算法
 
 - [1483. 树节点的第 K 个祖先 模版题](https://leetcode.cn/problems/kth-ancestor-of-a-tree-node/) [题解](./一般树/最近公共祖先(LCA)+倍增算法.md#1483.-树节点的第-k-个祖先-模版题)
@@ -459,6 +463,7 @@ Table of Contents
 - [133. 克隆图](https://leetcode.cn/problems/clone-graph/) [题解](./图论算法/DFS基础.md#133.-克隆图)
 - [1306. 跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/) [题解](./图论算法/DFS基础.md#1306.-跳跃游戏-iii)
 - [1340. 跳跃游戏 V](https://leetcode.cn/problems/jump-game-v/) [题解](./图论算法/DFS基础.md#1340.-跳跃游戏-v)
+- [2685. 统计完全连通分量的数量](https://leetcode.cn/problems/count-the-number-of-complete-components/) [题解](./图论算法/DFS基础.md#2685.-统计完全连通分量的数量)
 ## Dijkstra-单源最短路径
 
 - [基础模版](./图论算法/Dijkstra-单源最短路径.md#基础模版)
@@ -620,6 +625,7 @@ Table of Contents
 - [547. 省份数量](https://leetcode.cn/problems/number-of-provinces/) [题解](./并查集/基础.md#547.-省份数量)
 - [3607. 电网维护](https://leetcode.cn/problems/power-grid-maintenance/) [题解](./并查集/基础.md#3607.-电网维护)
 - [2092. 找出知晓秘密的所有专家](https://leetcode.cn/problems/find-all-people-with-secret/) [题解](./并查集/基础.md#2092.-找出知晓秘密的所有专家)
+- [3532. 针对图的路径存在性查询 I](https://leetcode.cn/problems/path-existence-queries-in-a-graph-i/) [题解](./并查集/基础.md#3532.-针对图的路径存在性查询-i)
 ## 数组上的并查集
 
 - [2612. 最少翻转操作数](https://leetcode.cn/problems/minimum-reverse-operations) [题解](./并查集/数组上的并查集.md#2612. 最少翻转操作数)
@@ -1025,11 +1031,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **520**
+Total problems: **524**
 
 Still working on ...
 
-Last updated: 2026-07-08 08:11:20
+Last updated: 2026-07-13 07:45:44
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

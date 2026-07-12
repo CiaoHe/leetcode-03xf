@@ -1,3 +1,30 @@
+找连通块、判断是否有环（如 207 题）等。部分题目做法不止一种。
+```python
+def solve(n: int, edges: List[List[int]]) -> List[int]:
+    # 节点编号从 0 到 n-1
+    g = [[] for _ in range(n)]
+    for x, y in edges:
+        g[x].append(y)
+        g[y].append(x)  # 无向图
+
+    vis = [False] * n
+
+    def dfs(x: int) -> int:
+        vis[x] = True  # 避免重复访问节点
+        size = 1
+        for y in g[x]:
+            if not vis[y]:
+                size += dfs(y)
+        return size
+
+    # 计算每个连通块的大小
+    ans = []
+    for i, b in enumerate(vis):
+        if not b:  # i 没有访问过
+            size = dfs(i)
+            ans.append(size)
+    return ans
+```
 # [797. 所有可能的路径](https://leetcode.cn/problems/all-paths-from-source-to-target/)
 DFS做法
 ```python
@@ -136,4 +163,43 @@ class Solution:
                 res = max(res, f(j) + 1)
             return res
         return max(f(i) for i in range(n))
+```
+
+# [2685. 统计完全连通分量的数量](https://leetcode.cn/problems/count-the-number-of-complete-components/)
+给你一个整数 `n` 。现有一个包含 `n` 个顶点的 **无向** 图，顶点按从 `0` 到 `n - 1` 编号。给你一个二维整数数组 `edges` 其中 `edges[i] = [ai, bi]` 表示顶点 `ai` 和 `bi` 之间存在一条 **无向** 边。
+
+返回图中 **完全连通分量** 的数量。
+
+如果在子图中任意两个顶点之间都存在路径，并且子图中没有任何一个顶点与子图外部的顶点共享边，则称其为 **连通分量** 。
+
+如果连通分量中每对节点之间都存在一条边，则称其为 **完全连通分量** 。
+
+> dfs计算联通块大小 + 内部边数
+```python
+class Solution:
+    def countCompleteComponents(self, n: int, edges: List[List[int]]) -> int:
+        g = [[] for _ in range(n)]
+        for u, v in edges:
+            g[u].append(v)
+            g[v].append(u)
+        vis = [False] * n
+
+        def dfs(x):
+            nonlocal v, e
+            v += 1 # node num +1
+            e += len(g[x])
+            vis[x] = True
+            for y in g[x]:
+                if not vis[y]:
+                    dfs(y)
+        
+        ans = 0
+        for i in range(n):
+            if not vis[i]:
+                v = 0
+                e = 0
+                dfs(i)
+                if e == v * (v - 1):
+                    ans += 1
+        return ans
 ```

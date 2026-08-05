@@ -138,6 +138,7 @@ Table of Contents
 - [2209. 用地毯覆盖后的最少白色砖块](https://leetcode.cn/problems/minimum-white-tiles-after-covering-with-carpets/) [题解](./DP/7-其他线形DP/多维DP.md#2209.-用地毯覆盖后的最少白色砖块)
 - [1320. 二指输入的的最小距离](https://leetcode.cn/problems/minimum-distance-to-type-a-word-using-two-fingers/) [题解](./DP/7-其他线形DP/多维DP.md#1320.-二指输入的的最小距离)
 - [3225. 网格图操作后的最大分数](https://leetcode.cn/problems/maximum-score-from-grid-operations/) [题解](./DP/7-其他线形DP/多维DP.md#3225.-网格图操作后的最大分数)
+- [3336. 最大公约数相等的子序列数量](https://leetcode.cn/problems/find-the-number-of-subsequences-with-equal-gcd/) [题解](./DP/7-其他线形DP/多维DP.md#3336.-最大公约数相等的子序列数量)
 ### 子矩形DP
 
 - [1277. 统计全为 1 的正方形子矩阵](https://leetcode.cn/problems/count-square-submatrices-with-all-ones/) [题解](./DP/7-其他线形DP/子矩形DP.md#1277.-统计全为-1-的正方形子矩阵)
@@ -166,6 +167,8 @@ Table of Contents
 ## 14-博弈DP
 
 - [486. 预测赢家](https://leetcode.cn/problems/predict-the-winner/) [题解](./DP/14-博弈DP.md#486.-预测赢家)
+- [877. 石子游戏](https://leetcode.cn/problems/stone-game/) [题解](./DP/14-博弈DP.md#877.-石子游戏)
+- [1406. 石子游戏 III](https://leetcode.cn/problems/stone-game-iii/) [题解](./DP/14-博弈DP.md#1406.-石子游戏-iii)
 ## 15-概率期望DP
 
 - [688. 骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) [题解](./DP/15-概率期望DP.md#688.-骑士在棋盘上的概率)
@@ -374,6 +377,8 @@ Table of Contents
 ## 最小字典序
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./单调栈/最小字典序.md#402.-移掉-k-位数字)
+- [1081. 不同字符的最小子序列](https://leetcode.cn/problems/smallest-subsequence-of-distinct-characters/) [题解](./单调栈/最小字典序.md#1081.-不同字符的最小子序列)
+- [Q3. 整理书架](https://leetcode.cn/contest/tianchi2022/problems/ev2bru/) [题解](./单调栈/最小字典序.md#q3.-整理书架)
 - [321. 拼接最大数](https://leetcode.cn/problems/create-maximum-number/) [题解](./单调栈/最小字典序.md#321.-拼接最大数)
 ## 矩形
 
@@ -464,6 +469,7 @@ Table of Contents
 - [1306. 跳跃游戏 III](https://leetcode.cn/problems/jump-game-iii/) [题解](./图论算法/DFS基础.md#1306.-跳跃游戏-iii)
 - [1340. 跳跃游戏 V](https://leetcode.cn/problems/jump-game-v/) [题解](./图论算法/DFS基础.md#1340.-跳跃游戏-v)
 - [2685. 统计完全连通分量的数量](https://leetcode.cn/problems/count-the-number-of-complete-components/) [题解](./图论算法/DFS基础.md#2685.-统计完全连通分量的数量)
+- [3310. 移除可疑的方法](https://leetcode.cn/problems/remove-methods-from-project/) [题解](./图论算法/DFS基础.md#3310.-移除可疑的方法)
 ## Dijkstra-单源最短路径
 
 - [基础模版](./图论算法/Dijkstra-单源最短路径.md#基础模版)
@@ -671,6 +677,8 @@ Table of Contents
 
 - [3201. 找出有效子序列的最大长度 I](https://leetcode.cn/problems/find-the-maximum-length-of-valid-subsequence-i/) [题解](./数学/数论/余数.md#3201.-找出有效子序列的最大长度-i)
 - [3202. 找出有效子序列的最大长度 II](https://leetcode.cn/problems/find-the-maximum-length-of-valid-subsequence-ii/) [题解](./数学/数论/余数.md#3202.-找出有效子序列的最大长度-ii)
+- [3014. 输入单词需要的最少按键次数 I](https://leetcode.cn/problems/minimum-number-of-pushes-to-type-word-i/) [题解](./数学/数论/余数.md#3014.-输入单词需要的最少按键次数-i)
+- [3016. 输入单词需要的最少按键次数 II](https://leetcode.cn/problems/minimum-number-of-pushes-to-type-word-ii/) [题解](./数学/数论/余数.md#3016.-输入单词需要的最少按键次数-ii)
 ### 判断质数
 
 - [埃氏筛](./数学/数论/判断质数.md#埃氏筛)
@@ -684,6 +692,7 @@ Table of Contents
 - [1979. 找出数组的最大公约数](https://leetcode.cn/problems/find-greatest-common-divisor-of-array/) [题解](./数学/数论/最大公约数(GCD).md#1979.-找出数组的最大公约数)
 - [365. 水壶问题](https://leetcode.cn/problems/water-and-jug-problem/) [题解](./数学/数论/最大公约数(GCD).md#365.-水壶问题)
 - [2654. 使数组所有元素变成 1 的最少操作次数](https://leetcode.cn/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/) [题解](./数学/数论/最大公约数(GCD).md#2654.-使数组所有元素变成-1-的最少操作次数)
+- [3312. 查询排序后的最大公约数](https://leetcode.cn/problems/sorted-gcd-pair-queries/) [题解](./数学/数论/最大公约数(GCD).md#3312.-查询排序后的最大公约数)
 ### 最小公倍数(LCM)
 
 ### 质因数分解
@@ -705,6 +714,7 @@ Table of Contents
 ### 组合计数
 
 - [3405. 统计恰好有 K 个相等相邻元素的数组数目](https://leetcode.cn/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) [题解](./数学/组合数学/组合计数.md#3405.-统计恰好有-k-个相等相邻元素的数组数目)
+- [3518. 最小回文排列 II](https://leetcode.cn/problems/smallest-palindromic-rearrangement-ii/) [题解](./数学/组合数学/组合计数.md#3518.-最小回文排列-ii)
 ## 计算几何
 
 ### 点+线
@@ -726,6 +736,7 @@ Table of Contents
 ## 异或（XOR）的性质
 
 - [2683. 相邻值的按位异或](https://leetcode.cn/problems/neighboring-bitwise-xor/) [题解](./数学/异或（XOR）的性质.md#2683.-相邻值的按位异或)
+- [3514. 不同 XOR 三元组的数目 II](https://leetcode.cn/problems/number-of-unique-xor-triplets-ii/) [题解](./数学/异或（XOR）的性质.md#3514.-不同-xor-三元组的数目-ii)
 ## 数值计算
 
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./数学/数值计算.md#69.-x-的平方根)
@@ -760,6 +771,9 @@ Table of Contents
 
 - [基础：发明树状数组](./树状数组和线段树/树状数组.md#基础：发明树状数组)
 - [315. 计算右侧小于当前元素的个数](https://leetcode.cn/problems/count-of-smaller-numbers-after-self/) [题解](./树状数组和线段树/树状数组.md#315.-计算右侧小于当前元素的个数)
+## 稀疏表
+
+- [3501. 操作后最大活跃区段数 II](https://leetcode.cn/problems/maximize-active-section-with-trade-ii/) [题解](./树状数组和线段树/稀疏表.md#3501.-操作后最大活跃区段数-ii)
 ## 线段树
 
 - [3479. 水果成篮 III](https://leetcode.cn/problems/fruits-into-baskets-iii/) [题解](./树状数组和线段树/线段树.md#3479.-水果成篮-iii)
@@ -826,6 +840,7 @@ Table of Contents
 - [3637. 三段式数组 I](https://leetcode.cn/problems/trionic-array-i/) [题解](./滑动窗口/分组循环.md#3637.-三段式数组-i)
 - [696. 计数二进制子串](https://leetcode.cn/problems/count-binary-substrings/) [题解](./滑动窗口/分组循环.md#696.-计数二进制子串)
 - [1861. 旋转盒子](https://leetcode.cn/problems/rotating-the-box/) [题解](./滑动窗口/分组循环.md#1861.-旋转盒子)
+- [3499. 操作后最大活跃区段数 I](https://leetcode.cn/problems/maximize-active-section-with-trade-i/) [题解](./滑动窗口/分组循环.md#3499.-操作后最大活跃区段数-i)
 # 网格图
 
 ## 网格图 0-1 BFS
@@ -1001,6 +1016,7 @@ Table of Contents
 - [1622. 奇妙序列](https://leetcode.cn/problems/fancy-sequence/) [题解](./模拟.md#1622.-奇妙序列)
 - [1878. 矩阵中最大的三个菱形和](https://leetcode.cn/problems/get-biggest-three-rhombus-sums-in-a-grid/) [题解](./模拟.md#1878.-矩阵中最大的三个菱形和)
 - [2069. 模拟行走机器人 II](https://leetcode.cn/problems/walking-robot-simulation-ii/) [题解](./模拟.md#2069.-模拟行走机器人-ii)
+- [3867. 数对的最大公约数之和](https://leetcode.cn/problems/sum-of-gcd-of-formed-pairs/) [题解](./模拟.md#3867.-数对的最大公约数之和)
 # 离线算法
 
 - [1847. 最近的房间](https://leetcode.cn/problems/closest-room/) [题解](./离线算法.md#1847.-最近的房间)
@@ -1024,6 +1040,7 @@ Table of Contents
 - [2087. 网格图中机器人回家的最小代价](https://leetcode.cn/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/) [题解](./脑筋急转弯.md#2087.-网格图中机器人回家的最小代价)
 - [796. 旋转字符串](https://leetcode.cn/problems/rotate-string/) [题解](./脑筋急转弯.md#796.-旋转字符串)
 - [3689. 最大子数组总值 I](https://leetcode.cn/problems/maximum-total-subarray-value-i/) [题解](./脑筋急转弯.md#3689.-最大子数组总值-i)
+- [3513. 不同 XOR 三元组的数目 I](https://leetcode.cn/problems/number-of-unique-xor-triplets-i/) [题解](./脑筋急转弯.md#3513.-不同-xor-三元组的数目-i)
 # 逆向思维
 
 - [3614. 用特殊操作处理字符串 II](https://leetcode.cn/problems/process-string-with-special-operations-ii/) [题解](./逆向思维.md#3614.-用特殊操作处理字符串-ii)
@@ -1031,11 +1048,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **524**
+Total problems: **539**
 
 Still working on ...
 
-Last updated: 2026-07-13 07:45:58
+Last updated: 2026-08-05 10:09:05
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

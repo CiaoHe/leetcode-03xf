@@ -114,3 +114,35 @@ class Solution:
                     return n-1+length-1
         return -1
 ```
+
+# [3312. 查询排序后的最大公约数](https://leetcode.cn/problems/sorted-gcd-pair-queries/)
+给你一个长度为 `n` 的整数数组 `nums` 和一个整数数组 `queries` 。
+
+`gcdPairs` 表示数组 `nums` 中所有满足 `0 <= i < j < n` 的数对 `(nums[i], nums[j])` 的 最大公约数 **升序** 排列构成的数组。
+
+对于每个查询 `queries[i]` ，你需要找到 `gcdPairs` 中下标为 `queries[i]` 的元素。
+
+请你返回一个整数数组 `answer` ，其中 `answer[i]` 是 `gcdPairs[queries[i]]` 的值。
+
+`gcd(a, b)` 表示 `a` 和 `b` 的 **最大公约数** 。
+
+```python
+class Solution:
+    def gcdValues(self, nums: List[int], queries: List[int]) -> List[int]:
+        mx = max(nums)
+        cnt = Counter(nums)
+
+        cnt_gcd = [0] * (mx + 1)
+        for i in range(mx, 0, -1):
+            c = 0
+            for j in range(i, mx + 1, i):
+                c += cnt[j]
+                # 根据容斥原理：由于这些数对的实际gcd可能是i的倍数的其他数
+                # 所以我们需要减去这些数对的个数, 扣除2g, 3g, 4g, ...的情况
+                cnt_gcd[i] -= cnt_gcd[j] # gcd 是 2i,3i,4i,... 的数对不能统计进来
+            cnt_gcd[i] += c * (c - 1) // 2 # c 个数选 2 个，组成 c*(c-1)/2 个数对
+        
+        # 计算前缀和，方便后续查询 
+        s = list(accumulate(cnt_gcd))
+        return [bisect_right(s, q) for q in queries]
+```

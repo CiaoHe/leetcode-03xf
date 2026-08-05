@@ -35,3 +35,22 @@ class Solution:
     def doesValidArrayExist(self, derived: List[int]) -> bool:
         return reduce(xor, derived) == 0
 ```
+
+# [3514. 不同 XOR 三元组的数目 II](https://leetcode.cn/problems/number-of-unique-xor-triplets-ii/)
+给你一个整数数组 `nums` 。
+**XOR 三元组** 定义为三个元素的异或值 `nums[i] XOR nums[j] XOR nums[k]`，其中 `i <= j <= k`。
+返回所有可能三元组 `(i, j, k)` 中 **不同** 的 XOR 值的数量。
+
+```python
+class Solution:
+    def uniqueXorTriplets(self, nums: List[int]) -> int:
+        nums = list(set(nums))
+        # 我们先获得任何pair的异或结果
+        # 记住追加上0，因为我们可以同时选择一个数两次
+        st = {x^y for x,y in combinations(nums, 2)} | {0}
+        ans = set()
+        for z in nums:
+            for xy in st:
+                ans.add(xy^z)
+        return len(ans)
+```

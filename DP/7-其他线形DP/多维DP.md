@@ -197,3 +197,47 @@ class Solution:
             return res
         return max(dfs(n-2, pre, dec=False) for pre in range(n+1))
 ```
+
+# [3336. 最大公约数相等的子序列数量](https://leetcode.cn/problems/find-the-number-of-subsequences-with-equal-gcd/)
+hard
+给你一个整数数组 `nums`。
+
+请你统计所有满足以下条件的 **非空** 子序列 对 `(seq1, seq2)` 的数量：
+
+- 子序列 `seq1` 和 `seq2` **不相交**，意味着 `nums` 中 **不存在** 同时出现在两个序列中的下标。
+- `seq1` 元素的 GCD 等于 `seq2` 元素的 GCD。
+
+返回满足条件的子序列对的总数。
+
+由于答案可能非常大，请返回其对 `109 + 7` **取余** 的结果。
+
+```python
+class Solution:
+    def subsequencePairCount(self, nums: List[int]) -> int:
+        MOD = 10**9 + 7
+        n = len(nums)
+        @cache
+        def dfs(i:int, gcd1, gcd2) -> int:
+            if i == n:
+                if gcd1 != -1 and gcd2 != -1 and gcd1 == gcd2:
+                    return 1
+                return 0
+            # update gcd1 and gcd2
+            res = 0
+            # 1. not choose nums[i]
+            res += dfs(i+1, gcd1, gcd2)
+            # 2. choose nums[i] for gcd1
+            if gcd1 == -1:
+                next_gcd1 = nums[i]
+            else:
+                next_gcd1 = gcd(gcd1, nums[i])
+            res += dfs(i+1, next_gcd1, gcd2)
+            # 3. choose nums[i] for gcd2
+            if gcd2 == -1:
+                next_gcd2 = nums[i]
+            else:
+                next_gcd2 = gcd(gcd2, nums[i])
+            res += dfs(i+1, gcd1, next_gcd2)
+            return res % MOD
+        return dfs(0, -1, -1) % MOD
+```

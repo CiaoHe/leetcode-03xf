@@ -164,11 +164,14 @@ Table of Contents
 - [2843. 统计对称整数的数目](https://leetcode.cn/problems/count-symmetric-integers/) [题解](./DP/10-数位DP.md#2843.-统计对称整数的数目)
 - [3753. 范围内总波动值 II](https://leetcode.cn/problems/total-waviness-of-numbers-in-range-ii/) [题解](./DP/10-数位DP.md#3753.-范围内总波动值-ii)
 - [1291. 顺次数](https://leetcode.cn/problems/sequential-digits/) [题解](./DP/10-数位DP.md#1291.-顺次数)
+- [3348. 最小可整除数位乘积 II](https://leetcode.cn/problems/smallest-divisible-digit-product-ii/) [题解](./DP/10-数位DP.md#3348.-最小可整除数位乘积-ii)
 ## 14-博弈DP
 
 - [486. 预测赢家](https://leetcode.cn/problems/predict-the-winner/) [题解](./DP/14-博弈DP.md#486.-预测赢家)
 - [877. 石子游戏](https://leetcode.cn/problems/stone-game/) [题解](./DP/14-博弈DP.md#877.-石子游戏)
+- [1140. 石子游戏 II](https://leetcode.cn/problems/stone-game-ii/) [题解](./DP/14-博弈DP.md#1140.-石子游戏-ii)
 - [1406. 石子游戏 III](https://leetcode.cn/problems/stone-game-iii/) [题解](./DP/14-博弈DP.md#1406.-石子游戏-iii)
+- [1510. 石子游戏 IV](https://leetcode.cn/problems/stone-game-iv/) [题解](./DP/14-博弈DP.md#1510.-石子游戏-iv)
 ## 15-概率期望DP
 
 - [688. 骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) [题解](./DP/15-概率期望DP.md#688.-骑士在棋盘上的概率)
@@ -181,6 +184,7 @@ Table of Contents
 ## 前后缀分解
 
 - [2163. 删除元素后和的最小差值](https://leetcode.cn/problems/minimum-difference-in-sums-after-removal-of-elements/) [题解](./DP/前后缀分解.md#2163.-删除元素后和的最小差值)
+- [3302. 字典序最小的合法序列](https://leetcode.cn/problems/find-the-lexicographically-smallest-valid-sequence/) [题解](./DP/前后缀分解.md#3302.-字典序最小的合法序列)
 ## 跳跃游戏
 
 - [2770. 达到末尾下标所需的最大跳跃次数](https://leetcode.cn/problems/maximum-number-of-jumps-to-reach-the-last-index/) [题解](./DP/跳跃游戏.md#2770.-达到末尾下标所需的最大跳跃次数)
@@ -1048,11 +1052,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **539**
+Total problems: **543**
 
 Still working on ...
 
-Last updated: 2026-08-05 10:09:05
+Last updated: 2026-08-10 08:49:24
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

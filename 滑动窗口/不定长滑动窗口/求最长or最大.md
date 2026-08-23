@@ -124,3 +124,32 @@ class Solution:
             ans = max(ans, s)
         return ans
 ```
+
+# [2958. 最多 K 个重复元素的最长子数组](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/)
+给你一个整数数组 `nums` 和一个整数 `k` 。
+
+一个元素 `x` 在数组中的 **频率** 指的是它在数组中的出现次数。
+
+如果一个数组中所有元素的频率都 **小于等于** `k` ，那么我们称这个数组是 **好** 数组。
+
+请你返回 `nums` 中 **最长好** 子数组的长度。
+
+**子数组** 指的是一个数组中一段连续非空的元素序列。
+
+```python
+class Solution:
+    def maxSubarrayLength(self, nums: List[int], k: int) -> int:
+        n = len(nums)
+        # 好subarr: 所有元素的freq <= k
+        freq = Counter()
+        # 滑动窗口
+        l = 0
+        res = 0
+        for r in range(n):
+            freq[nums[r]] += 1
+            while freq[nums[r]] > k:
+                freq[nums[l]] -= 1
+                l += 1
+            res = max(res, r - l + 1)
+        return res
+```

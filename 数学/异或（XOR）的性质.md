@@ -54,3 +54,25 @@ class Solution:
                 ans.add(xy^z)
         return len(ans)
 ```
+
+# [3702. 按位异或非零的最长子序列](https://leetcode.cn/problems/longest-subsequence-with-non-zero-bitwise-xor/)
+给你一个整数数组 `nums`。
+
+返回 `nums` 中 **按位异或**（XOR）计算结果 **非零** 的 **最长子序列** 的长度。如果不存在这样的 **子序列** ，返回 0 。
+
+**子序列** 是一个 **非空** 数组，可以通过从原数组中删除一些或不删除任何元素（不改变剩余元素的顺序）派生而来。
+
+```python
+class Solution:
+    def longestSubsequence(self, nums: List[int]) -> int:
+        # 1. 如果全为 0，无法构成非 0 异或和
+        if all(x == 0 for x in nums):
+            return 0
+
+        # 2. 如果整体异或和不为 0，答案就是 n；否则为 n - 1
+        total_xor = 0
+        for x in nums:
+            total_xor ^= x
+
+        return len(nums) if total_xor != 0 else len(nums) - 1
+```

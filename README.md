@@ -172,6 +172,8 @@ Table of Contents
 - [1140. 石子游戏 II](https://leetcode.cn/problems/stone-game-ii/) [题解](./DP/14-博弈DP.md#1140.-石子游戏-ii)
 - [1406. 石子游戏 III](https://leetcode.cn/problems/stone-game-iii/) [题解](./DP/14-博弈DP.md#1406.-石子游戏-iii)
 - [1510. 石子游戏 IV](https://leetcode.cn/problems/stone-game-iv/) [题解](./DP/14-博弈DP.md#1510.-石子游戏-iv)
+- [2029. 石子游戏 IX](https://leetcode.cn/problems/stone-game-ix/) [题解](./DP/14-博弈DP.md#2029.-石子游戏-ix)
+- [1563. 石子游戏 V](https://leetcode.cn/problems/stone-game-v/) [题解](./DP/14-博弈DP.md#1563.-石子游戏-v)
 ## 15-概率期望DP
 
 - [688. 骑士在棋盘上的概率](https://leetcode.cn/problems/knight-probability-in-chessboard/) [题解](./DP/15-概率期望DP.md#688.-骑士在棋盘上的概率)
@@ -339,6 +341,7 @@ Table of Contents
 ## 基础
 
 - [1009. 十进制整数的反码](https://leetcode.cn/problems/complement-of-base-10-integer/) [题解](./位运算/基础.md#1009.-十进制整数的反码)
+- [1386. 安排电影院座位](https://leetcode.cn/problems/cinema-seat-allocation/) [题解](./位运算/基础.md#1386.-安排电影院座位)
 ## 拆位or贡献法
 
 - [2275. 按位与结果大于零的最长组合](https://leetcode.cn/problems/largest-combination-with-bitwise-and-greater-than-zero/) [题解](./位运算/拆位or贡献法.md#2275.-按位与结果大于零的最长组合)
@@ -737,10 +740,12 @@ Table of Contents
 ## 容斥原理
 
 - [2929. 给小朋友们分糖果 II](https://leetcode.cn/problems/distribute-candies-among-children-ii/) [题解](./数学/容斥原理.md#2929.-给小朋友们分糖果-ii)
+- [3116. 单面值组合的第 K 小金额](https://leetcode.cn/problems/kth-smallest-amount-with-single-denomination-combination/) [题解](./数学/容斥原理.md#3116.-单面值组合的第-k-小金额)
 ## 异或（XOR）的性质
 
 - [2683. 相邻值的按位异或](https://leetcode.cn/problems/neighboring-bitwise-xor/) [题解](./数学/异或（XOR）的性质.md#2683.-相邻值的按位异或)
 - [3514. 不同 XOR 三元组的数目 II](https://leetcode.cn/problems/number-of-unique-xor-triplets-ii/) [题解](./数学/异或（XOR）的性质.md#3514.-不同-xor-三元组的数目-ii)
+- [3702. 按位异或非零的最长子序列](https://leetcode.cn/problems/longest-subsequence-with-non-zero-bitwise-xor/) [题解](./数学/异或（XOR）的性质.md#3702.-按位异或非零的最长子序列)
 ## 数值计算
 
 - [69. x 的平方根](https://leetcode.cn/problems/sqrtx/) [题解](./数学/数值计算.md#69.-x-的平方根)
@@ -783,6 +788,7 @@ Table of Contents
 - [3479. 水果成篮 III](https://leetcode.cn/problems/fruits-into-baskets-iii/) [题解](./树状数组和线段树/线段树.md#3479.-水果成篮-iii)
 - [3477. 水果成篮 II](https://leetcode.cn/problems/fruits-into-baskets-ii/) [题解](./树状数组和线段树/线段树.md#3477.-水果成篮-ii)
 - [3161. 物块放置查询](https://leetcode.cn/problems/block-placement-queries/) [题解](./树状数组和线段树/线段树.md#3161.-物块放置查询)
+- [2213. 由单个字符重复的最长子字符串](https://leetcode.cn/problems/longest-substring-of-one-repeating-character/) [题解](./树状数组和线段树/线段树.md#2213.-由单个字符重复的最长子字符串)
 # 滑动窗口
 
 ## 不定长滑动窗口
@@ -820,6 +826,7 @@ Table of Contents
 - [1695. 删除子数组的最大得分](https://leetcode.cn/problems/maximum-erasure-value/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#1695.-删除子数组的最大得分)
 - [3297. 统计重新排列后包含另一个字符串的子字符串数目 I](https://leetcode.cn/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#3297.-统计重新排列后包含另一个字符串的子字符串数目-i)
 - [2106. 摘水果](https://leetcode.cn/problems/maximum-fruits-harvested-after-at-most-k-steps/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#2106.-摘水果)
+- [2958. 最多 K 个重复元素的最长子数组](https://leetcode.cn/problems/length-of-longest-subarray-with-at-most-k-frequency/) [题解](./滑动窗口/不定长滑动窗口/求最长or最大.md#2958.-最多-k-个重复元素的最长子数组)
 ## 单序列双指针
 
 ### 相向双指针
@@ -997,6 +1004,7 @@ Table of Contents
 
 - [913. 猫和老鼠](https://leetcode.cn/problems/cat-and-mouse/) [题解](./博弈论.md#913.-猫和老鼠)
 - [1728. 猫和老鼠 II](https://leetcode.cn/problems/cat-and-mouse-ii/) [题解](./博弈论.md#1728.-猫和老鼠-ii)
+- [1927. 求和游戏](https://leetcode.cn/problems/sum-game/) [题解](./博弈论.md#1927.-求和游戏)
 # 数据结构设计
 
 - [380. O(1) 时间插入、删除和获取随机元素](https://leetcode.cn/problems/insert-delete-getrandom-o1/) [题解](./数据结构设计.md#380.-o(1)-时间插入、删除和获取随机元素)
@@ -1045,6 +1053,7 @@ Table of Contents
 - [796. 旋转字符串](https://leetcode.cn/problems/rotate-string/) [题解](./脑筋急转弯.md#796.-旋转字符串)
 - [3689. 最大子数组总值 I](https://leetcode.cn/problems/maximum-total-subarray-value-i/) [题解](./脑筋急转弯.md#3689.-最大子数组总值-i)
 - [3513. 不同 XOR 三元组的数目 I](https://leetcode.cn/problems/number-of-unique-xor-triplets-i/) [题解](./脑筋急转弯.md#3513.-不同-xor-三元组的数目-i)
+- [3471. 找出最大的几近缺失整数](https://leetcode.cn/problems/find-the-largest-almost-missing-integer/) [题解](./脑筋急转弯.md#3471.-找出最大的几近缺失整数)
 # 逆向思维
 
 - [3614. 用特殊操作处理字符串 II](https://leetcode.cn/problems/process-string-with-special-operations-ii/) [题解](./逆向思维.md#3614.-用特殊操作处理字符串-ii)
@@ -1052,11 +1061,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **543**
+Total problems: **552**
 
 Still working on ...
 
-Last updated: 2026-08-10 08:49:24
+Last updated: 2026-08-23 21:41:18
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

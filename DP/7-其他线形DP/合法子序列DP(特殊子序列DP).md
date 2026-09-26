@@ -74,3 +74,26 @@ class Solution:
             mi = g[mi]
         return res[::-1]
 ```
+
+# [940. 不同的子序列 II](https://leetcode.cn/problems/distinct-subsequences-ii/)
+给定一个字符串 `s`，计算 `s` 的 **不同非空子序列** 的个数。因为结果可能很大，所以返回答案需要对 **`10^9 + 7` 取余** 。
+
+字符串的 **子序列** 是经由原字符串删除一些（也可能不删除）字符但不改变剩余字符相对位置的一个新字符串。
+
+- 例如，`"ace"` 是 `"_**a**_b_**c**_d_**e**_"` 的一个子序列，但 `"aec"` 不是。
+```python
+class Solution:
+    def distinctSubseqII(self, s: str) -> int:
+        n = len(s)
+        MOD = 10**9 + 7
+        # 计算不同子序列，我们可以用dp的方式
+        @cache
+        def dp(i, last_char):
+            if i == n:
+                return 1
+            res = dp(i + 1, last_char)  # 不选s[i]
+            if s[i] != last_char:
+                res += dp(i + 1, s[i])  # 选s[i]
+            return res % MOD
+        return (dp(0, '') - 1) % MOD  # 减去空子序列
+```

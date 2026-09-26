@@ -48,3 +48,33 @@ class Solution:
         dfs2(root)
         return self.ans % MOD
 ```
+# [2265. 统计值等于子树平均值的节点数](https://leetcode.cn/problems/count-nodes-equal-to-average-of-subtree/)
+给你一棵二叉树的根节点 `root` ，找出并返回满足要求的节点数，要求节点的值等于其 **子树** 中值的 **平均值** 。
+
+**注意：**
+- `n` 个元素的平均值可以由 `n` 个元素 **求和** 然后再除以 `n` ，并 **向下舍入** 到最近的整数。
+- `root` 的 **子树** 由 `root` 和它的所有后代组成。
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def averageOfSubtree(self, root: TreeNode) -> int:
+        self.res = 0
+        def dfs(node):
+            if not node:
+                return (0,0)
+            left_sum, left_count = dfs(node.left)
+            right_sum, right_count = dfs(node.right)
+            total_sum = left_sum + right_sum + node.val
+            total_count = left_count + right_count + 1
+            if total_sum // total_count == node.val:
+                self.res += 1
+            return (total_sum, total_count)
+        dfs(root)
+        return self.res
+```

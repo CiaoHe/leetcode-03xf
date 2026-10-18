@@ -275,3 +275,85 @@ class Solution:
                 
         return ans
 ```
+
+# [2916. 子数组不同元素数目的平方和 II](https://leetcode.cn/problems/subarrays-distinct-element-sum-of-squares-ii/)
+给你一个下标从 **0** 开始的整数数组 `nums` 。
+
+定义 `nums` 一个子数组的 **不同计数** 值如下：
+
+- 令 `nums[i..j]` 表示 `nums` 中所有下标在 `i` 到 `j` 范围内的元素构成的子数组（满足 `0 <= i <= j < nums.length` ），那么我们称子数组 `nums[i..j]` 中不同值的数目为 `nums[i..j]` 的不同计数。
+
+请你返回 `nums` 中所有子数组的 **不同计数** 的 **平方** 和。
+
+由于答案可能会很大，请你将它对 `109 + 7` **取余** 后返回。
+
+子数组指的是一个数组里面一段连续 **非空** 的元素序列。
+
+
+> 看到“需要频繁对一个连续区间进行统一加减，并查询区间和”时，第一反应就是用线段树（或树状数组+差分
+
+1. 定义辅助数组
+	1. 令 `arr[L]` 表示**以 L 为左端点、当前右端点为 i**​ 的子数组中不同元素的个数。
+	2. 当右端点从 i-1 移动到 i 时，只有那些左端点 L 满足 `last[x] < L ≤ i` 的子数组才会多出一个新元素 x，因此这些 `arr[L]`要加 1；而其他左端点的值不变。
+2. 平方和的递推
+	1. 记 `S = ∑_{L=1}^{i-1} arr[L]`（旧的总和）
+		1. 但实际我们只需要更新区间 `[j+1, i]` 的和，其中 `j = last[x]`。
+	2. 设更新前，区间 `[j+1, i-1]` 的旧和为 `sum_old`（注意 `arr[i]` 初始为 0，不参与）。更新后：
+		1. 对于 `L ∈ [j+1, i]`，每个 `arr[L]` 增加 1，所以它们的平方变化为 `(a+1)² - a² = 2a + 1`。
+		2. 因此，新的平方和 `dp[i] = dp[i-1] + ∑_{L=j+1}^{i} (2·arr[L] + 1)`。其中 `arr[L]` 是更新前的值，且 `arr[i]=0`，所以上式 = `dp[i-1] + 2·sum_old + (i - j)`。
+		3. `dp[i] = dp[i-1] + 2·query_sum(j+1, i) + (i - j)`
+
+```python
+class Solution:
+    def sumCounts(self, nums: List[int]) -> int:
+        n = len(nums)
+        MOD = 10**9 + 7
+        # 把right endpoints相同的分到同一组，那么右端点为i的子数组可以看成是i-1的子数组 + nums[i]
+        # 那么这样右端点是i-1的子数组的 “不同计数的平方“之和就会增加: 
+
+        sum_ = [0] * (n * 4) # 表示节点 o 所代表区间内所有元素的当前和。这里的“元素”指的是以每个位置为左端点、当前遍历到的右端点构成的子数组的不同元素个数（即 arr[L]）。
+        todo = [0] * (n * 4) # 懒标记，表示节点 o 的整个区间还需要统一加上的数值（尚未下传到子节点）。用于延迟更新，提高效率。
+
+        def do(o:int, l:int, r:int, v:int):
+            sum_[o] += v * (r - l + 1) # 节点 o 代表的整个区间已经被加上了 add
+            todo[o] += v # 但它的子节点还没有得到这个更新
+        
+        def query_and_add1(o:int, l:int, r:int, L:int, R:int) -> int:
+            # l, r 固定为该节点对应的区间（如根节点为 [1, n]）
+            # L, R 是外部传入的需要操作的区间，在整个递归过程中保持不变（除非递归到子节点时，子节点会用自己的 l, r 与之比较）
+            if L <= l and r <= R:
+                # 这个区间完全包含在查询区间内，直接返回 sum_[o] 并将 todo[o] 加 1
+                res = sum_[o]
+                do(o, l, r, 1)
+                return res
+            
+            mid = (l + r) // 2
+            add = todo[o]
+            if add > 0:
+                # 如果当前节点有未下传的懒标记，则将其下传给子节点
+                do(o*2, l, mid, add)
+                do(o*2+1, mid+1, r, add)
+                todo[o] = 0
+            
+            res = 0
+            if L <= mid:
+                res += query_and_add1(o*2, l, mid, L, R)
+            if R > mid:
+                res += query_and_add1(o*2+1, mid+1, r, L, R)
+            sum_[o] = sum_[o*2] + sum_[o*2+1]
+            return res 
+        
+        ans = 0
+        cur_sum = 0
+        last = {}
+        # 线段树的根节点通常编号为 1，左孩子为 2*o，右孩子为 2*o+1。
+        # 因此，线段树的节点编号范围是 [1, 4*n]，而数组下标范围是 [1, n]。
+        # 因此我们为了配合线段树的实现，将数组下标从 1 开始编号。
+        for i,x in enumerate(nums, 1):
+            j = last.get(x, 0)
+            last[x] = i
+            old_sum = query_and_add1(1, 1, n, j+1, i)
+            cur_sum += (i - j) + old_sum * 2
+            ans += cur_sum
+        return ans % MOD
+```

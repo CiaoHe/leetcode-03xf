@@ -295,3 +295,63 @@ class Solution:
 > 为什么不能用dfs?
 > 在没有加缓存（记忆化）的情况下，你的 DFS 会尝试所有可能的路径。即便加上记忆化，由于图中存在**环路**（你可以走到 $i+1$，再走回 $i$，或者通过相同数字的索引来回跳），DFS 在第一次访问某个节点时，**并不能保证此时的步数 `step` 是最短的**。
 > - **举个例子：** 如果 DFS 先走了一条很绕的远路到达了索引 `k`，把它标记为了 `visited`。后续有一条极短的路径也能到达 `k`，但由于 `k` 已经在 `visited` 中，短路径就会被直接剪枝（返回 `inf`）。这会导致最终求出的结果不是全局最优解，甚至根本找不到解。
+
+# [301. 删除无效的括号](https://leetcode.cn/problems/remove-invalid-parentheses/)
+给你一个由若干括号和字母组成的字符串 `s` ，删除最小数量的无效括号，使得输入的字符串有效。
+
+返回所有可能的结果。答案可以按 **任意顺序** 返回。
+
+```python
+class Solution:
+    def removeInvalidParentheses(self, s: str) -> list[str]:
+        def is_valid(s):
+            count = 0
+            for c in s:
+                if c == '(':
+                    count += 1
+                elif c == ')':
+                    count -= 1
+                    if count < 0:
+                        return False
+            return count == 0
+        
+        # 如果我们采用bfs的话
+        cur = {s}
+        while True:
+            valid = list(filter(is_valid, cur))
+            if valid:
+                return valid
+            
+            nxt = set()
+            for str_ in cur:
+                for i in range(len(str_)):
+                    if str_[i] in '()':
+                        nxt.add(str_[:i] + str_[i+1:])
+            cur = nxt 
+```
+# [1021. 删除最外层的括号](https://leetcode.cn/problems/remove-outermost-parentheses/)
+有效括号字符串为空 `""`、`"(" + A + ")"` 或 `A + B` ，其中 `A` 和 `B` 都是有效的括号字符串，`+` 代表字符串的连接。
+- 例如，`""`，`"()"`，`"(())()"` 和 `"(()(()))"` 都是有效的括号字符串。
+
+如果有效字符串 `s` 非空，且不存在将其拆分为 `s = A + B` 的方法，我们称其为**原语（primitive）**，其中 `A` 和 `B` 都是非空有效括号字符串。
+
+给出一个非空有效字符串 `s`，考虑将其进行原语化分解，使得：`s = P_1 + P_2 + ... + P_k`，其中 `P_i` 是有效括号字符串原语。
+
+对 `s` 进行原语化分解，删除分解中每个原语字符串的最外层括号，返回 `s` 。
+
+```python
+class Solution:
+    def removeOuterParentheses(self, s: str) -> str:
+        depth = 0
+        ans = []
+        for c in s:
+            if c == '(':
+                if depth > 0:
+                    ans.append(c)
+                depth += 1
+            else:
+                depth -= 1
+                if depth > 0:
+                    ans.append(c)
+        return ''.join(ans)
+```

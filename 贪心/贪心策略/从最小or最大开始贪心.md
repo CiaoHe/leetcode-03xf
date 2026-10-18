@@ -169,3 +169,29 @@ class Solution:
                 arr[i] = arr[i-1] + 1
         return arr[-1]
 ```
+
+# [3727. 最大交替平方和](https://leetcode.cn/problems/maximum-alternating-sum-of-squares/)
+给你一个整数数组 `nums`。你可以以任意顺序 **重新排列元素** 。
+
+数组 `arr` 的 **交替得分** 定义为：
+- `score = arr[0]2 - arr[1]2 + arr[2]2 - arr[3]2 + ...`
+
+在对 `nums` 重新排列后，返回其 **最大可能的交替得分**。
+
+```python
+class Solution:
+    def maxAlternatingSum(self, nums: List[int]) -> int:
+        nums.sort(reverse=True, key=lambda x: abs(x))
+        n = len(nums)
+        ans = 0
+        
+        # 偶数下标的个数是 (n + 1) // 2，这些位置贡献正数平方
+        even_count = (n + 1) // 2
+        
+        for i in range(even_count):
+            ans += nums[i] * nums[i]
+        for i in range(even_count, n):
+            ans -= nums[i] * nums[i]
+            
+        return ans
+```

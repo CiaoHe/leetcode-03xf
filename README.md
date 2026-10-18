@@ -337,6 +337,7 @@ Table of Contents
 
 - [3314. 构造最小位运算数组 I](https://leetcode.cn/problems/construct-the-minimum-bitwise-array-i/) [题解](./位运算/与或（AND OR）的性质.md#3314.-构造最小位运算数组-i)
 - [2657. 找到两个数组的前缀公共数组](https://leetcode.cn/problems/find-the-prefix-common-array-of-two-arrays/) [题解](./位运算/与或（AND OR）的性质.md#2657.-找到两个数组的前缀公共数组)
+- [2897. 对数组执行操作使平方和最大](https://leetcode.cn/problems/apply-operations-on-array-to-maximize-sum-of-squares/) [题解](./位运算/与或（AND OR）的性质.md#2897.-对数组执行操作使平方和最大)
 ## 位运算（其他）
 
 - [137. 只出现一次的数字 II](https://leetcode.cn/problems/single-number-ii/) [题解](./位运算/位运算（其他）.md#137.-只出现一次的数字-ii)
@@ -447,6 +448,7 @@ Table of Contents
 - [52. N 皇后 II](https://leetcode.cn/problems/n-queens-ii/) [题解](./回溯/排列型回溯.md#52.-n-皇后-ii)
 - [3001. 捕获黑皇后需要的最少移动次数](https://leetcode.cn/problems/minimum-moves-to-capture-the-queen/) [题解](./回溯/排列型回溯.md#3001.-捕获黑皇后需要的最少移动次数)
 - [1415. 长度为 n 的开心字符串中字典序第 k 小的字符串](https://leetcode.cn/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) [题解](./回溯/排列型回溯.md#1415.-长度为-n-的开心字符串中字典序第-k-小的字符串)
+- [22. 括号生成](https://leetcode.cn/problems/generate-parentheses/) [题解](./回溯/排列型回溯.md#22.-括号生成)
 ## 暴搜+剪枝
 
 - [79. 单词搜索](https://leetcode.cn/problems/word-search/) [题解](./回溯/暴搜+剪枝.md#79.-单词搜索)
@@ -473,6 +475,8 @@ Table of Contents
 - [1298. 你能从盒子里获得的最大糖果数](https://leetcode.cn/problems/maximum-candies-you-can-get-from-boxes/) [题解](./图论算法/BFS基础.md#1298.-你能从盒子里获得的最大糖果数)
 - [3629. 通过质数传送到达终点的最少跳跃次数](https://leetcode.cn/problems/minimum-jumps-to-reach-end-via-prime-teleportation/) [题解](./图论算法/BFS基础.md#3629.-通过质数传送到达终点的最少跳跃次数)
 - [1345. 跳跃游戏 IV](https://leetcode.cn/problems/jump-game-iv/) [题解](./图论算法/BFS基础.md#1345.-跳跃游戏-iv)
+- [301. 删除无效的括号](https://leetcode.cn/problems/remove-invalid-parentheses/) [题解](./图论算法/BFS基础.md#301.-删除无效的括号)
+- [1021. 删除最外层的括号](https://leetcode.cn/problems/remove-outermost-parentheses/) [题解](./图论算法/BFS基础.md#1021.-删除最外层的括号)
 ## Bellman-Ford
 
 - [和Dijkstra的对比](./图论算法/Bellman-Ford.md#和dijkstra的对比)
@@ -655,6 +659,7 @@ Table of Contents
 
 - [1722. 执行交换操作后的最小汉明距离](https://leetcode.cn/problems/minimize-hamming-distance-after-swap-operations/) [题解](./并查集/联通块交换元素.md#1722.-执行交换操作后的最小汉明距离)
 - [2948. 交换得到字典序最小的数组](https://leetcode.cn/problems/make-lexicographically-smallest-array-by-swapping-elements/) [题解](./并查集/联通块交换元素.md#2948.-交换得到字典序最小的数组)
+- [3551. 数位和排序需要的最小交换次数](https://leetcode.cn/problems/minimum-swaps-to-sort-by-digit-sum/) [题解](./并查集/联通块交换元素.md#3551.-数位和排序需要的最小交换次数)
 ## 边权并查集
 
 - [399. 除法求值](https://leetcode.cn/problems/evaluate-division/) [题解](./并查集/边权并查集.md#399.-除法求值)
@@ -735,6 +740,7 @@ Table of Contents
 - [3405. 统计恰好有 K 个相等相邻元素的数组数目](https://leetcode.cn/problems/count-the-number-of-arrays-with-k-matching-adjacent-elements/) [题解](./数学/组合数学/组合计数.md#3405.-统计恰好有-k-个相等相邻元素的数组数目)
 - [3518. 最小回文排列 II](https://leetcode.cn/problems/smallest-palindromic-rearrangement-ii/) [题解](./数学/组合数学/组合计数.md#3518.-最小回文排列-ii)
 - [1621. 大小为 K 的不重叠线段的数目](https://leetcode.cn/problems/number-of-sets-of-k-non-overlapping-line-segments/) [题解](./数学/组合数学/组合计数.md#1621.-大小为-k-的不重叠线段的数目)
+- [1569. 将子数组重新排序得到同一个二叉搜索树的方案数](https://leetcode.cn/problems/number-of-ways-to-reorder-array-to-get-same-bst/) [题解](./数学/组合数学/组合计数.md#1569.-将子数组重新排序得到同一个二叉搜索树的方案数)
 ## 计算几何
 
 ### 圆
@@ -776,10 +782,19 @@ Table of Contents
 - [1963. 使字符串平衡的最小交换次数](https://leetcode.cn/problems/minimum-number-of-swaps-to-make-the-string-balanced/) [题解](./栈/合法括号字符串.md#1963.-使字符串平衡的最小交换次数)
 - [2116. 判断一个括号字符串是否有效](https://leetcode.cn/problems/check-if-a-parentheses-string-can-be-valid/) [题解](./栈/合法括号字符串.md#2116.-判断一个括号字符串是否有效)
 - [761. 特殊的二进制字符串](https://leetcode.cn/problems/special-binary-string/) [题解](./栈/合法括号字符串.md#761.-特殊的二进制字符串)
+- [2267. 检查是否有合法括号字符串路径](https://leetcode.cn/problems/check-if-there-is-a-valid-parentheses-string-path/) [题解](./栈/合法括号字符串.md#2267.-检查是否有合法括号字符串路径)
+- [1111. 有效括号的嵌套深度](https://leetcode.cn/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/) [题解](./栈/合法括号字符串.md#1111.-有效括号的嵌套深度)
+- [20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) [题解](./栈/合法括号字符串.md#20.-有效的括号)
+- [32. 最长有效括号](https://leetcode.cn/problems/longest-valid-parentheses/) [题解](./栈/合法括号字符串.md#32.-最长有效括号)
+- [678. 有效的括号字符串](https://leetcode.cn/problems/valid-parenthesis-string/) [题解](./栈/合法括号字符串.md#678.-有效的括号字符串)
+- [856. 括号的分数](https://leetcode.cn/problems/score-of-parentheses/) [题解](./栈/合法括号字符串.md#856.-括号的分数)
+- [921. 使括号有效的最少添加](https://leetcode.cn/problems/minimum-add-to-make-parentheses-valid/) [题解](./栈/合法括号字符串.md#921.-使括号有效的最少添加)
 ## 栈（基础）
 
 - [402. 移掉 K 位数字](https://leetcode.cn/problems/remove-k-digits/) [题解](./栈/栈（基础）.md#402.-移掉-k-位数字)
 - [394. 字符串解码](https://leetcode.cn/problems/decode-string/) [题解](./栈/栈（基础）.md#394.-字符串解码)
+- [1190. 反转每对括号间的子串](https://leetcode.cn/problems/reverse-substrings-between-each-pair-of-parentheses/) [题解](./栈/栈（基础）.md#1190.-反转每对括号间的子串)
+- [1614. 括号的最大嵌套深度](https://leetcode.cn/problems/maximum-nesting-depth-of-the-parentheses/) [题解](./栈/栈（基础）.md#1614.-括号的最大嵌套深度)
 ## 表达式解析
 
 - [1096. 花括号展开 II](https://leetcode.cn/problems/brace-expansion-ii/) [题解](./栈/表达式解析.md#1096.-花括号展开-ii)
@@ -798,6 +813,7 @@ Table of Contents
 - [3454. 分割正方形 II](https://leetcode.cn/problems/separate-squares-ii/) [题解](./树状数组和线段树/Lazy线段树.md#3454.-分割正方形-ii)
 - [3719. 最长平衡子数组 I](https://leetcode.cn/problems/longest-balanced-subarray-i/) [题解](./树状数组和线段树/Lazy线段树.md#3719.-最长平衡子数组-i)
 - [3721. 最长平衡子数组 II](https://leetcode.cn/problems/longest-balanced-subarray-ii/) [题解](./树状数组和线段树/Lazy线段树.md#3721.-最长平衡子数组-ii)
+- [2916. 子数组不同元素数目的平方和 II](https://leetcode.cn/problems/subarrays-distinct-element-sum-of-squares-ii/) [题解](./树状数组和线段树/Lazy线段树.md#2916.-子数组不同元素数目的平方和-ii)
 ## 树状数组
 
 - [基础：发明树状数组](./树状数组和线段树/树状数组.md#基础：发明树状数组)
@@ -923,6 +939,7 @@ Table of Contents
 - [3474. 字典序最小的生成字符串](https://leetcode.cn/problems/lexicographically-smallest-generated-string/) [题解](./贪心/字符串贪心/字典序最小or最大.md#3474.-字典序最小的生成字符串)
 - [3720. 大于目标字符串的最小字典序排列](https://leetcode.cn/problems/lexicographically-smallest-permutation-greater-than-target/) [题解](./贪心/字符串贪心/字典序最小or最大.md#3720.-大于目标字符串的最小字典序排列)
 - [3734. 大于目标字符串的最小字典序回文排列](https://leetcode.cn/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/) [题解](./贪心/字符串贪心/字典序最小or最大.md#3734.-大于目标字符串的最小字典序回文排列)
+- [3723. 数位平方和的最大值](https://leetcode.cn/problems/maximize-sum-of-squares-of-digits/) [题解](./贪心/字符串贪心/字典序最小or最大.md#3723.-数位平方和的最大值)
 ## 思维题目
 
 ### 从特殊到一般
@@ -941,6 +958,7 @@ Table of Contents
 - [2144. 打折购买糖果的最小开销](https://leetcode.cn/problems/minimum-cost-of-buying-candies-with-discount/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#2144.-打折购买糖果的最小开销)
 - [1833. 雪糕的最大数量](https://leetcode.cn/problems/maximum-ice-cream-bars/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1833.-雪糕的最大数量)
 - [1846. 减小和重新排列数组后的最大元素](https://leetcode.cn/problems/maximum-element-after-decreasing-and-rearranging/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#1846.-减小和重新排列数组后的最大元素)
+- [3727. 最大交替平方和](https://leetcode.cn/problems/maximum-alternating-sum-of-squares/) [题解](./贪心/贪心策略/从最小or最大开始贪心.md#3727.-最大交替平方和)
 ### 从最左or最右开始贪心
 
 - [3228. 将 1 移动到末尾的最大操作次数](https://leetcode.cn/problems/maximum-number-of-operations-to-move-ones-to-the-end/) [题解](./贪心/贪心策略/从最左or最右开始贪心.md#3228.-将-1-移动到末尾的最大操作次数)
@@ -1100,11 +1118,11 @@ Table of Contents
 
 # Summary
 
-Total problems: **579**
+Total problems: **597**
 
 Still working on ...
 
-Last updated: 2026-09-26 22:38:55
+Last updated: 2026-10-18 14:06:22
 
 My Leetcode: [CiaoHe](https://leetcode.cn/u/user7313y/)
 

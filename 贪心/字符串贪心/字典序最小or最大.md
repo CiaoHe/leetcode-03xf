@@ -219,3 +219,35 @@ class Solution:
         
         return ''
 ```
+
+# [3723. 数位平方和的最大值](https://leetcode.cn/problems/maximize-sum-of-squares-of-digits/)
+给你两个 **正** 整数 `num` 和 `sum`。
+
+如果一个正整数 `n` 满足以下两个条件，则称其为 **好整数** ：
+- `n` 的位数 **恰好** 为 `num`。
+- `n` 的各位数字之和 **恰好** 为 `sum`。
+
+一个 **好整数** `n` 的 **分数** 定义为 `n` 的各位数字的平方和。
+
+返回一个 **字符串** ，表示能获得 **最大****分数** 的 **好整数** `n`。如果有多个可能的整数，返回 **最大** 的那个。如果不存在这样的整数，返回一个空字符串。
+
+> 一般地，由于 $f(x)=x^2$ 是凸函数，当元素分布最不均匀时，平方和最大。
+
+```python
+class Solution:
+    def maxSumOfSquares(self, num: int, sum: int) -> str:
+        n = num
+        sum_ = sum
+        if n * 9 < sum:
+            return ""
+        # 贪心 先填足够多的9
+        cnt9 = min(n, sum_ // 9)
+        ans = [9] * cnt9
+        sum_ -= cnt9 * 9
+        if sum_ % 9 > 0:
+            ans.append(sum_ % 9)
+        # 填充0
+        while len(ans) < n:
+            ans.append(0)
+        return ''.join(map(str, ans))
+```
